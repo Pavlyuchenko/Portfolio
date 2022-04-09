@@ -1,0 +1,21 @@
+{
+    "short_name": "Michal Pavlíček",
+    "name": "Michal Pavlíček | Portfolio",
+    "description": "Michal Pavlíček's personal portfolio",
+    "icons": [
+        {
+            "src": "michal_pavlicek_128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "michal_pavlicek_256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#FFFFFF",
+    "display": "minimal-ui",
+    "theme_color": "#2F3C7E"
+}
