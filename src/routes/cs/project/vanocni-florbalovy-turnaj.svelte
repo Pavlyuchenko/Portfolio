@@ -19,7 +19,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="vfb_main.png"
+				src="https://ik.imagekit.io/velkadomu/vfb_main_Us2xy_FMX.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504349843"
 				alt="Vánoční florbalový turnaj hlavní obrázek"
 			/>
 
@@ -154,8 +154,14 @@
 					path: "https://ik.imagekit.io/velkadomu/vfb_detail_bCaWuClht.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504372357",
 					alt: "Detail týmu",
 				},
-				{ path: "https://ik.imagekit.io/velkadomu/vfb_rozpis_uwWWFXTnR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504350598", alt: "Rozpis zápasů" },
-				{ path: "https://ik.imagekit.io/velkadomu/vfb_mobile_uIr5U5_OV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504350625", alt: "Mobilní verze" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/vfb_rozpis_uwWWFXTnR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504350598",
+					alt: "Rozpis zápasů",
+				},
+				{
+					path: "https://ik.imagekit.io/velkadomu/vfb_mobile_uIr5U5_OV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504350625",
+					alt: "Mobilní verze",
+				},
 			]}
 		/>
 

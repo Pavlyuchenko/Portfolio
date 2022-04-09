@@ -21,7 +21,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="pj_main.png"
+				src="https://ik.imagekit.io/velkadomu/pj_main_lV_mkS9O0P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504363562"
 				alt="VelkáDomů hlavní obrázek"
 				id="main-image"
 			/>
@@ -115,9 +115,18 @@
 		/>
 		<ImageShowcase
 			imgs={[
-				{ path: "https://ik.imagekit.io/velkadomu/pj_landing_jnqjiCmnS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364286", alt: "VFB" },
-				{ path: "https://ik.imagekit.io/velkadomu/pj_landing_logged_dOkXgn2lE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367639", alt: "VFB" },
-				{ path: "https://ik.imagekit.io/velkadomu/pj_register_m6X4Irc6r.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364186", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_landing_jnqjiCmnS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364286",
+					alt: "VFB",
+				},
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_landing_logged_dOkXgn2lE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367639",
+					alt: "VFB",
+				},
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_register_m6X4Irc6r.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364186",
+					alt: "VFB",
+				},
 				{
 					path: "https://ik.imagekit.io/velkadomu/pj_recenze_WFQ0L2tTPa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369163",
 					alt: "VFB",

@@ -17,7 +17,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="vfb_main.png"
+				src="https://ik.imagekit.io/velkadomu/vfb_main_Us2xy_FMX.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504349843"
 				alt="Vánoční florbalový turnaj hlavní obrázek"
 			/>
 
