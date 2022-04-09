@@ -112,7 +112,7 @@
 			text="Vše se snaží působit jednoduše a přehledně, ale zároveň graficky příjemně, aby uživatel na mou stránku nezanevřel kvůli designovým prvkům."
 		/>
 		<ImageLoader
-			path="vfb_landing.png"
+			path="https://ik.imagekit.io/velkadomu/vfb_landing_14l3GUfoq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504349462"
 			alt="Dashboard"
 			description="Primární dashboard s nejnutnějšími informacemi."
 		/>
