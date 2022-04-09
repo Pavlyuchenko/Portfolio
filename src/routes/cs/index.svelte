@@ -216,7 +216,7 @@
 				</div>
 				<img
 					id="image"
-					src="slibotechny_sliced.png"
+					src="https://ik.imagekit.io/velkadomu/slibotechny_sliced_NY1siBbbWn.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369511"
 					alt="Obrázek Slibotechny"
 				/>
 			</article>
