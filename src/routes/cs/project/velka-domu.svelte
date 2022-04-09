@@ -231,13 +231,14 @@
 				},
 			]}
 		/>
-		ImageShowcase imgs={[
-			{ path: "admin.png", alt: "VFB" },
-			{ path: "title_image.png", alt: "VFB" },
-			{ path: "cms.png", alt: "VFB" },
-			{ path: "rychlovky.png", alt: "VFB" },
-			{ path: "nova_rychlovka.png", alt: "VFB" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "admin.png", alt: "VFB" },
+				{ path: "title_image.png", alt: "VFB" },
+				{ path: "cms.png", alt: "VFB" },
+				{ path: "rychlovky.png", alt: "VFB" },
+				{ path: "nova_rychlovka.png", alt: "VFB" },
+			]}
 		/>
 
 		<Heading1
@@ -257,18 +258,19 @@
 		<TextBlock
 			text="V průběhu programování prostředí pro čtenáře docházelo k neustálému testování s novými spolupracovníky na projektu napříč různými platformami a jejich zpětné vazbě. V tomto finálním kroku však šlo pouze o získání dat ze serveru a zobrazení je na stránce pomocí HTML a CSS za použití existujícího designového rámce. Tento krok také zahrnoval vytvoření vlastního přihlašovacího systému kvůli hlasování v anketách a zařízení responzivity všech stránek. Výsledek lze vidět na této stránce <a href='https://velkadomu-sapper.vercel.app/' target='_blank'>velkadomu.cz</a> (vzorový účet: test@test.test, heslo: Testing123) nebo na následujících obrázcích:"
 		/>
-		ImageShowcase imgs={[
-			{ path: "landing_velka_domu.png", alt: "VFB" },
-			{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
-			{ path: "clanek_velka_domu.png", alt: "VFB" },
-			{
-				path: "anketa1.gif",
-				alt: "VFB",
-				altPath: "anketa.png",
-			},
-			{ path: "kalendar.png", alt: "VFB" },
-			{ path: "mobile_velka_domu.png", alt: "VFB" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "landing_velka_domu.png", alt: "VFB" },
+				{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
+				{ path: "clanek_velka_domu.png", alt: "VFB" },
+				{
+					path: "anketa1.gif",
+					alt: "VFB",
+					altPath: "anketa.png",
+				},
+				{ path: "kalendar.png", alt: "VFB" },
+				{ path: "mobile_velka_domu.png", alt: "VFB" },
+			]}
 		/>
 		<ImageLoader
 			path="landing_mobile.gif"

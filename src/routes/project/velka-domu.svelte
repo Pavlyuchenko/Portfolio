@@ -228,13 +228,14 @@
 				},
 			]}
 		/>
-		ImageShowcase imgs={[
-			{ path: "admin.png", alt: "VFB" },
-			{ path: "title_image.png", alt: "VFB" },
-			{ path: "cms.png", alt: "VFB" },
-			{ path: "rychlovky.png", alt: "VFB" },
-			{ path: "nova_rychlovka.png", alt: "VFB" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "admin.png", alt: "VFB" },
+				{ path: "title_image.png", alt: "VFB" },
+				{ path: "cms.png", alt: "VFB" },
+				{ path: "rychlovky.png", alt: "VFB" },
+				{ path: "nova_rychlovka.png", alt: "VFB" },
+			]}
 		/>
 
 		<Heading1
@@ -254,18 +255,19 @@
 		<TextBlock
 			text="During programming the UI for readers, there was constant testing with my friends across many platforms. In this final step, it was all about getting the data from the server and displaying them on the page nicely using HTML and CSS. This step also included creating my own login system, user surveys and responsivity. The result can be seen here <a href='https://velkadomu-sapper.vercel.app/' target='_blank'>velkadomu.cz</a> (example account: test@test.test, heslo: Testing123) or on the following images:"
 		/>
-		ImageShowcase imgs={[
-			{ path: "landing_velka_domu.png", alt: "VFB" },
-			{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
-			{ path: "clanek_velka_domu.png", alt: "VFB" },
-			{
-				path: "anketa1.gif",
-				alt: "VFB",
-				altPath: "anketa.png",
-			},
-			{ path: "kalendar.png", alt: "VFB" },
-			{ path: "mobile_velka_domu.png", alt: "VFB" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "landing_velka_domu.png", alt: "VFB" },
+				{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
+				{ path: "clanek_velka_domu.png", alt: "VFB" },
+				{
+					path: "anketa1.gif",
+					alt: "VFB",
+					altPath: "anketa.png",
+				},
+				{ path: "kalendar.png", alt: "VFB" },
+				{ path: "mobile_velka_domu.png", alt: "VFB" },
+			]}
 		/>
 		<ImageLoader
 			path="landing_mobile.gif"

@@ -93,11 +93,12 @@
 		<ImageLoader path="vfb_screen.png" alt="Test" />
 		<ImageLoader path="ffox.png" alt="Test" />
 		<hr />
-		ImageShowcase imgs={[
-			{ path: "vfb_screen.png", alt: "VFB" },
-			{ path: "ffox.png", alt: "VFB" },
-			{ path: "vfb_screen.png", alt: "VFB" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "vfb_screen.png", alt: "VFB" },
+				{ path: "ffox.png", alt: "VFB" },
+				{ path: "vfb_screen.png", alt: "VFB" },
+			]}
 		/>
 
 		<Heading1 description="The Description" heading="Heading" />

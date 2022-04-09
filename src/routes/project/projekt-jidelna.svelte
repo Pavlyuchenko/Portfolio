@@ -116,7 +116,7 @@
 		<TextBlock
 			text="In the early beginning, I downloaded Figma for the first time in my life and I mocked up a basic design without knowing anything about it. Despite that, I got really into it and eventually created a good draft, which is however not good, really:"
 		/>
-		ImageShowcase imgs={[
+		<ImageShowcase imgs={[
 			{ path: "pj_landing.png", alt: "VFB" },
 			{ path: "pj_landing_logged.png", alt: "VFB" },
 			{ path: "pj_register.png", alt: "VFB" },

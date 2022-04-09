@@ -3,11 +3,11 @@
 
 	export let path;
 	export let alt;
+	export let width = 100;
 	export let description = "";
 
 	let modal_div;
 	let modalImage;
-	let width = 100;
 
 	function modal() {
 		modal_div.style.display = "block";

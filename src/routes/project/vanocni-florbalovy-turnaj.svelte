@@ -146,11 +146,12 @@
 		<TextBlock
 			text="Apart from that I had also assured the responsivity of the webisite, since its main use is intended to be on mobile phones. The event takes place in a gym, so the users won't have a desktop, obviously."
 		/>
-		ImageShowcase imgs={[
-			{ path: "vfb_detail.png", alt: "Detail týmu" },
-			{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
-			{ path: "vfb_mobile.png", alt: "Mobilní verze" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "vfb_detail.png", alt: "Detail týmu" },
+				{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
+				{ path: "vfb_mobile.png", alt: "Mobilní verze" },
+			]}
 		/>
 
 		<hr />

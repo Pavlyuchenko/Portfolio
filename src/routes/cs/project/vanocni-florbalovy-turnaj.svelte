@@ -148,11 +148,12 @@
 		<TextBlock
 			text="Krom toho jsem měl na mysli také responzivitu stránky, neboť její hlavní užití bylo zamýšleno na mobilních telefonech, jelikož to je v podstatě to jediné zařízení, které studenti ve škole používají."
 		/>
-		ImageShowcase imgs={[
-			{ path: "vfb_detail.png", alt: "Detail týmu" },
-			{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
-			{ path: "vfb_mobile.png", alt: "Mobilní verze" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "vfb_detail.png", alt: "Detail týmu" },
+				{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
+				{ path: "vfb_mobile.png", alt: "Mobilní verze" },
+			]}
 		/>
 
 		<hr />
