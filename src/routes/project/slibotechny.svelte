@@ -15,7 +15,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="slibotechny_preview.png"
+				src="https://ik.imagekit.io/velkadomu/slibotechny_preview_hGw_PU9jE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369880"
 				alt="Hlavní obrázek Slibotechny"
 			/>
 
@@ -90,7 +90,7 @@
 			text="After some time dedicated to designing a arrived to an almost final design, and I made it interesting by adding this dotted background. My coworkers liked the mockup, so I could soon start programming."
 		/>
 		<ImageLoader
-			path="slibotechny_main_design.png"
+			path="https://ik.imagekit.io/velkadomu/slibotechny_main_design_Q19OhYdwHM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504370044"
 			alt="Slibotechny hlavní design"
 			description="First and final design of the party view."
 		/>
@@ -106,7 +106,7 @@
 			text="When entering the page, no data are load from the back-end (well apart from the HTML and CSS) to decrease the loadtime as much as possible. The user then has to choose a party, which takes him to a category choice. There, once he hovers over some category with a mouse, that data downloads to the memory and when user clicks, the data is shown with almost no wait."
 		/>
 		<ImageLoader
-			path="slibotechny_kategorie.png"
+			path="https://ik.imagekit.io/velkadomu/slibotechny_kategorie_Cp8FIMZTq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369928"
 			alt="Výběr kategorie"
 			description="Choice of a category of a promise. During hover, the data is downloaded."
 		/>

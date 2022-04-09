@@ -150,9 +150,12 @@
 		/>
 		<ImageShowcase
 			imgs={[
-				{ path: "vfb_detail.png", alt: "Detail týmu" },
-				{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
-				{ path: "vfb_mobile.png", alt: "Mobilní verze" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/vfb_detail_bCaWuClht.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504372357",
+					alt: "Detail týmu",
+				},
+				{ path: "https://ik.imagekit.io/velkadomu/vfb_rozpis_uwWWFXTnR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504350598", alt: "Rozpis zápasů" },
+				{ path: "https://ik.imagekit.io/velkadomu/vfb_mobile_uIr5U5_OV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504350625", alt: "Mobilní verze" },
 			]}
 		/>
 

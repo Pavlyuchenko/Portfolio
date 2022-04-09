@@ -115,11 +115,17 @@
 		/>
 		<ImageShowcase
 			imgs={[
-				{ path: "pj_landing.png", alt: "VFB" },
-				{ path: "pj_landing_logged.png", alt: "VFB" },
-				{ path: "pj_register.png", alt: "VFB" },
-				{ path: "pj_recenze.png", alt: "VFB" },
-				{ path: "pj_vyber.png", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/pj_landing_jnqjiCmnS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364286", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/pj_landing_logged_dOkXgn2lE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367639", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/pj_register_m6X4Irc6r.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364186", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_recenze_WFQ0L2tTPa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369163",
+					alt: "VFB",
+				},
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_vyber_O_gQcqnNuY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367076",
+					alt: "VFB",
+				},
 			]}
 		/>
 
@@ -136,7 +142,7 @@
 		/>
 
 		<ImageLoader
-			path="pj_rating.gif"
+			path="https://ik.imagekit.io/velkadomu/pj_rating_bpnLyxx3w.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649504381494"
 			alt="VFB"
 			description="Hodnocení obědů"
 		/>

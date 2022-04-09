@@ -1,7 +1,7 @@
 <section>
 	<img
 		loading="lazy"
-		src="profile_edited.png"
+		src="https://ik.imagekit.io/velkadomu/profile_edited_ACigk5OrM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504386433"
 		alt="Me, myself and I"
 		id="profile"
 	/>

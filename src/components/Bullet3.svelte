@@ -1,8 +1,8 @@
 <script>
 	export let points = [
-		{ text: "a", image: "vfb_screen.png", content: "asdasd" },
-		{ text: "b", image: "vfb_screen.png", content: "asdasd" },
-		{ text: "c", image: "vfb_screen.png", content: "asdasd" },
+		{ text: "a", image: "https://ik.imagekit.io/velkadomu/vfb_screen_qgDlGQclK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504351505", content: "asdasd" },
+		{ text: "b", image: "https://ik.imagekit.io/velkadomu/vfb_screen_qgDlGQclK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504351505", content: "asdasd" },
+		{ text: "c", image: "https://ik.imagekit.io/velkadomu/vfb_screen_qgDlGQclK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504351505", content: "asdasd" },
 	];
 </script>
 

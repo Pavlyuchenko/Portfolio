@@ -79,7 +79,7 @@
 					{#if segment === "cs"}
 						<img
 							loading="lazy"
-							src="uk.svg"
+							src="https://ik.imagekit.io/velkadomu/uk__ckmO6dTr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369963"
 							alt="English"
 							width="28"
 						/>

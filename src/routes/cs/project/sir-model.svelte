@@ -149,7 +149,7 @@
 		/>
 
 		<ImageLoader
-			path="sir.gif"
+			path="https://ik.imagekit.io/velkadomu/sir_VBf0dO0NC.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649504401287"
 			alt="VFB"
 			description="Krátká ukázka animace"
 		/>

@@ -18,7 +18,11 @@
 			</p>
 		</div>
 		<div id="image">
-			<img loading="lazy" src="velka_domu_image.webp" alt="" />
+			<img
+				loading="lazy"
+				src="https://ik.imagekit.io/velkadomu/velka_domu_image_nZtyvk_r43.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1649504374829"
+				alt=""
+			/>
 
 			<div id="project-info">
 				<div>
@@ -90,14 +94,14 @@
 
 		<!-- TO DO -->
 		<ImageLoader path="vfb_image_test.png" alt="Test" />
-		<ImageLoader path="vfb_screen.png" alt="Test" />
+		<ImageLoader path="https://ik.imagekit.io/velkadomu/vfb_screen_qgDlGQclK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504351505" alt="Test" />
 		<ImageLoader path="ffox.png" alt="Test" />
 		<hr />
 		<ImageShowcase
 			imgs={[
-				{ path: "vfb_screen.png", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/vfb_screen_qgDlGQclK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504351505", alt: "VFB" },
 				{ path: "ffox.png", alt: "VFB" },
-				{ path: "vfb_screen.png", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/vfb_screen_qgDlGQclK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504351505", alt: "VFB" },
 			]}
 		/>
 

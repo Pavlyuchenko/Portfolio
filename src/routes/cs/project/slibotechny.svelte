@@ -15,7 +15,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="slibotechny_preview.png"
+				src="https://ik.imagekit.io/velkadomu/slibotechny_preview_hGw_PU9jE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369880"
 				alt="Hlavní obrázek Slibotechny"
 			/>
 
@@ -94,7 +94,7 @@
 			text="Po chvíli designování a upravování jsem dospěl k téměř finálnímu designu, přičemž jsem mu dodal šmrnc zajímavým tečkovaným pozadím. Spolupracovníkům se návrh líbil, takže jsem se brzy mohl dostat k hlavní části: k programování."
 		/>
 		<ImageLoader
-			path="slibotechny_main_design.png"
+			path="https://ik.imagekit.io/velkadomu/slibotechny_main_design_Q19OhYdwHM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504370044"
 			alt="Slibotechny hlavní design"
 			description="První a konečný design hlavního zobrazení strany."
 		/>
@@ -110,7 +110,7 @@
 			text="Při vstupu uživatele na stránku se nestahují žádná data z BE, aby se co nejvíce snížil loading time. Uživatel pak musí zvolit nějakou politickou stranu, čímž se dostane na výběr kategorií. Jakmile přejede myší přes nějakou kategorii, tak se pošle request na BE, který vrátí přesně ta data, která si uživatel vyžádal a uloži je do paměti pro případné budoucí využití. Tento přístup co nejvíce minimalizuje stahování dat."
 		/>
 		<ImageLoader
-			path="slibotechny_kategorie.png"
+			path="https://ik.imagekit.io/velkadomu/slibotechny_kategorie_Cp8FIMZTq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369928"
 			alt="Výběr kategorie"
 			description="Výběr katogorie slibu. Při hoveru se stahují data a ukládají se do společné paměti."
 		/>

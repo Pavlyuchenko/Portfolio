@@ -22,7 +22,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="velkadomu2.png"
+				src="https://ik.imagekit.io/velkadomu/velkadomu2_iJO5yyCvzT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504383080"
 				alt="VelkáDomů hlavní obrázek"
 				id="main-image"
 			/>
@@ -108,7 +108,7 @@
 		/>
 
 		<ImageLoader
-			path="first_design.png"
+			path="https://ik.imagekit.io/velkadomu/first_design_I-Kx68cVy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504360274"
 			alt="VFB"
 			description="První verze designu VelkáDomů.cz"
 		/>
@@ -117,7 +117,7 @@
 			text="Tato verze sice vypadá na první pohled přívětivě, čtenáře však hned z počátku zahltí mnoho výrazných barev a grafických prvků. Kromě tří primárních článků tento prototyp postrádá vizuální hierarchii a mate čtenáře. Proto jsme se rozhodli vytvořit druhou verzi, která vizuální hierarchii vylepšuje, přičemž přináší přívětivý a konzistentní vzhled:"
 		/>
 		<ImageLoader
-			path="new_design.png"
+			path="https://ik.imagekit.io/velkadomu/new_design_015Q2S8xp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369462"
 			alt="VFB"
 			description="Finální verze designu"
 		/>
@@ -185,7 +185,7 @@
 		/>
 
 		<ImageLoader
-			path="text_editor.png"
+			path="https://ik.imagekit.io/velkadomu/text_editor_KOK-YZm91.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504375687"
 			alt="Test"
 			description="Textový editor naprogramovaný pro redakční systém"
 		/>
@@ -195,7 +195,7 @@
 		/>
 
 		<ImageLoader
-			path="TextEditor.gif"
+			path="https://ik.imagekit.io/velkadomu/resizedTextEditor_Y8hJGfwVc.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649504402704"
 			alt="Test"
 			description="Textový editor naprogramovaný pro redakční systém"
 		/>
@@ -233,11 +233,17 @@
 		/>
 		<ImageShowcase
 			imgs={[
-				{ path: "admin.png", alt: "VFB" },
-				{ path: "title_image.png", alt: "VFB" },
-				{ path: "cms.png", alt: "VFB" },
-				{ path: "rychlovky.png", alt: "VFB" },
-				{ path: "nova_rychlovka.png", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/admin_JfcTeqr3t0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504356055", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/title_image_AegigQ3wo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504382372",
+					alt: "VFB",
+				},
+				{ path: "https://ik.imagekit.io/velkadomu/cms_qCXYiLKQ4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504358201", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/rychlovky_4Stm5cOc3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504371494",
+					alt: "VFB",
+				},
+				{ path: "https://ik.imagekit.io/velkadomu/nova_rychlovka_sFJigWhyt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504360824", alt: "VFB" },
 			]}
 		/>
 
@@ -250,7 +256,7 @@
 		/>
 
 		<ImageLoader
-			path="scheme.png"
+			path="https://ik.imagekit.io/velkadomu/scheme_CfxTXOjqY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367422"
 			alt="Test"
 			description="Na jakém principu funguje VelkáDomů.cz?"
 		/>
@@ -260,20 +266,26 @@
 		/>
 		<ImageShowcase
 			imgs={[
-				{ path: "landing_velka_domu.png", alt: "VFB" },
-				{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
-				{ path: "clanek_velka_domu.png", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/landing_velka_domu_mc0GHG2k4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367959", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/nejnovejsi_clanky_velka_domu_BVGRa_lhFh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504374779",
+					alt: "VFB",
+				},
+				{ path: "https://ik.imagekit.io/velkadomu/clanek_velka_domu__jKb8QIOa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504358101", alt: "VFB" },
 				{
 					path: "anketa1.gif",
 					alt: "VFB",
 					altPath: "anketa.png",
 				},
-				{ path: "kalendar.png", alt: "VFB" },
-				{ path: "mobile_velka_domu.png", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/kalendar_Y40qlvWRi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504359340", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/mobile_velka_domu_Yvl8AVJSE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504372608",
+					alt: "VFB",
+				},
 			]}
 		/>
 		<ImageLoader
-			path="landing_mobile.gif"
+			path="https://ik.imagekit.io/velkadomu/landing_mobile_4lnVUnayw.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649504396436"
 			alt="Test"
 			description="Hlavní mobilní stránka VelkáDomů.cz"
 			width="30"

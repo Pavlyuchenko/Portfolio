@@ -195,7 +195,7 @@
 				</div>
 				<img
 					id="image"
-					src="velkadomu_image.png"
+					src="https://ik.imagekit.io/velkadomu/velkadomu_image_IQaeE2EQC.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504371549"
 					alt="Obrázek VelkáDomů.cz"
 				/>
 			</article>

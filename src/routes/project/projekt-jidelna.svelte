@@ -116,13 +116,20 @@
 		<TextBlock
 			text="In the early beginning, I downloaded Figma for the first time in my life and I mocked up a basic design without knowing anything about it. Despite that, I got really into it and eventually created a good draft, which is however not good, really:"
 		/>
-		<ImageShowcase imgs={[
-			{ path: "pj_landing.png", alt: "VFB" },
-			{ path: "pj_landing_logged.png", alt: "VFB" },
-			{ path: "pj_register.png", alt: "VFB" },
-			{ path: "pj_recenze.png", alt: "VFB" },
-			{ path: "pj_vyber.png", alt: "VFB" },
-		]}
+		<ImageShowcase
+			imgs={[
+				{ path: "https://ik.imagekit.io/velkadomu/pj_landing_jnqjiCmnS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364286", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/pj_landing_logged_dOkXgn2lE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367639", alt: "VFB" },
+				{ path: "https://ik.imagekit.io/velkadomu/pj_register_m6X4Irc6r.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504364186", alt: "VFB" },
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_recenze_WFQ0L2tTPa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369163",
+					alt: "VFB",
+				},
+				{
+					path: "https://ik.imagekit.io/velkadomu/pj_vyber_O_gQcqnNuY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504367076",
+					alt: "VFB",
+				},
+			]}
 		/>
 
 		<Heading1
@@ -138,7 +145,7 @@
 		/>
 
 		<ImageLoader
-			path="pj_rating.gif"
+			path="https://ik.imagekit.io/velkadomu/pj_rating_bpnLyxx3w.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1649504381494"
 			alt="VFB"
 			description="Rating the meals"
 		/>
