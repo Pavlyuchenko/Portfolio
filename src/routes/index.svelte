@@ -272,7 +272,7 @@
 				</div>
 				<img
 					id="image"
-					src="vfb_image.png"
+					src="https://ik.imagekit.io/velkadomu/vfb_image_5DHuL1Jzw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504349279"
 					alt="Obrázek VelkáDomů.cz"
 				/>
 			</article>
@@ -293,7 +293,7 @@
 				</div>
 				<img
 					id="image"
-					src="sir_image.png"
+					src="https://ik.imagekit.io/velkadomu/sir_image_Yfk3BJb7a.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504368171"
 					alt="Obrázek VelkáDomů.cz"
 				/>
 			</article>
@@ -321,7 +321,7 @@
 				<img
 					loading="lazy"
 					id="image"
-					src="pj_image.png"
+					src="https://ik.imagekit.io/velkadomu/pj_image_Qr3nNIE-W.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504362601"
 					alt="Obrázek VelkáDomů.cz"
 				/>
 			</article>
