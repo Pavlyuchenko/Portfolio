@@ -15,7 +15,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="Slibotechny_preview.png"
+				src="slibotechny_preview.png"
 				alt="Hlavní obrázek Slibotechny"
 			/>
 
