@@ -22,7 +22,7 @@
 		</div>
 		<div id="image">
 			<img
-				src="sir_model.png"
+				src="https://ik.imagekit.io/velkadomu/sir_model_KuiE9xyZA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649504368913"
 				alt="VelkáDomů hlavní obrázek"
 				id="main-image"
 			/>
