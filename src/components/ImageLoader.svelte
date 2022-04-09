@@ -8,6 +8,7 @@
 	let nativeLoading = false;
 </script>
 
+<!-- Does it work? -->
 <IntersectionObserver once={true} let:intersecting>
 	{#if intersecting || nativeLoading}
 		<Image {alt} {path} {description} />
