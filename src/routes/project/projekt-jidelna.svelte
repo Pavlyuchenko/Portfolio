@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../components/Image.svelte";
+	import ImageLoader from "../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../components/ImageShowcase.svelte";
 	import Heading1 from "../../components/Heading1.svelte";
 	import TextBlock from "../../components/TextBlock.svelte";
@@ -45,7 +45,12 @@
 							alt="jQuery logo"
 							title="jQuery"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -111,14 +116,13 @@
 		<TextBlock
 			text="In the early beginning, I downloaded Figma for the first time in my life and I mocked up a basic design without knowing anything about it. Despite that, I got really into it and eventually created a good draft, which is however not good, really:"
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "pj_landing.png", alt: "VFB" },
-				{ path: "pj_landing_logged.png", alt: "VFB" },
-				{ path: "pj_register.png", alt: "VFB" },
-				{ path: "pj_recenze.png", alt: "VFB" },
-				{ path: "pj_vyber.png", alt: "VFB" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "pj_landing.png", alt: "VFB" },
+			{ path: "pj_landing_logged.png", alt: "VFB" },
+			{ path: "pj_register.png", alt: "VFB" },
+			{ path: "pj_recenze.png", alt: "VFB" },
+			{ path: "pj_vyber.png", alt: "VFB" },
+		]}
 		/>
 
 		<Heading1
@@ -133,7 +137,11 @@
 			text="So the website was done and I would say some features were really good, such as reviewing the meals:"
 		/>
 
-		<Image path="pj_rating.gif" alt="VFB" description="Rating the meals" />
+		<ImageLoader
+			path="pj_rating.gif"
+			alt="VFB"
+			description="Rating the meals"
+		/>
 
 		<TextBlock
 			text="As a result, it's not a huge amazing project, I however wanted to show my journey and the process of learning. "

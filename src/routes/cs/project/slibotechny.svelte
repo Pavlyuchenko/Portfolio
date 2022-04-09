@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../../components/Image.svelte";
+	import ImageLoader from "../../../components/ImageLoader.svelte";
 	import Heading1 from "../../../components/Heading1.svelte";
 	import TextBlock from "../../../components/TextBlock.svelte";
 </script>
@@ -37,7 +37,12 @@
 							alt="Svelte logo"
 							title="Svelte"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -88,7 +93,7 @@
 		<TextBlock
 			text="Po chvíli designování a upravování jsem dospěl k téměř finálnímu designu, přičemž jsem mu dodal šmrnc zajímavým tečkovaným pozadím. Spolupracovníkům se návrh líbil, takže jsem se brzy mohl dostat k hlavní části: k programování."
 		/>
-		<Image
+		<ImageLoader
 			path="slibotechny_main_design.png"
 			alt="Slibotechny hlavní design"
 			description="První a konečný design hlavního zobrazení strany."
@@ -104,7 +109,7 @@
 		<TextBlock
 			text="Při vstupu uživatele na stránku se nestahují žádná data z BE, aby se co nejvíce snížil loading time. Uživatel pak musí zvolit nějakou politickou stranu, čímž se dostane na výběr kategorií. Jakmile přejede myší přes nějakou kategorii, tak se pošle request na BE, který vrátí přesně ta data, která si uživatel vyžádal a uloži je do paměti pro případné budoucí využití. Tento přístup co nejvíce minimalizuje stahování dat."
 		/>
-		<Image
+		<ImageLoader
 			path="slibotechny_kategorie.png"
 			alt="Výběr kategorie"
 			description="Výběr katogorie slibu. Při hoveru se stahují data a ukládají se do společné paměti."

@@ -14,7 +14,7 @@
 			</p>
 		</div>
 		<div id="image">
-			<img src="expobank_main.png" alt="Expobank logo" />
+			<img loading="lazy" src="expobank_main.png" alt="Expobank logo" />
 
 			<div id="project-info">
 				<div>

@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../../components/Image.svelte";
+	import ImageLoader from "../../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../../components/ImageShowcase.svelte";
 	import Heading1 from "../../../components/Heading1.svelte";
 	import TextBlock from "../../../components/TextBlock.svelte";
@@ -45,7 +45,12 @@
 							alt="Svelte logo"
 							title="Svelte"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -102,7 +107,7 @@
 			text="Prvním krokem bylo vytvoření designu a ujasnění všech funkcí našeho projektu. Přednostní vytvoření designu skýtá mnoho výhod, především jsme mohli společně diskutovat nad požadovanou vizuální stránkou a bezbolestně dopracovat detaily. Po pár dnech jsme došli k prvnímu vzhledu naší stránky, který vypadal následovně:"
 		/>
 
-		<Image
+		<ImageLoader
 			path="first_design.png"
 			alt="VFB"
 			description="První verze designu VelkáDomů.cz"
@@ -111,7 +116,7 @@
 		<TextBlock
 			text="Tato verze sice vypadá na první pohled přívětivě, čtenáře však hned z počátku zahltí mnoho výrazných barev a grafických prvků. Kromě tří primárních článků tento prototyp postrádá vizuální hierarchii a mate čtenáře. Proto jsme se rozhodli vytvořit druhou verzi, která vizuální hierarchii vylepšuje, přičemž přináší přívětivý a konzistentní vzhled:"
 		/>
-		<Image
+		<ImageLoader
 			path="new_design.png"
 			alt="VFB"
 			description="Finální verze designu"
@@ -179,7 +184,7 @@
 			id="texteditor"
 		/>
 
-		<Image
+		<ImageLoader
 			path="text_editor.png"
 			alt="Test"
 			description="Textový editor naprogramovaný pro redakční systém"
@@ -189,7 +194,7 @@
 			text="Nejprve přišlo na řadu programování redaktorského prostředí. Tento proces se rozdělil na dva primární problémy: textový editor a správa článků. Při programování textového editoru jsem se mohl rozhodnout pro klasické out-of-the-box WYSIWYG řešení. Ale jelikož mezi cíle projektu patřila také experimentace, rozhodl jsem se pro vytvoření vlastního block-based editoru, jehož popularita je v poslední době na vzestupu. Jeho základní demo lze najít <a href='/showcase/text-editor' target='_blank'>zde</a>."
 		/>
 
-		<Image
+		<ImageLoader
 			path="TextEditor.gif"
 			alt="Test"
 			description="Textový editor naprogramovaný pro redakční systém"
@@ -226,14 +231,13 @@
 				},
 			]}
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "admin.png", alt: "VFB" },
-				{ path: "title_image.png", alt: "VFB" },
-				{ path: "cms.png", alt: "VFB" },
-				{ path: "rychlovky.png", alt: "VFB" },
-				{ path: "nova_rychlovka.png", alt: "VFB" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "admin.png", alt: "VFB" },
+			{ path: "title_image.png", alt: "VFB" },
+			{ path: "cms.png", alt: "VFB" },
+			{ path: "rychlovky.png", alt: "VFB" },
+			{ path: "nova_rychlovka.png", alt: "VFB" },
+		]}
 		/>
 
 		<Heading1
@@ -244,7 +248,7 @@
 			text="Narozdíl od redakčního systému musí u čtenářského zážitku být naopak kladen zásadní důraz na grafickou atraktivitu stránky. Kromě toho v tento moment přišlo na řadu spojování všeho dohromady. Výsledný systém nakonec funguje na tomto principu:"
 		/>
 
-		<Image
+		<ImageLoader
 			path="scheme.png"
 			alt="Test"
 			description="Na jakém principu funguje VelkáDomů.cz?"
@@ -253,21 +257,20 @@
 		<TextBlock
 			text="V průběhu programování prostředí pro čtenáře docházelo k neustálému testování s novými spolupracovníky na projektu napříč různými platformami a jejich zpětné vazbě. V tomto finálním kroku však šlo pouze o získání dat ze serveru a zobrazení je na stránce pomocí HTML a CSS za použití existujícího designového rámce. Tento krok také zahrnoval vytvoření vlastního přihlašovacího systému kvůli hlasování v anketách a zařízení responzivity všech stránek. Výsledek lze vidět na této stránce <a href='https://velkadomu-sapper.vercel.app/' target='_blank'>velkadomu.cz</a> (vzorový účet: test@test.test, heslo: Testing123) nebo na následujících obrázcích:"
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "landing_velka_domu.png", alt: "VFB" },
-				{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
-				{ path: "clanek_velka_domu.png", alt: "VFB" },
-				{
-					path: "anketa1.gif",
-					alt: "VFB",
-					altPath: "anketa.png",
-				},
-				{ path: "kalendar.png", alt: "VFB" },
-				{ path: "mobile_velka_domu.png", alt: "VFB" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "landing_velka_domu.png", alt: "VFB" },
+			{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
+			{ path: "clanek_velka_domu.png", alt: "VFB" },
+			{
+				path: "anketa1.gif",
+				alt: "VFB",
+				altPath: "anketa.png",
+			},
+			{ path: "kalendar.png", alt: "VFB" },
+			{ path: "mobile_velka_domu.png", alt: "VFB" },
+		]}
 		/>
-		<Image
+		<ImageLoader
 			path="landing_mobile.gif"
 			alt="Test"
 			description="Hlavní mobilní stránka VelkáDomů.cz"

@@ -1,32 +1,28 @@
 <script>
+	import { onMount } from "svelte";
+
 	export let path;
 	export let alt;
-	export let width = 100;
 	export let description = "";
 
 	let modal_div;
 	let modalImage;
+	let width = 100;
 
 	function modal() {
 		modal_div.style.display = "block";
-		let imgWidth = modalImage.width;
-		let imgHeight = modalImage.height;
-		let innerWidth = window.innerWidth;
-		let innerHeight = window.innerHeight;
-
-		console.log(imgWidth);
-		console.log(imgHeight);
-		/* if (imgWidth / imgHeight + 0.2 < innerWidth / innerHeight) {
-			modalImage.style.maxHeight = "90%";
-			console.log("hey");
-		} else {
-			modalImage.style.maxWidth = "95%";
-			modalImage.style.maxHeight = "90%";
-		} */
 	}
 	function hideImage() {
 		modal_div.style.display = "none";
 	}
+
+	let loaded = false;
+	let thisImage;
+	onMount(() => {
+		thisImage.onload = () => {
+			loaded = true;
+		};
+	});
 </script>
 
 <figure>
@@ -38,6 +34,8 @@
 		on:click={() => {
 			modal();
 		}}
+		bind:this={thisImage}
+		loading="lazy"
 	/>
 	{#if description != ""}
 		<figcaption><i>{description}</i></figcaption>
@@ -45,7 +43,7 @@
 </figure>
 
 <div class="modal" bind:this={modal_div} on:click={hideImage}>
-	<img src={path} {alt} bind:this={modalImage} />
+	<img loading="lazy" src={path} {alt} bind:this={modalImage} />
 </div>
 
 <style>

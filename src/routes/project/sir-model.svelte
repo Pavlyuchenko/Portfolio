@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../components/Image.svelte";
+	import ImageLoader from "../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../components/ImageShowcase.svelte";
 	import Heading1 from "../../components/Heading1.svelte";
 	import TextBlock from "../../components/TextBlock.svelte";
@@ -45,7 +45,12 @@
 							alt="HTML5 Canvas logo"
 							title="Canvas"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -144,7 +149,7 @@
 			text="Every infected individual has an invisible circle around himself. When a healthy person goes inside it there is a slight chance he will get infected too. After some time, infected people become 'grey'."
 		/>
 
-		<Image
+		<ImageLoader
 			path="sir.gif"
 			alt="VFB"
 			description="A short showcase of the simulation"

@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../../components/Image.svelte";
+	import ImageLoader from "../../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../../components/ImageShowcase.svelte";
 	import Heading1 from "../../../components/Heading1.svelte";
 	import TextBlock from "../../../components/TextBlock.svelte";
@@ -44,7 +44,12 @@
 							alt="jQuery logo"
 							title="jQuery"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -130,7 +135,11 @@
 			text="Každopádně stránka byla úspěšně dokončena a některé funkce bych označil za velmi povedené, kromě principu přidávání obědů také jejich recenzování:"
 		/>
 
-		<Image path="pj_rating.gif" alt="VFB" description="Hodnocení obědů" />
+		<ImageLoader
+			path="pj_rating.gif"
+			alt="VFB"
+			description="Hodnocení obědů"
+		/>
 
 		<TextBlock
 			text="Ve výsledku nejde o grandiózní a oslňující projekt, chtěl jsem však zdokumentovat a ukázat proces mého učení. "

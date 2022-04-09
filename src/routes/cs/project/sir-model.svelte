@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../../components/Image.svelte";
+	import ImageLoader from "../../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../../components/ImageShowcase.svelte";
 	import Heading1 from "../../../components/Heading1.svelte";
 	import TextBlock from "../../../components/TextBlock.svelte";
@@ -45,7 +45,12 @@
 							alt="HTML5 Canvas logo"
 							title="Canvas"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -143,7 +148,11 @@
 			text="Každý nakažený má kolem sebe neviditelný kruh. Když do něj vstoupí zdravý jedinec, tak má určitou šanci nakazit se také. Po nějakém čase přestane být jedinec infekční."
 		/>
 
-		<Image path="sir.gif" alt="VFB" description="Krátká ukázka animace" />
+		<ImageLoader
+			path="sir.gif"
+			alt="VFB"
+			description="Krátká ukázka animace"
+		/>
 
 		<TextBlock
 			text="Canvas funguje na principu neustálého přepisování celé plochy. Při každém framu se celá oblast vymaže a vytvoří se noví 'občané' o kousek přemístění. Při tom se také spočítá jejich vzájemná vzdálenost, případně když se zdravý člověk přiblíží nakaženému, pak se může podle určené pravděpodobnosti také nakazit."

@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../../components/Image.svelte";
+	import ImageLoader from "../../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../../components/ImageShowcase.svelte";
 	import Heading1 from "../../../components/Heading1.svelte";
 	import Heading2 from "../../../components/Heading2.svelte";
@@ -31,13 +31,23 @@
 				<div>
 					<p class="project-info-title">Technologie</p>
 					<p class="project-info-value" id="tech">
-						<img src="react.png" alt="React logo" title="React" />
+						<img
+							loading="lazy"
+							src="react.png"
+							alt="React logo"
+							title="React"
+						/>
 						<img
 							src="python.png"
 							alt="Python logo"
 							title="Python"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -85,7 +95,7 @@
 		<TextBlock
 			text="Uživatel si na startu vybere tým, kterému fandí. Toto rozhodnutí se poté projeví tak, že mu budou chodit notifikace o následujících zápasech tohoto týmu a jejich postavení v tabulce."
 		/>
-		<Image
+		<ImageLoader
 			path="VFB_team_choice.gif"
 			alt="Výběr týmu"
 			description="Reaktivní výběr týmu na úvodní stránce."
@@ -101,7 +111,7 @@
 		<TextBlock
 			text="Vše se snaží působit jednoduše a přehledně, ale zároveň graficky příjemně, aby uživatel na mou stránku nezanevřel kvůli designovým prvkům."
 		/>
-		<Image
+		<ImageLoader
 			path="vfb_landing.png"
 			alt="Dashboard"
 			description="Primární dashboard s nejnutnějšími informacemi."
@@ -111,7 +121,7 @@
 			description="Adminovské rozhraní"
 			heading="Jak se do systému dostávají informace?"
 		/>
-		<Image
+		<ImageLoader
 			path="vfb_showcase.gif"
 			alt="Ukázka real-time updatování informací"
 			description="Updatování informací z Backendu u uživatele."
@@ -122,7 +132,7 @@
 		<TextBlock
 			text="Třešničkou na dortu je, že se informace přenášejí ke klientům v reálném čase, takže mají o zápasech přehled, i když se zrovna nenachází v tělocvičně."
 		/>
-		<Image
+		<ImageLoader
 			path="VFB_real_time.gif"
 			alt="Real time ukázka"
 			description="Zobrazování informací v reálném čase."
@@ -138,12 +148,11 @@
 		<TextBlock
 			text="Krom toho jsem měl na mysli také responzivitu stránky, neboť její hlavní užití bylo zamýšleno na mobilních telefonech, jelikož to je v podstatě to jediné zařízení, které studenti ve škole používají."
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "vfb_detail.png", alt: "Detail týmu" },
-				{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
-				{ path: "vfb_mobile.png", alt: "Mobilní verze" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "vfb_detail.png", alt: "Detail týmu" },
+			{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
+			{ path: "vfb_mobile.png", alt: "Mobilní verze" },
+		]}
 		/>
 
 		<hr />

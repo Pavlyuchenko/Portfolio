@@ -9,7 +9,7 @@
 <div id="flex">
 	{#each points as point}
 		<div>
-			<img src={point.image} alt="" />
+			<img loading="lazy" src={point.image} alt="" />
 			<span>{point.text}</span>
 			<p>{point.content}</p>
 		</div>

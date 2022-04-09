@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../components/Image.svelte";
+	import ImageLoader from "../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../components/ImageShowcase.svelte";
 	import Heading1 from "../../components/Heading1.svelte";
 	import TextBlock from "../../components/TextBlock.svelte";
@@ -29,13 +29,23 @@
 				<div>
 					<p class="project-info-title">Technologies</p>
 					<p class="project-info-value" id="tech">
-						<img src="react.png" alt="React logo" title="React" />
+						<img
+							loading="lazy"
+							src="react.png"
+							alt="React logo"
+							title="React"
+						/>
 						<img
 							src="python.png"
 							alt="Python logo"
 							title="Python"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -83,7 +93,7 @@
 		<TextBlock
 			text="The user chooses his favorit team in the beginning. This decision shows itself it the way of notification about when this team plays and other similar information like their current standings."
 		/>
-		<Image
+		<ImageLoader
 			path="VFB_team_choice.gif"
 			alt="Výběr týmu"
 			description="The reactive team choice."
@@ -99,7 +109,7 @@
 		<TextBlock
 			text="Everything tries to feel as easily and clearly as possible, while being graphically pleasant."
 		/>
-		<Image
+		<ImageLoader
 			path="vfb_landing.png"
 			alt="Dashboard"
 			description="Primary dashboard with the most imporatant infromation."
@@ -109,7 +119,7 @@
 			description="Admin dashboard"
 			heading="How do information get to the system?"
 		/>
-		<Image
+		<ImageLoader
 			path="vfb_showcase.gif"
 			alt="Ukázka real-time updatování informací"
 			description="Updating information from the back-end."
@@ -120,7 +130,7 @@
 		<TextBlock
 			text="The cherry on tom is the fact that the information flows to the users in real-time, so they have an overview about the current matches even if they are not in the gym at the moment."
 		/>
-		<Image
+		<ImageLoader
 			path="VFB_real_time.gif"
 			alt="Real time ukázka"
 			description="Showing information in real time."
@@ -136,12 +146,11 @@
 		<TextBlock
 			text="Apart from that I had also assured the responsivity of the webisite, since its main use is intended to be on mobile phones. The event takes place in a gym, so the users won't have a desktop, obviously."
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "vfb_detail.png", alt: "Detail týmu" },
-				{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
-				{ path: "vfb_mobile.png", alt: "Mobilní verze" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "vfb_detail.png", alt: "Detail týmu" },
+			{ path: "vfb_rozpis.png", alt: "Rozpis zápasů" },
+			{ path: "vfb_mobile.png", alt: "Mobilní verze" },
+		]}
 		/>
 
 		<hr />

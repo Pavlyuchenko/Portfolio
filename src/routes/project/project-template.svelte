@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../components/Image.svelte";
+	import ImageLoader from "../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../components/ImageShowcase.svelte";
 	import Heading1 from "../../components/Heading1.svelte";
 	import Heading2 from "../../components/Heading2.svelte";
@@ -18,7 +18,7 @@
 			</p>
 		</div>
 		<div id="image">
-			<img src="velka_domu_image.webp" alt="" />
+			<img loading="lazy" src="velka_domu_image.webp" alt="" />
 
 			<div id="project-info">
 				<div>
@@ -38,7 +38,12 @@
 							alt="Svelte logo"
 							title="Svelte"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -84,16 +89,15 @@
 		<hr />
 
 		<!-- TO DO -->
-		<Image path="vfb_image_test.png" alt="Test" />
-		<Image path="vfb_screen.png" alt="Test" />
-		<Image path="ffox.png" alt="Test" />
+		<ImageLoader path="vfb_image_test.png" alt="Test" />
+		<ImageLoader path="vfb_screen.png" alt="Test" />
+		<ImageLoader path="ffox.png" alt="Test" />
 		<hr />
-		<ImageShowcase
-			imgs={[
-				{ path: "vfb_screen.png", alt: "VFB" },
-				{ path: "ffox.png", alt: "VFB" },
-				{ path: "vfb_screen.png", alt: "VFB" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "vfb_screen.png", alt: "VFB" },
+			{ path: "ffox.png", alt: "VFB" },
+			{ path: "vfb_screen.png", alt: "VFB" },
+		]}
 		/>
 
 		<Heading1 description="The Description" heading="Heading" />

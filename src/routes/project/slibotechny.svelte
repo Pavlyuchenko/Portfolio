@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../components/Image.svelte";
+	import ImageLoader from "../../components/ImageLoader.svelte";
 	import Heading1 from "../../components/Heading1.svelte";
 	import TextBlock from "../../components/TextBlock.svelte";
 </script>
@@ -37,7 +37,12 @@
 							alt="Svelte logo"
 							title="Svelte"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -84,7 +89,7 @@
 		<TextBlock
 			text="After some time dedicated to designing a arrived to an almost final design, and I made it interesting by adding this dotted background. My coworkers liked the mockup, so I could soon start programming."
 		/>
-		<Image
+		<ImageLoader
 			path="slibotechny_main_design.png"
 			alt="Slibotechny hlavní design"
 			description="First and final design of the party view."
@@ -100,7 +105,7 @@
 		<TextBlock
 			text="When entering the page, no data are load from the back-end (well apart from the HTML and CSS) to decrease the loadtime as much as possible. The user then has to choose a party, which takes him to a category choice. There, once he hovers over some category with a mouse, that data downloads to the memory and when user clicks, the data is shown with almost no wait."
 		/>
-		<Image
+		<ImageLoader
 			path="slibotechny_kategorie.png"
 			alt="Výběr kategorie"
 			description="Choice of a category of a promise. During hover, the data is downloaded."

@@ -1,5 +1,10 @@
 <section>
-	<img src="profile_edited.png" alt="Me, myself and I" id="profile" />
+	<img
+		loading="lazy"
+		src="profile_edited.png"
+		alt="Me, myself and I"
+		id="profile"
+	/>
 	<div id="personal-info">
 		<h3>About</h3>
 		<hr />

@@ -15,7 +15,11 @@
 			</p>
 		</div>
 		<div id="image">
-			<img src="zauzoo_main.png" alt="Hlavní obrázek Zauzoo" />
+			<img
+				loading="lazy"
+				src="zauzoo_main.png"
+				alt="Hlavní obrázek Zauzoo"
+			/>
 
 			<div id="project-info">
 				<div>
@@ -25,7 +29,12 @@
 				<div>
 					<p class="project-info-title">Technologie</p>
 					<p class="project-info-value" id="tech">
-						<img src="react.png" alt="React logo" title="React" />
+						<img
+							loading="lazy"
+							src="react.png"
+							alt="React logo"
+							title="React"
+						/>
 						<img
 							src="mui.png"
 							alt="Material UI logo"

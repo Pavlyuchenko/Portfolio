@@ -77,7 +77,12 @@
 					style="text-decoration: 'none'; color: 'var(--secondary)';"
 				>
 					{#if segment === "cs"}
-						<img src="uk.svg" alt="English" width="28" />
+						<img
+							loading="lazy"
+							src="uk.svg"
+							alt="English"
+							width="28"
+						/>
 					{:else}
 						<img
 							src="cz.png"

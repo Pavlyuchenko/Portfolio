@@ -178,7 +178,11 @@
 		<a href="/cs/project/velka-domu">
 			<article id="velka-domu">
 				<div class="project-info">
-					<img src="velkadomu.png" alt="VelkáDomů.cz logo" />
+					<img
+						loading="lazy"
+						src="velkadomu.png"
+						alt="VelkáDomů.cz logo"
+					/>
 					<div>
 						<p class="project-date">lis. 2020 - úno. 2021</p>
 						<h2 class="project-name">VelkáDomů.cz</h2>
@@ -199,7 +203,7 @@
 		<a href="/cs/project/slibotechny">
 			<article id="slibotechny">
 				<div class="project-info">
-					<img src="qm.png" alt="Slibotechny logo" />
+					<img loading="lazy" src="qm.png" alt="Slibotechny logo" />
 					<div>
 						<p class="project-date">srp. 2021 - pro. 2021</p>
 						<h2 class="project-name">Slibotechny</h2>
@@ -222,7 +226,11 @@
 		<a href="/cs/project/vanocni-florbalovy-turnaj">
 			<article id="vfb">
 				<div class="project-info">
-					<img src="vft.png" alt="Vánoční florbalový turnaj logo" />
+					<img
+						loading="lazy"
+						src="vft.png"
+						alt="Vánoční florbalový turnaj logo"
+					/>
 					<div>
 						<p class="project-date">kvě. 2020 - čvn. 2020</p>
 						<h2 class="project-name">Vánoční florbalový turnaj</h2>
@@ -243,7 +251,7 @@
 		<a href="/cs/project/sir-model">
 			<article id="sir">
 				<div class="project-info">
-					<img src="sir.png" alt="SIR logo" />
+					<img loading="lazy" src="sir.png" alt="SIR logo" />
 					<div>
 						<p class="project-date">kvě. 2020</p>
 						<h2 class="project-name">SIR Model</h2>
@@ -266,7 +274,11 @@
 		<a href="/cs/project/projekt-jidelna">
 			<article id="pj">
 				<div class="project-info">
-					<img src="pj.png" alt="Projekt Jídelna logo" />
+					<img
+						loading="lazy"
+						src="pj.png"
+						alt="Projekt Jídelna logo"
+					/>
 					<div>
 						<p class="project-date">dub. 2019 - čvc. 2019</p>
 						<h2 class="project-name">Projekt Jídelna</h2>
@@ -277,7 +289,12 @@
 						<p class="project-tag">Skupinový projekt</p>
 					</div>
 				</div>
-				<img id="image" src="pj_image.png" alt="Obrázek VelkáDomů.cz" />
+				<img
+					loading="lazy"
+					id="image"
+					src="pj_image.png"
+					alt="Obrázek VelkáDomů.cz"
+				/>
 			</article>
 		</a>
 	</div>

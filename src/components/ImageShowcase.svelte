@@ -1,11 +1,11 @@
 <script>
-	import Image from "./Image.svelte";
+	import ImageLoader from "./ImageLoader.svelte";
 	export let imgs;
 
 	let chosenImage = imgs[0];
 </script>
 
-<Image path={chosenImage.path} alt={chosenImage.alt} />
+<ImageLoader path={chosenImage.path} alt={chosenImage.alt} />
 <div class="image-gallery">
 	{#each imgs as image}
 		<img

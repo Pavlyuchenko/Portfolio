@@ -1,5 +1,5 @@
 <script>
-	import Image from "../../components/Image.svelte";
+	import ImageLoader from "../../components/ImageLoader.svelte";
 	import ImageShowcase from "../../components/ImageShowcase.svelte";
 	import Heading1 from "../../components/Heading1.svelte";
 	import TextBlock from "../../components/TextBlock.svelte";
@@ -45,7 +45,12 @@
 							alt="Svelte logo"
 							title="Svelte"
 						/>
-						<img src="figma.png" alt="Figma logo" title="Figma" />
+						<img
+							loading="lazy"
+							src="figma.png"
+							alt="Figma logo"
+							title="Figma"
+						/>
 					</p>
 				</div>
 				<div>
@@ -99,7 +104,7 @@
 			text="The first step was creating the design and agreed on the functions of the project. Creating the design first is neccessary since we could discuss the features together and tamper with the details quickly. After a few days we came to a design that looked like this:"
 		/>
 
-		<Image
+		<ImageLoader
 			path="first_design.png"
 			alt="VFB"
 			description="The first design of VelkáDomů.cz"
@@ -108,7 +113,11 @@
 		<TextBlock
 			text="This version on one hand looks friendly, but the reader is immediately presented with a lot of colors and informations and they become overwhelmed. Apart from the three main articles, this version lacks visual hierarchy a confuses the reader. That's why decided to create an another version, which improves visual hierarchy and brings consistent look:"
 		/>
-		<Image path="new_design.png" alt="VFB" description="Final design" />
+		<ImageLoader
+			path="new_design.png"
+			alt="VFB"
+			description="Final design"
+		/>
 
 		<TextBlock
 			text="The new version doesn't overwhelm the reader, since it only shows four articels upon arival. It only presents other, less important, informations lower including other actual articles. After we consulted it with other poeple, we decided to choose the latter vesion due to this arguments:"
@@ -172,7 +181,7 @@
 			id="texteditor"
 		/>
 
-		<Image
+		<ImageLoader
 			path="text_editor.png"
 			alt="Text editor"
 			description="Text editor programmed for the editorial system."
@@ -182,7 +191,7 @@
 			text="At first, the programming of the editorial system came up. This process split to two main problems: the text editor a articles managment. When I created the text-editor, I could've gone for the classic out-of-the-box WYSIWYG solution. But one of the targets of this projects was learning, so I decided to code up my own block-based text editor. Its basic demo can be found <a href='/showcase/text-editor' target='_blank'>here</a>."
 		/>
 
-		<Image
+		<ImageLoader
 			path="resizedTextEditor.gif"
 			alt="Text editor"
 			description="Text editor programmed for the editorial system"
@@ -219,14 +228,13 @@
 				},
 			]}
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "admin.png", alt: "VFB" },
-				{ path: "title_image.png", alt: "VFB" },
-				{ path: "cms.png", alt: "VFB" },
-				{ path: "rychlovky.png", alt: "VFB" },
-				{ path: "nova_rychlovka.png", alt: "VFB" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "admin.png", alt: "VFB" },
+			{ path: "title_image.png", alt: "VFB" },
+			{ path: "cms.png", alt: "VFB" },
+			{ path: "rychlovky.png", alt: "VFB" },
+			{ path: "nova_rychlovka.png", alt: "VFB" },
+		]}
 		/>
 
 		<Heading1
@@ -237,7 +245,7 @@
 			text="Contrary to the editorial system, design matters the most concerning the regular user. At this point, I had to join everything together, so the result looks like this:"
 		/>
 
-		<Image
+		<ImageLoader
 			path="scheme.png"
 			alt="Scheme"
 			description="How does VelkáDomů.cz work?"
@@ -246,21 +254,20 @@
 		<TextBlock
 			text="During programming the UI for readers, there was constant testing with my friends across many platforms. In this final step, it was all about getting the data from the server and displaying them on the page nicely using HTML and CSS. This step also included creating my own login system, user surveys and responsivity. The result can be seen here <a href='https://velkadomu-sapper.vercel.app/' target='_blank'>velkadomu.cz</a> (example account: test@test.test, heslo: Testing123) or on the following images:"
 		/>
-		<ImageShowcase
-			imgs={[
-				{ path: "landing_velka_domu.png", alt: "VFB" },
-				{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
-				{ path: "clanek_velka_domu.png", alt: "VFB" },
-				{
-					path: "anketa1.gif",
-					alt: "VFB",
-					altPath: "anketa.png",
-				},
-				{ path: "kalendar.png", alt: "VFB" },
-				{ path: "mobile_velka_domu.png", alt: "VFB" },
-			]}
+		ImageShowcase imgs={[
+			{ path: "landing_velka_domu.png", alt: "VFB" },
+			{ path: "nejnovejsi_clanky_velka_domu.png", alt: "VFB" },
+			{ path: "clanek_velka_domu.png", alt: "VFB" },
+			{
+				path: "anketa1.gif",
+				alt: "VFB",
+				altPath: "anketa.png",
+			},
+			{ path: "kalendar.png", alt: "VFB" },
+			{ path: "mobile_velka_domu.png", alt: "VFB" },
+		]}
 		/>
-		<Image
+		<ImageLoader
 			path="landing_mobile.gif"
 			alt="Landing mobile"
 			description="The main mobile site VelkáDomů.cz"
