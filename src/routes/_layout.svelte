@@ -133,9 +133,29 @@
 				document.getElementById("container").classList = "";
 			}}
 		>
-			<a href="/">Portfolio</a>
-			<a href="/blog">Blog</a>
-			<a href="/omne">O mně</a>
+			<a href={segment === "cs" ? "/cs" : "/"}>Portfolio</a>
+			<a href={segment === "cs" ? "/cs/about" : "/about"}>About</a>
+			<a href={segment === "cs" ? "/cs/resume" : "/resume"}>Resumé</a>
+			<a
+				href={segment === "cs" ? "/" : "/cs"}
+				style="text-decoration: 'none'; color: 'var(--secondary)';"
+			>
+				{#if segment === "cs"}
+					<img
+						loading="lazy"
+						src="https://ik.imagekit.io/velkadomu/uk__ckmO6dTr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369963"
+						alt="English"
+						width="28"
+					/>
+				{:else}
+					<img
+						src="cz.png"
+						alt="Česky"
+						width="28"
+						style="border: 1px solid black;"
+					/>
+				{/if}
+			</a>
 			<hr id="mobile-hr" />
 		</div>
 		<slot />

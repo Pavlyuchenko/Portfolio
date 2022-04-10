@@ -148,7 +148,7 @@
 		</a>
 	</div>
 
-	<p id="my-work">My work</p>
+	<p id="my-work_2">My work</p>
 	<hr />
 
 	<div class="projects-row">
@@ -419,6 +419,13 @@
 	}
 
 	#my-work {
+		margin-top: 80px;
+		font-family: "Inter";
+		margin-bottom: 0px;
+		font-weight: 500;
+		color: var(--primary);
+	}
+	#my-work_2 {
 		margin-top: 80px;
 		font-family: "Inter";
 		margin-bottom: 0px;
