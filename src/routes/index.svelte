@@ -111,10 +111,10 @@
 			<p id="hello">Hello! Welcome to my portfolio!</p>
 			<div id="vl" style="height: {height}px" />
 			<p id="bio">
-				I am a high school student who programes. I mainly create
-				websites from design all the way the back-end. Currently, I
-				focus on programming competitions, expanding my portfolio with
-				interesting projects and working @ Zauzoo
+				I am Data Science & AI bachelor at Maastricht.
+				Currently looking for summer 2023 internship &
+				working as a freelancer @ Upwork. My main objective 
+				is to create visually appealing projects.
 			</p>
 		</div>
 	</div>
