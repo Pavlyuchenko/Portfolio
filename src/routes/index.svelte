@@ -16,11 +16,11 @@
 			deleteLetter();
 		}, WAIT_TEXT_INTERVAL);
 
-		setTimeout(() => {
+		/* setTimeout(() => {
 			if (document.getElementById("country").innerHTML != "Czechia") {
 				foreigner = true;
 			}
-		}, 500);
+		}, 500); */
 	});
 
 	function deleteLetter() {
@@ -84,13 +84,15 @@
 	let textIndex = 0;
 	let textOptions = [
 		"I am a programmer",
-		"I program mainly in Python and Javascript",
+		"I study Data Science & AI in Netherlands, Maasstricht",
 		"the meaning of life is 42",
-		"I know Flask, React, Svelte and Sapper",
-		"I enjoy designing",
+		"I am looking for summer 2023 internship!",
+		"I program in Javascript and Python",
 		"I speak English, Czech und ein bisschen Deutsch",
+		"I know React, Flask & Svelte",
 		"I love Sci-fi",
-		"I would like to study in Netherlands",
+		"cloud computing and virtual reality are my learning goals",
+		"I know that's too ambitious, but I'll try anyway",
 	];
 
 	let variableText = textOptions[textOptionsIndex];

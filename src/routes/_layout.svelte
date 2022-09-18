@@ -203,14 +203,14 @@
 		margin-top: 5px;
 	}
 	h3 {
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 1.5em;
 
 		margin-bottom: 0px;
 	}
 	p {
 		margin: 0;
-		font-weight: 500;
+		font-weight: 600;
 
 		display: inline-block;
 		vertical-align: middle;
@@ -253,7 +253,7 @@
 		margin-left: 60px;
 
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 600;
 		color: var(--primary);
 
 		transition: 0.1s;

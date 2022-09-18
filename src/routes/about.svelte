@@ -6,62 +6,56 @@
 		id="profile"
 	/>
 	<div id="personal-info">
-		<h3>About</h3>
-		<hr />
-
 		<h1>Hello, I'm <span style="color: var(--primary);">Michal</span></h1>
 		<p id="main-desc">
-			I'm a full-stack developer living in Opava, Czechia. I enjoy growing
-			both as a person and as a developer, connecting with other
-			like-minded people and solving interesting and challlenging
-			problems.
+			I'm a full-stack developer originally from Czechia now living in Maastricht, Netherlands. 
+			I enjoy growing both as a person and as a developer, connecting with other
+			like-minded people and solving interesting and challlenging problems.
 		</p>
 		<p id="desc">
-			I'm currently a part-time front-end and test engineer at
-			<a href="https://zauzoo.com" target="_blank">Zauzoo</a>. I created
-			both the front-end and the back-end of projects
+			I'm a freelancer at Upwork currently working on <a href="https://dev.ticklefluff.com" target="_blank">Ticklefluff</a>.
+			I used to work at a Czech company <a href="https://zauzoo.com" target="_blank">Zauzoo</a> as a 
+			front-end developer and tester. I created both the front-end and the back-end of projects
 			<a href="https://velkadomu-sapper.vercel.app" target="_blank">
 				VelkáDomů.cz
 			</a>
 			and
 			<a href="https://slibotechny.cz" target="_blank">Slibotechny</a>.
-			The main technologies I use to create an amazing web experience are
-			Flask, Svelte and React.
+			The main technologies I use are React & Flask.
 		</p>
 		<p id="desc">
-			Until the end of May 2022, I will be attending Mendel's grammar
-			school in Opava and after graduating, I hope I will study Data
-			Science & Artificial Intelligence at Leiden University in
-			Netherlands, because it seems to me like a logical and thrilling
-			stepping stone into the diverse world of IT.
+			I am a first year bachelor student at Maastricht University
+			in the Netherlands studying Data Science and Artificial Intelligence.
+			Currently in the process of looking for a summer 2023 internship.
 		</p>
 		<p id="desc">
 			When I'm not programming, designing or solving algorithmical
 			puzzles, you may find me on a football field, watching sci-fi shows,
-			reading (also mostly sci-fi) books, investing into stocks or crypto,
+			reading (also mostly sci-fi) books, investing,
 			or hanging out with my friends.
 		</p>
 		<p id="desc">
-			I aspire to be an open-minded person with the ability to help my
-			teammates, to learn new technologies and to be a well-read,
-			physically fit and interesting person to talk to.
-		</p>
-		<p id="desc">
-			Among my biggest programming achievments belongs landing the job at
-			Zauzoo, reaching the 20th place in the whole Czechia in both
+			Among my biggest competitive programming achievments belongs 
+			reaching the 20th place in the whole Czechia in both
 			<a
 				href="https://mo.mff.cuni.cz/p/71/vysledky-3.pdf"
 				target="_blank"
 			>
 				Math olympiad in programming
 			</a>
-			and a programming competition
+			and another programming competition
 			<a
 				href="https://kasiopea.matfyz.cz/archiv/2021/finale/vysledky/"
 				target="_blank"
 			>
 				Kasiopea
 			</a>.
+		</p>
+		<p id="desc">
+			Since I am always looking for a challenge, my next
+			learning topic is cloud computing and later on 
+			virtual reality, as that's what excites me and what
+			I see the future in.
 		</p>
 	</div>
 </section>
