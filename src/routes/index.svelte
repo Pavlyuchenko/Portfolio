@@ -111,9 +111,9 @@
 			<p id="hello">Hello! Welcome to my portfolio!</p>
 			<div id="vl" style="height: {height}px" />
 			<p id="bio">
-				I am Data Science & AI bachelor at Maastricht.
-				Currently looking for summer 2023 internship &
-				working as a freelancer @ Upwork. My main objective 
+				I am a Data Science & AI bachelor in Maastricht.
+				Currently looking for a summer 2023 internship.
+				Working as a freelancer @ Upwork. My main objective 
 				is to create visually appealing projects.
 			</p>
 		</div>
