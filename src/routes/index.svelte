@@ -139,7 +139,6 @@
 		>
 			Slibotechny.cz
 		</a>
-		<br />
 		<a
 			href="https://codepen.io/Pavlyuchenko/pen/bGaMYgr"
 			target="_blank"
@@ -692,14 +691,19 @@
 		.projects-row article {
 			padding-left: 25px;
 		}
-	}
-
-	@media (max-width: 590px) {
 		#my-work {
 			margin-top: 240px;
 		}
 		#right-main {
 			margin-top: 240px;
+		}
+		#demos {
+			flex-direction: column;
+			gap: 15px;
+			width: 100%;
+		}
+		.demo-item {
+			width: 100% !important;
 		}
 	}
 
