@@ -56,6 +56,7 @@
 	<div id="the-story">
 		<h3>Prologue</h3>
 		<p>
+			<b><a href="https://slibotechny.cz" target="_blank">Link to the project</a></b><br>
 			In the summer 2021 I found myself in a young and ambitious team full
 			of people interested in politics. Together, we noticed the polarity
 			in Czech society. Both these camps ususally claimed completely

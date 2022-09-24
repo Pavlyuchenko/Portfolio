@@ -64,6 +64,7 @@
 	<div id="the-story">
 		<h3>Prologue</h3>
 		<p>
+			<b><a href="https://velkadomu-sapper.vercel.app/" target="_blank">Link to the project</a></b><br>
 			At the start of November 2020 I joined with my classmate to create
 			our own website, where we could present our own football news. My
 			concern was the technical side of things, his job was marketing and

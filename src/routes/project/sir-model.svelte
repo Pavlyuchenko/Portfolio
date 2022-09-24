@@ -62,19 +62,10 @@
 	</div>
 
 	<div id="the-story">
-		<div id="alert">
-			<span id="excl-mark">!</span>
-			<span>
-				This project served as a means to learn a new technology. It's
-				therefore not an amazing project, but rather a small quick
-				project, which I created to learn lt;canvas&gt;.
-				<a href="/project/velka-domu">My best project.</a>
-			</span>
-		</div>
 		<h3>Prologue</h3>
 		<p>
 			<a
-				href="https://codepen.io/Pavlyuchenko/pen/bGaMYgr"
+				href="https://pavlyuchenko.github.io/SIRModel/"
 				target="_blank"
 			>
 				Demo of the project.
@@ -85,7 +76,7 @@
 			any academic requests. At first, I experienced excitement, since the
 			first holidays of this kind in history was taking place and the situation
 			in Czechia was kinda calm. Then, one of the most well-known educatinal
-			Youtubers
+			Youtuber
 			<a href="https://www.youtube.com/c/3blue1brown" target="_blank">
 				3Blue1Brown
 			</a>
