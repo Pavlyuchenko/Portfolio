@@ -1,5 +1,5 @@
 <script>
-	window.open("/static/CV_en.pdf");
+    window.open("/static/RESUME.pdf");
 
-	window.history.back();
+    window.history.back();
 </script>
