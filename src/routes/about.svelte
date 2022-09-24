@@ -137,7 +137,7 @@
         line-height: 25px;
     }
     #skills-wrapper {
-        padding: 0px calc((100% - 73rem) / 2) 0px calc((100% - 73rem) / 2);
+        padding: 0px calc((100% - 75rem) / 2);
         margin-top: 80px;
     }
     .skills {
