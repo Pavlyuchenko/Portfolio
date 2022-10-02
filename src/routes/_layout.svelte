@@ -193,12 +193,27 @@
                         michaelg.pavlicek@gmail.com
                     </a>
                 </div>
+                <div id="thanks">
+                    Portfolio heavily inspired by
+                    <a href="https://taamannae.dev/">Tammy Taabassum</a>.
+                </div>
             </footer>
         {/if}
     </main>
 {/if}
 
 <style>
+    #thanks {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+
+        font-size: 14px;
+    }
+    #thanks a {
+        font-size: 14px;
+        margin: 0 !important;
+    }
     nav {
         display: flex;
         justify-content: space-between;

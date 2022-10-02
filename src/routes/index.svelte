@@ -162,14 +162,6 @@
         >
             Waterfall Game
         </a>
-        <a
-            href="https://pavlyuchenko.github.io/WaterfallGame"
-            target="_blank"
-            class="demo-item"
-            id="mars-demo"
-        >
-            Algorithmic thinking game
-        </a>
     </div>
 
     <p id="my-work_2">Articles about my projects</p>
@@ -380,7 +372,7 @@
         box-shadow: 4px 4px 18px 8px rgba(33, 33, 33, 0.25);
     }
     #text-editor-demo {
-        background-color: #ff8a00;
+        background: url("/text_ed_bg.png");
         color: #fff;
     }
     #slibotechny-demo {
@@ -389,7 +381,8 @@
         box-sizing: border-box;
     }
     #sir-demo {
-        background-color: #303030;
+        background: url("/sir_bg.png");
+        object-fit: fill;
         color: #fff;
     }
     #sudoku-demo {
@@ -398,7 +391,7 @@
         color: #fff;
     }
     #waterfall-demo {
-        background-color: #ff2959;
+        background: url("/waterfall_bg.png");
         color: #fff;
     }
     #mars-demo {
@@ -655,6 +648,20 @@
         color: var(--secondary);
     }
 
+    @media (max-width: 1300px) {
+        #sir-demo {
+            background: #303030;
+        }
+        #text-editor-demo {
+            background: #ff8a00;
+        }
+        #waterfall-demo {
+            background: #e63946;
+        }
+        #sudoku-demo {
+            background: #0096ff;
+        }
+    }
     @media (max-width: 1100px) {
         h1 {
             margin-top: 50px;
