@@ -167,7 +167,29 @@
     <p id="my-work_2">Articles about my projects</p>
     <hr />
 
-    <div class="projects-row">
+    <div id="projects">
+        <a href="/project/upwork">
+            <article id="upwork">
+                <div class="project-info">
+                    <img
+                        src="upwork_logo.png"
+                        alt="Upwork logo"
+                        width="45"
+                        height="45"
+                    />
+                    <div>
+                        <p class="project-date">aug. 2022 - now</p>
+                        <h2 class="project-name">Freelance Web Developer</h2>
+                        <p class="project-description">
+                            Started my freelance journey on Upwork and created
+                            projects for 4 clients so far.
+                        </p>
+                        <p class="project-tag">Work</p>
+                    </div>
+                </div>
+                <img id="image" src="ticklefluff.png" alt="Image Ticklefluff" />
+            </article>
+        </a>
         <a href="/project/expobank">
             <article id="expobank">
                 <div class="project-info">
@@ -216,8 +238,6 @@
                 />
             </article>
         </a>
-    </div>
-    <div class="projects-row">
         <a href="/project/velka-domu">
             <article id="velka-domu">
                 <div class="project-info">
@@ -264,8 +284,6 @@
                 />
             </article>
         </a>
-    </div>
-    <div class="projects-row">
         <a href="/project/vanocni-florbalovy-turnaj">
             <article id="vfb">
                 <div class="project-info">
@@ -314,8 +332,6 @@
                 />
             </article>
         </a>
-    </div>
-    <div class="projects-row">
         <a href="/project/projekt-jidelna">
             <article id="pj">
                 <div class="project-info">
@@ -394,10 +410,6 @@
         background: url("/waterfall_bg.png");
         color: #fff;
     }
-    #mars-demo {
-        background-color: #cc3333;
-        color: #fff;
-    }
     #main-div {
         padding: 0px calc((100% - 73rem) / 2) 0px calc((100% - 73rem) / 2);
 
@@ -470,32 +482,32 @@
         margin-bottom: 40px;
     }
 
-    .projects-row {
-        display: flex;
-        justify-content: space-between;
+    #projects {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: 1fr;
     }
-    .projects-row article {
-        width: calc(100%-75px);
-        height: 280px;
+    #projects article {
+        width: 100%;
+        min-height: 280px;
 
-        margin-bottom: 25px;
         padding: 25px 35px;
         padding-right: 0;
 
         border-radius: 4px;
-        background-color: grey;
 
         display: flex;
         align-items: center;
 
         cursor: pointer;
         transition: 0.25s cubic-bezier(0, 0, 0.4, 1);
+        box-sizing: border-box;
     }
-    .projects-row a {
-        width: 49%;
+    #projects a {
         text-decoration: none;
     }
-    .projects-row article:hover {
+    #projects article:hover {
         transform: scale(1.05);
         box-shadow: 4px 4px 18px 8px rgba(33, 33, 33, 0.25);
     }
@@ -515,10 +527,11 @@
         font-size: 26px;
     }
 
-    .projects-row article #image {
+    #projects article #image {
         object-fit: cover;
         width: 100%;
         flex: 1;
+        max-height: 321px;
     }
 
     .project-tag {
@@ -536,10 +549,15 @@
         line-height: 130%;
     }
 
+    #upwork {
+        background-color: #00aa00;
+        color: #fff;
+    }
     #expobank {
         background-color: #00465a;
         color: #fff;
         font-weight: 500;
+        height: 100%;
     }
     #expobank .project-name {
         color: #fff;
@@ -669,18 +687,18 @@
         #main-div {
             padding-left: 0px;
         }
-        .projects-row {
-            flex-direction: column;
+        #projects {
+            grid-template-columns: minmax(0, 1fr);
         }
-        .projects-row a {
+        #projects a {
             width: 100%;
         }
 
-        .projects-row article {
+        #projects article {
             padding-right: 0;
             position: relative;
         }
-        .projects-row article #image {
+        #projects article #image {
             max-width: 300px;
         }
 
@@ -718,7 +736,7 @@
     }
 
     @media (max-width: 590px) {
-        .projects-row article #image {
+        #projects article #image {
             position: absolute;
             top: 2px;
             right: 0;
@@ -734,7 +752,7 @@
         #right-main {
             margin-top: 180px;
         }
-        .projects-row article {
+        #projects article {
             padding-left: 25px;
         }
         #my-work {

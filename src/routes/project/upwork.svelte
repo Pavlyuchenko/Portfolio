@@ -1,51 +1,52 @@
 <script>
     import Heading1 from "../../components/Heading1.svelte";
     import TextBlock from "../../components/TextBlock.svelte";
+    import ImageLoader from "../../components/ImageLoader.svelte";
 </script>
 
 <article>
     <div>
         <div>
-            <p id="date">jan. 2022 - apr. 2022</p>
-            <h1>Testing Expobank</h1>
+            <p id="date">aug. 2022 - now</p>
+            <h1>Freelance Web Developer on Upwork</h1>
             <p id="description">
-                I wrote tests for a big internet banking application using
-                technologies Jasmine and KarmaJS.
+                I developer 5 projects for 4 clients recieving only 5 star
+                ratings.
             </p>
         </div>
         <div id="image">
-            <img loading="lazy" src="expobank_main.png" alt="Expobank logo" />
+            <img loading="lazy" src="upwork_banner.webp" alt="Expobank logo" />
 
             <div id="project-info">
                 <div>
                     <p class="project-info-title">My role</p>
-                    <p class="project-info-value" id="role">Tester</p>
+                    <p class="project-info-value" id="role">Web Developer</p>
                 </div>
                 <div>
                     <p class="project-info-title">Technologies</p>
                     <p class="project-info-value" id="tech">
                         <img
-                            src="play.png"
-                            alt="Play Framework logo"
-                            title="Play Framework"
+                            src="js.png"
+                            alt="Javascript logo"
+                            title="Javascript"
                         />
                         <img
-                            src="jasmine.png"
-                            alt="Jasmine logo"
-                            title="Jasmine"
-                            width="21"
-                            height="21"
+                            loading="lazy"
+                            src="react.png"
+                            alt="React logo"
+                            title="React"
                         />
                         <img
-                            src="karmajs.png"
-                            alt="KarmaJS logo"
-                            title="KarmaJS"
+                            loading="lazy"
+                            src="html.svg"
+                            alt="HTML logo"
+                            title="HTML"
                         />
                     </p>
                 </div>
                 <div>
                     <p class="project-info-title">Interval</p>
-                    <p class="project-info-value" id="interval">3 months</p>
+                    <p class="project-info-value" id="interval">2+ months</p>
                 </div>
             </div>
         </div>
@@ -54,80 +55,83 @@
     <div id="the-story">
         <h3>Prolog</h3>
         <p>
-            After finishing the previous project at Zauzoo, I received another
-            interesting project as my task. This time, I tried working on a
-            project for Expobank, specifically on their new internet banking. At
-            first, I had to test one part of the application to get acquainted
-            with the project. That task was completely new for me, as I had no
-            prior experience with testing.
+            I've been hearing about this freelance thing for a long time. It
+            sounded like a dream to me, too good to be true, but I gave it a
+            shot anyways. I had all the required skills and projects to prove
+            them, so I registered and landed my first project within the first
+            week. After that, empowered with my success, I managed to get 4
+            more.
         </p>
-        <div id="intro-flex" class="flex">
-            <div class="flex-child-left">
-                <h3>Problem</h3>
-                <p class="left-text">
-                    Test a part of the webapp using the framework KarmaJS. The
-                    website was written using Java's framework Play. I had no
-                    experince using neither of these technologies, so I had to
-                    learn a lot.
-                </p>
-            </div>
-            <div class="flex-child-right">
-                <h3>Result</h3>
-                <p class="right-text">
-                    Thanks to a huge help from a friend, who also used to work
-                    for Zauzoo, I managed to test a big part of the application
-                    and during that time, I learned a lot of new valuable thing
-                    such as Unit testing.
-                </p>
-            </div>
-        </div>
 
         <Heading1
-            description="Description of my task"
-            heading="Testing the internet banking"
+            description="Javascript Tree Algorithm"
+            heading="My first Upwork project"
         />
         <TextBlock
-            text="During the beginning of my work on the project, most of the codebase was already written, so I felt kinda lost. Apart from that, I was given the task of testing and I had no idea of how to test such application."
+            text="My first gig was for a client, who I guess needed his homework done. My task was to create an interactive knowledge tree with the ability to view it in levels and going one level up as well. So I had to code up an algorithm to to find node's children, parents and siblings, which deepened my knowledge in this area."
+        />
+        <ImageLoader path="/upwork_tree.png" alt="Upwork Tree" />
+        <a
+            href="https://pavlyuchenko.github.io/UpworkFirstProject/"
+            target="_blank"
+            style="font-size: 20px; font-weight: 700;">Demo</a
+        >
+
+        <Heading1
+            description="Interactive Card Game"
+            heading="My biggest client"
         />
         <TextBlock
-            text="The only thing I was told in the beginning was what part of the app should I test and which framework I must use. On top of that, the project was written in Play Framework, for which you have to use Java. I used this framework for the first time in my life too."
+            text="Skipping a few projects, I got the chance to create a HTML & JS card game for another client. This was probably my favorite project on Upwork so far, since it involved, well, creating a game. I used my OOP knowledge, as well as CSS animations, optimization and a lot more."
+        />
+        <ImageLoader path="/waterfall.png" alt="Waterfall Game" />
+        <a
+            href="https://pavlyuchenko.github.io/WaterfallGame/"
+            target="_blank"
+            style="font-size: 20px; font-weight: 700;">Demo</a
+        >
+
+        <Heading1
+            description="My current project"
+            heading="Recreating mobile app on the web"
         />
         <TextBlock
-            text="Especially thanks to the help of my friend at Zauzoo did I manage to finally understand what testing is all about and what actually should I do to accomplish the task I was given. In the end, I've written a number of tests and checked a lot of aspects of the application."
+            text="Since we both enjoyed working with each other, the client from the card game recruited me for another project he was just working on. I was responsible for creating the visual side of things and connecting to an API. The aim of this project is making your pets talk using machine learning."
         />
+        <ImageLoader path="/ticklefluff_img.png" alt="Ticklefluff" />
+        <a
+            href="https://dev.ticklefluff.com"
+            target="_blank"
+            style="font-size: 20px; font-weight: 700;">Demo</a
+        >
 
         <h3 class="epilogue">Epilogue</h3>
         <div class="flex " id="epilogue-div">
             <p>
-                Despite the fact that testing doesn't belong to the most fun
-                parts of IT, I am still very grateful for this experience. I
-                tried for the first time in my life how websites are tested and
-                I got the opportunity to test my abilities on real project,
-                which kept me motivated.
+                I am grateful for starting my freelance journey on Upwork, since
+                it allowed me to go study abroad and I gained invaluable
+                experience when talking to clients.
             </p>
         </div>
         <h3 class="epilogue">Lessons learned</h3>
         <div class="flex " id="epilogue-div">
             <div class="flex-child-left">
-                <div class="lesson-title">
-                    Testing is boring, but it is useful
-                </div>
+                <div class="lesson-title">Communication is key</div>
                 <p>
-                    I had to force myself to keep on testing new and new things,
-                    since it felt unimaginably hard and unusual. But the longer
-                    I did that, the faster it got and the more entertaining it
-                    eventually was.
+                    From the start I had to be completely sure I am making the
+                    exact project the clients wants me to. I had to therefore
+                    ask a lot of questions and make sure we are on the same
+                    boat. That improved my communication skills quite a bit.
                 </p>
             </div>
             <div class="flex-child-right">
-                <div class="lesson-title">Help is better than gold</div>
+                <div class="lesson-title">It's tough between projects</div>
                 <p>
-                    Without help, I would be completely clueless. Not a lot of
-                    people use Play Framework anymore, so there isn't many
-                    materials on the internet. KarmaJS doesn't have a good
-                    documentation in my view as well, so I would have to learn
-                    all the thing by myself without help, which would have taken
-                    at least double the time it took.
+                    I also got the opportunity to witness the bad part of
+                    freelancing, which is getting the clients in the first
+                    place. When finishing one project, it can take quite a long
+                    time to find a perfect match and is frustrating, when noone
+                    responds to your proposals.
                 </p>
             </div>
         </div>
