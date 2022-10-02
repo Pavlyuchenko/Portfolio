@@ -11,10 +11,65 @@
     }
 
     export let segment;
+
+    import emailjs from "emailjs-com";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        emailjs.init("pGdB6jXZqymTuMDWW");
+    });
+
+    const sendEmail = (email) => {
+        emailjs
+            .send("service_bsbh8tc", "template_unfatv8", {
+                email: email,
+            })
+            .then(
+                () => {
+                    alert("Thanks for joining my newsletter!");
+                },
+                (error) => {
+                    alert("Something went wrong: ", error);
+                }
+            );
+    };
+
+    var newsletterEmail = "";
 </script>
 
 {#if segment === "showcase"}
     <slot />
+{:else if segment === "writing" || segment === "article"}
+    <header>
+        <div>
+            <img
+                src="ja_cropped.jpg"
+                alt="Michal Pavlíček foto"
+                width="48"
+                height="48"
+                style="border-radius: 50%; object-fit: cover;"
+            />
+            <h3>Mike Pavlicek</h3>
+        </div>
+        <div id="links-writing">
+            <a href="/">Portfolio</a>
+            <a href="/about">About</a>
+        </div>
+    </header>
+    <div id="main-div">
+        <slot />
+    </div>
+
+    <!-- <footer id="footer">
+        <p>Enjoy my writing? Get notified when I publish a new article!</p>
+        <input type="email" bind:value={newsletterEmail} />
+        <button
+            on:click={() => {
+                sendEmail(newsletterEmail);
+            }}>Sign Up!</button
+        >
+        <p>I promise I won't send out any bullshit.</p>
+    </footer> -->
 {:else}
     <main>
         <nav>
@@ -429,6 +484,75 @@
             display: block;
             border-top: 2px solid var(--primary);
             width: 100%;
+        }
+    }
+
+    /* Writing */
+    #main-div {
+        padding: 0px calc((100% - 73rem) / 2) 0px calc((100% - 73rem) / 2);
+
+        position: relative;
+    }
+    header {
+        display: flex;
+        margin-bottom: 75px;
+        justify-content: space-between;
+    }
+    header div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    header h3 {
+        margin-top: 0;
+
+        font-size: 18px;
+        color: var(--primary);
+    }
+    header a {
+        text-decoration: none;
+        margin-left: 60px;
+
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--primary);
+
+        transition: 0.1s;
+    }
+
+    header a:hover {
+        color: var(--secondary);
+    }
+
+    #footer {
+        width: 100%;
+        height: auto !important;
+        background-color: var(--primary);
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        color: #fff;
+
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+    }
+    #footer p {
+        margin: 0;
+    }
+    #footer input {
+        margin: 10px;
+    }
+
+    @media (max-width: 1100px) {
+        #main-div {
+            padding-left: 0px;
+        }
+        #main-div {
+            margin-top: 20px;
         }
     }
 </style>

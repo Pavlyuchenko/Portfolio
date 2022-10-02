@@ -1,96 +1,75 @@
-<div id="main-div">
-    <div id="intro">
-        <h1>
-            The stories about <br />
-            <i id="red-text">Everything</i>
-        </h1>
-        <div id="right-main">
-            <p id="hello">
-                You finally stumbled upon my writing space! Thought you'd never
-                come...
-            </p>
-            <div id="vl" style="height: 100%" />
-            <p id="bio">
-                This blog aims to be all over the place and to make you think.
-                Expect topics such as technology, self-improvement, literature,
-                personal stories, science-fiction, philosophy.
-            </p>
-        </div>
+<div id="intro">
+    <h1>
+        The stories about <br />
+        <i id="red-text">Everything</i>
+    </h1>
+    <div id="right-main">
+        <p id="hello">
+            You finally stumbled upon my writing space! Thought you'd never
+            come...
+        </p>
+        <div id="vl" style="height: 100%" />
+        <p id="bio">
+            This blog aims to be all over the place and to make you think.
+            Expect topics such as technology, self-improvement, literature,
+            personal stories, science-fiction, philosophy.
+        </p>
     </div>
-    <p id="by-category">By category</p>
-    <hr />
-    <div class="grid">
-        <div class="grid-item">
-            <h2>Technology</h2>
-            <a href="/writing">Empty</a><br />
-        </div>
-        <div class="grid-item">
-            <h2>Self-Improvement</h2>
-            <a href="/writing" disabled>Empty</a><br />
-        </div>
-        <div class="grid-item">
-            <h2>Stories</h2>
-            <a href="/article/zacatky-na-nizozemske-univerzite" class="czech">
-                Z Česka na nizozemskou univerzitu
-            </a><br />
-        </div>
-        <div class="grid-item">
-            <h2>Literature</h2>
-            <a href="/article/why-scifi-is-going-to-decline">
-                Why sci-fi is inevitabely going to decline
-            </a><br />
-        </div>
-        <div class="grid-item">
-            <h2>Philosophy</h2>
-            <a href="/writing" disabled>Empty</a><br />
-        </div>
-        <div class="grid-item">
-            <h2>Other</h2>
-            <a href="/writing" disabled>Empty</a><br />
-        </div>
-    </div>
-    <p id="by-category">By date</p>
-    <hr />
-    <div class="by-date">
-        <div>
-            <h2>2022</h2>
-            <div class="by-date-item">
-                <h4>December</h4>
-                <a href="">Z Česka na zahraniční univerzitu</a>
-            </div>
-            <div class="by-date-item">
-                <h4>November</h4>
-                <a href="">Z Česka na zahraniční univerzitu</a>
-            </div>
-            <div class="by-date-item">
-                <h4>October</h4>
-                <a href=""
-                    >Why science fiction is inevitabely going to decline</a
-                >
-            </div>
-            <div class="by-date-item">
-                <h4>September</h4>
-                <a href="">Z Česka na zahraniční univerzitu</a>
-            </div>
-        </div>
-    </div>
-    <div id="blank" style="height: 200px;" />
 </div>
-<footer>
-    <p>Enjoy my writing? Get notified when I publish a new article!</p>
-    <input type="email" name="" id="" />
-    <p>I promise I won't send out any bullshit.</p>
-</footer>
+<p id="by-category">By date</p>
+<hr />
+<div class="by-date">
+    <div>
+        <h2>2022</h2>
+        <div class="by-date-item">
+            <h4>October</h4>
+            <div>
+                <a
+                    href="/article/vyplati-se-zahranicni-univerzita"
+                    class="article-title"
+                >
+                    Z Česka na zahraniční univerzitu
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<p id="by-category">By category</p>
+<hr />
+<div class="grid">
+    <div class="grid-item">
+        <h2>Technology</h2>
+        <a href="/writing">Empty</a><br />
+    </div>
+    <div class="grid-item">
+        <h2>Self-Improvement</h2>
+        <a href="/writing" disabled>Empty</a><br />
+    </div>
+    <div class="grid-item">
+        <h2>Stories</h2>
+        <a href="/article/zacatky-na-nizozemske-univerzite" class="czech">
+            Z Česka na nizozemskou univerzitu
+        </a><br />
+    </div>
+    <div class="grid-item">
+        <h2>Literature</h2>
+        <a href="/article/why-scifi-is-going-to-decline">
+            Why sci-fi is inevitabely going to decline
+        </a><br />
+    </div>
+    <div class="grid-item">
+        <h2>Philosophy</h2>
+        <a href="/writing" disabled>Empty</a><br />
+    </div>
+    <div class="grid-item">
+        <h2>Other</h2>
+        <a href="/writing" disabled>Empty</a><br />
+    </div>
+</div>
+
+<div id="blank" style="height: 200px;" />
 
 <style>
-    #main-div {
-        padding: 0px calc((100% - 73rem) / 2) 0px calc((100% - 73rem) / 2);
-
-        position: relative;
-
-        margin-top: 75px;
-    }
-
     #intro {
         display: flex;
         align-items: center;
@@ -216,27 +195,9 @@
         font-size: 18px;
         color: var(--primary);
     }
-
-    footer {
-        width: 100%;
-        background-color: var(--primary);
-
-        position: absolute;
-        left: 0;
-        bottom: 0;
-
-        color: #fff;
-
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
-        font-size: 20px;
-    }
-    footer p {
-        margin: 0;
-    }
-    footer input {
-        margin: 10px;
+    .article-title {
+        display: inline-block;
+        margin-bottom: 10px;
     }
 
     @media (max-width: 1100px) {
