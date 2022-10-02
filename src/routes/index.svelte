@@ -531,7 +531,7 @@
         object-fit: cover;
         width: 100%;
         flex: 1;
-        max-height: 321px;
+        max-height: 290px;
     }
 
     .project-tag {
