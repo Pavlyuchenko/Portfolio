@@ -99,8 +99,28 @@
         </div>
         <div class="grid-column">
             <b>1st place, national round</b>
-            <p style="font-weight: 400;">High School Busines Challenge</p>
+            <p style="font-weight: 400;">High School Business Challenge</p>
         </div>
+    </div>
+</div>
+<div id="skills-wrapper">
+    <h3>Contact</h3>
+    <hr />
+    <p id="contact-text">
+        Would you like to get in touch with me? Below are the most common ways I
+        communicate with others. It would be a pleasure to meet you, feel free
+        to contact me!
+    </p>
+    <div id="links">
+        <a href="https://www.linkedin.com/in/michal-pavlicek/" target="_blank">
+            <img src="/linkedin.png" alt="LinkedIn logo" />
+        </a>
+        <a href="mailto:michaelg.pavlicek@gmail.com" target="_blank">
+            <img src="/gmail.png" alt="Gmail logo" />
+        </a>
+        <a href="https://github.com/Pavlyuchenko" target="_blank">
+            <img src="/github.png" alt="GitHub logo" />
+        </a>
     </div>
 </div>
 
@@ -150,6 +170,20 @@
         margin-bottom: 7px;
         font-weight: 500;
         font-size: 18px;
+    }
+    #contact-text {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    #links {
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    #links img {
+        height: 80px;
     }
 
     @media (max-width: 1250px) {

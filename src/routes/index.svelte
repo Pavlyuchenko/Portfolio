@@ -123,12 +123,12 @@
 
     <div id="demos">
         <a
-            href="/showcase/text-editor"
+            href="https://pavlyuchenko.github.io/SIRModel/"
             target="_blank"
             class="demo-item"
-            id="text-editor-demo"
+            id="sir-demo"
         >
-            Custom Text Editor
+            Pandemic simulation
         </a>
         <a
             href="https://www.slibotechny.cz/"
@@ -139,12 +139,12 @@
             Slibotechny.cz
         </a>
         <a
-            href="https://pavlyuchenko.github.io/SIRModel/"
+            href="/showcase/text-editor"
             target="_blank"
             class="demo-item"
-            id="sir-demo"
+            id="text-editor-demo"
         >
-            Pandemic simulation
+            Custom Text Editor
         </a>
         <a
             href="https://pavlyuchenko.github.io/Sudoku"

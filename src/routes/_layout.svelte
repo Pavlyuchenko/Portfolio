@@ -65,14 +65,14 @@
                     About
                 </a>
                 <a
-                    href="/contact"
-                    style="text-decoration: {segment === 'contact'
+                    href="/writing"
+                    style="text-decoration: {segment === 'writing'
                         ? 'underline'
-                        : 'none'}; color: {segment === 'contact'
+                        : 'none'}; color: {segment === 'writing'
                         ? 'var(--secondary)'
                         : 'var(--primary)'};"
                 >
-                    Contact
+                    Writing
                 </a>
                 <a
                     href={segment === "cs" ? "/cs/resume" : "/resume"}
@@ -117,9 +117,11 @@
                 }}
             >
                 <img
-                    src="michal_pavlicek.webp"
+                    src="ja_cropped.jpg"
                     alt="Michal Pavlíček foto"
                     width="32"
+                    height="32"
+                    id="mobile-profile-img"
                 />
                 <div id="image-info">
                     <h3>Michal Pavlíček</h3>
@@ -172,25 +174,27 @@
         </div>
         <slot />
 
-        <footer>
-            <div id="text">
-                <h2>Let's create something together!</h2>
-                <p>
-                    Do you have an interesting idea, need help with something or
-                    just want to get in touch with me?
+        {#if segment !== "writing"}
+            <footer>
+                <div id="text">
+                    <h2>Let's create something together!</h2>
+                    <p>
+                        Do you have an interesting idea, need help with
+                        something or just want to get in touch with me?
+                        <br />
+                        Feel free to write me an email, I'm happy to join even smaller
+                        projects!
+                    </p>
                     <br />
-                    Feel free to write me an email, I'm happy to join even smaller
-                    projects!
-                </p>
-                <br />
-                <a
-                    href="https://mail.google.com/mail/u/0/?fs=1&to=michaelg.pavlicek@gmail.com&su=Chci s tebou spolupracovat!&tf=cm"
-                    target="_blank"
-                >
-                    michaelg.pavlicek@gmail.com
-                </a>
-            </div>
-        </footer>
+                    <a
+                        href="https://mail.google.com/mail/u/0/?fs=1&to=michaelg.pavlicek@gmail.com&su=Chci s tebou spolupracovat!&tf=cm"
+                        target="_blank"
+                    >
+                        michaelg.pavlicek@gmail.com
+                    </a>
+                </div>
+            </footer>
+        {/if}
     </main>
 {/if}
 
@@ -286,6 +290,11 @@
         display: none;
     }
 
+    #mobile-profile-img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
     #links {
         display: none;
     }
@@ -348,7 +357,7 @@
         }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         nav,
         hr {
             display: none;
