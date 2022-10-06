@@ -75,6 +75,8 @@
         align-items: center;
         height: 100%;
         position: relative;
+
+        margin-top: 75px;
     }
 
     h1 {

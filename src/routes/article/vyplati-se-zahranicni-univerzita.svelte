@@ -1,15 +1,19 @@
 <script>
     import { onMount } from "svelte";
+    import ImageLoader from "../../components/ImageLoader.svelte";
+
     onMount(() => {
-        document.querySelectorAll("a").forEach((a) => {
-            a.addEventListener("click", (event) => {
-                event.preventDefault();
-                console.log(a.getAttribute("href"));
-                document
-                    .getElementById(a.getAttribute("href").replace("#", ""))
-                    .scrollIntoView();
+        document
+            .getElementById("article")
+            .querySelectorAll(".table_of_contents-link")
+            .forEach((a) => {
+                a.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    document
+                        .getElementById(a.getAttribute("href").replace("#", ""))
+                        .scrollIntoView();
+                });
             });
-        });
     });
 </script>
 
@@ -30,9 +34,9 @@
     <span> |</span>
     <p>02. 10. 2022</p>
 </div>
-<section>
+<section id="article">
     <div>
-        <p id="bbd305c8-913b-4fbd-ad90-7983683ea63e" class="">
+        <p id="bbd305c8-913b-4fbd-ad90-7983683ea63e">
             Před třemi týdny jsem poprvé ve svém životě vyrazil na vlastní pěst
             do cizí země. Do země, kde jsem nikoho neznal a kde pravděpodobně
             strávím alespoň následující tři roky. Rozhodl jsem se totiž po
@@ -42,7 +46,7 @@
             smutku, pochyb, až konečně k přijetí svého rozhodnutí a ke
             spokojenosti.
         </p>
-        <p id="7039ca68-fc18-454a-896f-2ae8fa7c61ea" class="">
+        <p id="7039ca68-fc18-454a-896f-2ae8fa7c61ea">
             V průběhu této, prozatím krátké, ale rozhodně ne strohé, cesty jsem
             narazil na několik různých problémů, které jsem při plánování
             neočekával. V následujících kapitolách bych rád předal své
@@ -51,11 +55,10 @@
             zahraničí nebo se na něj již připravujete, mým cílem je nastínit, co
             vše takové rozhodnutí obnáší a co je třeba zvážit.
         </p>
-        <p id="fdf7dd84-84ff-4423-a98c-dd23e49c1d22" class="">
+        <p id="fdf7dd84-84ff-4423-a98c-dd23e49c1d22">
             <em
-                >Jelikož jde opravdu o článek monstrózních rozměrů, navrhuji,
-                abyste se zaměřili především na části, které vás opravdu
-                zajímají:</em
+                >Jelikož je článek poměrně dlouhý, navrhuji, abyste se zaměřili
+                především na části, které vás opravdu zajímají:</em
             >
         </p>
         <nav
@@ -73,7 +76,6 @@
                 <a
                     class="table_of_contents-link"
                     href="#a8f80ebe-a970-4b8b-a9c9-568aa8176374"
-                    style="padding-left: 20px;"
                     >Kde hledat zahraniční univerzity</a
                 >
             </div>
@@ -148,10 +150,10 @@
                 >
             </div>
         </nav>
-        <h1 id="735fcb7a-560a-41eb-a432-781047d2f08f" class="">
+        <h1 id="735fcb7a-560a-41eb-a432-781047d2f08f">
             Plánování studia mimo Česko
         </h1>
-        <p id="d3710422-dd05-4217-8364-45e774d7c90e" class="">
+        <p id="d3710422-dd05-4217-8364-45e774d7c90e">
             O tom, že chci studovat v zahraničí, jsem věděl několik let dopředu,
             ale příliš důkladně jsem nezkoumal, co vše takové rozhodnutí obnáší.
             Jen jsem tak postupně informoval své okolí (především rodiče) o této
@@ -160,25 +162,31 @@
             druháku, protože na definitivní rozhodnutí je v této chvíli ještě
             dost času.
         </p>
-        <p id="a2ea1ace-0fbf-44f5-926a-2afbf916a2b8" class="">
+        <p id="a2ea1ace-0fbf-44f5-926a-2afbf916a2b8">
             První důkladnější průzkum prostředí jsem poté uskutečnil na konci
-            třetího ročníku gymnázia a o letních prázdninách. Na Notion jsem si
-            sepsal předběžný seznam univerzit, jejichž bakalářské programy mě
-            alespoň trochu zaujaly. Věděl jsem, že chci studovat ve Skandinávii
-            a rozhodně program v oblasti IT. Takové zúžení výběru hodně pomáhá,
-            protože nabídka oborů v různých zemích v dnešní době překypuje
-            možnostmi. A i přesto není lehké si vybrat.
+            třetího ročníku gymnázia a o letních prázdninách. Na <a
+                href="https://www.notion.so/">Notion</a
+            > jsem si sepsal předběžný seznam univerzit, jejichž bakalářské programy
+            mě alespoň trochu zaujaly. Věděl jsem, že chci studovat ve Skandinávii
+            a rozhodně program v oblasti IT. Takové zúžení výběru hodně pomáhá, protože
+            nabídka oborů v různých zemích v dnešní době překypuje možnostmi. A i
+            přesto není lehké si vybrat.
         </p>
-        <h2 id="a8f80ebe-a970-4b8b-a9c9-568aa8176374" class="">
+        <blockquote>
+            S hledáním univerzity doporučuji začít na konci třetího ročníku.
+            Zasílání přihlášek obvykle začíná kolem začátku roku, takže budete
+            mít půl roku na přemýšlení.
+        </blockquote>
+        <h2 id="a8f80ebe-a970-4b8b-a9c9-568aa8176374">
             Kde hledat zahraniční univerzity
         </h2>
-        <p id="7edd9b81-6048-442f-98eb-fcd3bf624b60" class="">
+        <p id="7edd9b81-6048-442f-98eb-fcd3bf624b60">
             Velmi brzo jsem zúžil své možnosti pouze na Evropskou Unii, protože
             mé finanční možnosti měly stanovené jasné hranice a jen školné
             samotné mimo země EU dokáže obrátit rozpočet vzhůru nohama, nemluvě
-            o nutných měsíčních výdajích.
+            o dalších měsíčních výdajích.
         </p>
-        <p id="c8f58075-d93a-49df-9ed1-f8a1c32c6c87" class="">
+        <p id="c8f58075-d93a-49df-9ed1-f8a1c32c6c87">
             V tomto ohledu jsou užitečné stránky <a href="https://euroskop.cz/"
                 >Euroskopu</a
             >, kde lze najít základní informace o mnoha zemích. Například
@@ -188,10 +196,15 @@
             nejznámějších univerzitách a taky základních údajů o ubytování, financích
             atd. od každé země.
         </p>
-        <p id="a6c8a93d-527a-436c-91c2-9472fa566ab6" class="">
+        <ImageLoader
+            path="euroskop.png"
+            alt="Ukázka Euroskop.cz"
+            description="Seznam školného v EU na Euroskop.cz"
+        />
+        <p id="a6c8a93d-527a-436c-91c2-9472fa566ab6">
             Jakmile jsem měl vybrané země (Švédsko, Finsko, Dánsko a Nizozemí),
             pomohla mi nejvíce <a
-                href="https://euroskop.cz/evropska-unie/clenske-staty/jednotlive-staty/finsko/finsko-studium-prace-cestovani/"
+                href="https://www.bachelorsportal.com/search/bachelor?utm_source=studyportalsweb&utm_medium=organic"
                 >tato stránka</a
             >. Jde o roztřizený seznam snad všech univerzitních programů z
             celého světa. Stačí zadat obor a lokalitu a během chvilky je na
@@ -201,7 +214,12 @@
             nabízela program, který bych rád studoval, uložil jsem si jej opět
             do dokumentu na Notion.
         </p>
-        <p id="49224796-1325-4918-af47-3478868deacd" class="">
+        <ImageLoader
+            path="bachelorsportal.png"
+            alt="Ukázka Bachelorsportal"
+            description="Seznam všech bakalářských programů na Bachelorsportal"
+        />
+        <p id="49224796-1325-4918-af47-3478868deacd">
             V této fázi jsem se nejvíce chtěl dostal na univerzitu do Dánska,
             druhé místo obsadilo Švédko a Finsko a nejméně se mi zamlouvalo
             Nizozemí. Nemělo to žádný racionální důvod, jen jsem to tak z
@@ -209,7 +227,7 @@
             jediné zpoplatněné studium, konkrétně cca 1000 € za první rok).
             Nakonec však vše dopadlo přesně naopak.
         </p>
-        <p id="2b2e28c3-9a6c-45a1-873d-06b700ab2c1e" class="">
+        <p id="2b2e28c3-9a6c-45a1-873d-06b700ab2c1e">
             Dánsko zrovna na rok 2022 bohužel zrušilo naprostou většinu IT
             oborů, takže pro mě naprosto vypadlo ze hry. Dále jsem musel vyřadit
             i Švédsko a Finsko, protože životní výdaje v těchto zemích byly nad
@@ -219,7 +237,7 @@
             <a href="https://studyinsweden.se/">Švédsko</a> vytvořilo nádherné a
             detailní užitečné stránky).
         </p>
-        <p id="bb0eb081-af48-44a4-937a-3e0ee7eae125" class="">
+        <p id="bb0eb081-af48-44a4-937a-3e0ee7eae125">
             Takže logicky zbývala poslední možnost: Nizozemsko. Co se týče
             financí, tak jsem našel, že lze očekávat měsíční výdaje kolem 600 €
             včetně ubytování a stravy + zmíněné školné, ale jsou k dispozici
@@ -228,10 +246,10 @@
             program Data Science &amp; Artificial Intelligence, což byl přímo
             obor, který jsem chtěl studovat. Takže na řadu přišly přijímačky.
         </p>
-        <h2 id="e14969b3-ef26-45fa-8744-03a47171d30d" class="">
+        <h2 id="e14969b3-ef26-45fa-8744-03a47171d30d">
             Přijímačky na nizozemských univerzitách
         </h2>
-        <p id="c23a747b-2e5e-49a0-96cc-7a357f66f9ef" class="">
+        <p id="c23a747b-2e5e-49a0-96cc-7a357f66f9ef">
             Groningen rychle odpadl z mých možností, protože zaprvé je poměrně
             oddělený od zbytku nizozemských měst a zadruhé byl program zde
             označený jako “Numerus Fixus”, což znamená, že vyberou pouze určitý
@@ -240,23 +258,22 @@
             z matematiky. Toť vše, nic víc, nic míň. Přihlásit se tak může
             kdokoliv, i když nikdy předtím neviděl počítač. Je však nutné
             počítat s tím, že v prvním roce škola vyhodí velké množství
-            studentů, neměla by to být úplně procházka růžovým sadem.
+            studentů.
         </p>
         <figure
             class="block-color-gray_background callout"
             style="white-space:pre-wrap;display:flex"
             id="6c2c8fde-620b-44c3-8b7e-a787c2c1286f"
         >
-            <div style="font-size:1.5em"><span class="icon">💡</span></div>
             <div style="width:100%">
-                Některé jiné obory požadovaly motivační dopis nebo měly jiné
+                Ostatní obory požadovaly motivační dopis nebo měly jiné
                 požadavky, vždy je potřeba zkontrolovat si “Admission
                 requirements” na příslušných stránkách a prokousat se
-                nejednoznačnými informacemi. Vždy je možné napsat univerzitě
-                email, není se čeho bát.
+                nejednoznačnými informacemi napsanými v angličtině. Když si
+                nejste jistí, napište univerzitě email, není se čeho bát.
             </div>
         </figure>
-        <p id="ea969ae6-0e8f-4149-ba37-b80af6835ebc" class="">
+        <p id="ea969ae6-0e8f-4149-ba37-b80af6835ebc">
             Z nějakého důvodu chtěli v Leidenu za poslání přihlášky 100 €,
             zatímco v Maastrichtu byla zdarma. První verzi přihlášky jsem
             odevzdával kolem března, přičemž univerzita požadovala základní
@@ -270,7 +287,7 @@
             zaplatit školné. Deadline pro získání podmínečného přijetí byl konec
             května, na dodání zbylých dokumentů je čas až do konce srpna.
         </p>
-        <p id="0603624b-79c0-481d-8631-fd8109bfeba2" class="">
+        <p id="0603624b-79c0-481d-8631-fd8109bfeba2">
             Já jsem odevzdání maturitního vysvědčení nechal až na poslední
             chvíli, kdy jsem už byl v Maastrichtu a vše jsem odevzdal osobně na
             univerzitě. Předal jsem ověřenou kopii maturitního vysvědčení (v
@@ -278,21 +295,25 @@
             školy k samotnému vysvědčení. Vše prošlo bez problému a do dvou dnů
             mi univerzita potvrdila přijetí.
         </p>
-        <p id="90a509f1-e029-449e-b6fd-79d0d4817983" class="">
+        <p id="90a509f1-e029-449e-b6fd-79d0d4817983">
             Ale to jsem trochu předběhl, protože jsem ještě ani nenapsal, do
             kterého města jsem byl vlastně přijat. Situace se totiž měla takto:
         </p>
-        <h2 id="d4fd899b-6cb4-4013-a35d-176c221bda45" class="">
+        <h2 id="d4fd899b-6cb4-4013-a35d-176c221bda45">
             Hledání studentského ubytování v zahraničí
         </h2>
-        <p id="8aaa58d0-92c2-45b7-9623-4ad6a8b349d9" class="">
+        <p id="8aaa58d0-92c2-45b7-9623-4ad6a8b349d9">
             Předtím, než jsem začal vyplňovat přihlášky, jsem očekával, že
             největším oříškem bude papírování a komunikace s univerzitou. To
             jsem se ale šeredně mýlil, protože to proběhlo až na malé
             nesrovnalosti bez problému. Na obzoru se totiž objevil mnohem větší
             a náročnější protivník: hledání ubytování.
         </p>
-        <p id="8525a98e-590f-487a-b103-d71f2d54afed" class="">
+        <figure>
+            Hledání ubytování bylo jednoznačně nejtěžším úkolem při přípravě na
+            studium v zahraničí. Začněte proto brzy!
+        </figure>
+        <p id="8525a98e-590f-487a-b103-d71f2d54afed">
             Pro někoho, kdo celý svůj život bydlel u rodičů a nikdy se
             ubytováním nezabýval, jde o nečekaně složitý úkol. Kdybych měl tento
             proces shrnout v jednom slově, byla by to beznaděj. V Nizozemsku ze
@@ -301,68 +322,71 @@
             podepsat… A poptávka enormně překročuje nabídku, z toho, co jsem
             pochopil, tak v celém Nizozemsku.
         </p>
-        <h2 id="c3e32186-116a-4845-9483-afd8a6265e59" class="">
+        <h2 id="c3e32186-116a-4845-9483-afd8a6265e59">
             Úskalí při hledání ubytování
         </h2>
-        <p id="c04e1117-1977-43d0-9514-fa9444d94aa2" class="">
+        <p id="c04e1117-1977-43d0-9514-fa9444d94aa2">
             Já ani vlastně nevím, jak situaci s ubytováním v Nizozemsku sepsat,
             protože to je opravdu naprostý zmatek s několika háčky a problémy,
             takže nejprve zde sepíšu v bodech pár tipů, a pak svou zkušenost:
         </p>
         <ul id="d2869ff1-6342-4f38-8f9e-739e852f8763" class="bulleted-list">
             <li style="list-style-type:disc">
-                S hledáním začněte nejpozději v březnu. Není nutné něco najít,
-                ale spíše si udělat obrázek. Pokud najdete něco pod 400 €, tak
-                to berte jako jackpot a neváhejte.
+                <b>S hledáním začněte nejpozději v březnu.</b> Není nutné něco najít,
+                ale spíše si udělat obrázek. Pokud najdete něco pod 400 €, tak to
+                berte jako jackpot a neváhejte.
             </li>
         </ul>
         <ul id="1b3532a0-c3c0-4826-8ca3-dc63edf10962" class="bulleted-list">
             <li style="list-style-type:disc">
-                Zároveň ale buďte velmi ostražití, na trhu se pohybuje také
-                mnoho podvodníků. Je nutné si (v angličtině) přečíst, co
-                doporučuje univerzita při vyhýbání se podvodným nabídkám.
-                Většinou je nutné nejprve podepsat smlouvu, až potom platit. Na
-                smlouvě by mělo být jméno landlorda a jeho adresa: zkuste si
-                tyto informace vygooglit a vyhodnotit, zda jsou tyto údaje
-                věrohodné.
+                <b
+                    >Zároveň ale buďte velmi ostražití, na trhu se pohybuje také
+                    mnoho podvodníků.</b
+                > Je nutné si (v angličtině) přečíst, co doporučuje univerzita při
+                vyhýbání se podvodným nabídkám. Většinou je nutné nejprve podepsat
+                smlouvu, až potom platit. Na smlouvě by mělo být jméno landlorda
+                a jeho adresa: zkuste si tyto informace vygooglit a vyhodnotit, zda
+                jsou tyto údaje věrohodné.
             </li>
         </ul>
         <ul id="0350f53e-ec23-4347-81c8-f21018dae017" class="bulleted-list">
             <li style="list-style-type:disc">
-                Hned ze začátku rozšiřte své hledání i do okolí města, kde
-                budete studovat. Vyplatí se zkusit blízké vesnice, kde je
-                ubytování dostupnější a taky levnější. Dojíždění do školy pak
-                sice zabere kolem 20 minut na kole, ale před vyučováním a po něm
-                jde o zaslouženou relaxaci.
+                <b
+                    >Hned ze začátku rozšiřte své hledání i do okolí města, kde
+                    budete studovat.</b
+                > Vyplatí se zkusit blízké vesnice, kde je ubytování dostupnější
+                a taky levnější. Dojíždění do školy pak sice zabere kolem 20 minut
+                na kole, ale před vyučováním a po něm jde o zaslouženou relaxaci.
             </li>
         </ul>
         <ul id="8b5f9d7e-6753-469c-9c4e-41d192415283" class="bulleted-list">
             <li style="list-style-type:disc">
-                Univerzity obvykle nějaké ubytování nabízejí, ale je vzhledem k
-                počtu studentů velmi limitované. Takové nabídky jsou vždy velmi
-                brzy rozebrané, dokonce možná už v březnu. Proto je nutné hledat
-                rychle.
+                <b>Univerzity obvykle nějaké ubytování nabízejí</b>, ale je
+                vzhledem k počtu studentů velmi limitované. Takové nabídky jsou
+                vždy velmi brzy rozebrané, dokonce možná už v březnu. Proto je
+                nutné hledat rychle.
             </li>
         </ul>
         <ul id="5f511904-b93e-4e5f-8f43-6d87caf0cde2" class="bulleted-list">
             <li style="list-style-type:disc">
-                U každého ubytování si zjistěte podrobnosti. Je v udávané ceně
-                započtena elektřina, plyn a voda? Kde se ubytování nachází? S
-                kolika lidmi budete na ubytování bydlet?
+                <b>U každého ubytování si zjistěte podrobnosti.</b> Je v udávané
+                ceně započtena elektřina, plyn a voda? Kde se ubytování nachází?
+                S kolika lidmi budete na ubytování bydlet?
             </li>
         </ul>
         <ul id="e3123d54-2ee2-4b6e-b4d6-b0a07aa6387a" class="bulleted-list">
             <li style="list-style-type:disc">
                 Když se mě kamarádi a rodina ptali na Nizozemí a já se jim
-                zmínil o tristní situaci s ubytováním, všichni navrhovali hledat
-                na Facebooku. To ale v podstatě nemá cenu, protože naprostá
-                většina nabídek tam jsou podvody a zbytek je ihned rozebraný, na
-                jakoukoliv nabídku je do pár minut několik komentářů. Facebook
-                se hodí jedině k potkávání lidí ve stejné situaci. Poznal jsem
-                takto jednoho Poláka, se kterým jsme si pak navzájem pomáhali.
-                Případně můžete zkusit hledat ve více lidech, někdy tak můžete
-                mít štěstí a najít nabídku celého apartmánu k pronájmu, což vás
-                navíc vyjde levněji.
+                zmínil o tristní situaci s ubytováním, <b
+                    >všichni navrhovali hledat na Facebooku. To ale v podstatě
+                    nemá cenu,</b
+                > protože naprostá většina nabídek tam jsou podvody a zbytek je ihned
+                rozebraný, na jakoukoliv nabídku je do pár minut několik komentářů.
+                Facebook se hodí jedině k potkávání lidí ve stejné situaci. Poznal
+                jsem takto jednoho Poláka, se kterým jsme si pak navzájem pomáhali.
+                Případně můžete zkusit hledat ve více lidech, někdy tak můžete mít
+                štěstí a najít nabídku celého apartmánu k pronájmu, což vás navíc
+                vyjde levněji.
             </li>
         </ul>
         <ul id="e8f02434-9e6a-48ab-8550-58a22968edc6" class="bulleted-list">
@@ -372,14 +396,14 @@
                 splátku nájmu, nejprve budete muset pravděpodobně zaplatit za
                 členství na inzerující stránce. Naprostá většina ubytování jsou
                 nabízena na stránkách, které vám dovolí reagovat na nabídky
-                pouze po zaplacení členského příspěvku, který většinou činí
+                pouze <b>po zaplacení členského příspěvku,</b> který většinou činí
                 kolem 30 €. To samé mě potkalo i u univerzitních stránek.
             </li>
         </ul>
-        <h2 id="1015a6b6-4df7-4ed0-9eba-19e72e932ef4" class="">
+        <h2 id="1015a6b6-4df7-4ed0-9eba-19e72e932ef4">
             Mé zkušenosti s hledáním bytu
         </h2>
-        <p id="d0d6e5ce-a431-4aeb-ac98-498ee789efd6" class="">
+        <p id="d0d6e5ce-a431-4aeb-ac98-498ee789efd6">
             Já jsem hledání ubytování naivně podcenil. Říkal jsem si, že zrovna
             ubytování se nakonec nějak musí vyřešit, ale ve výsledku to byly mé
             největší obavy. Začal jsem kolem května a dva měsíce jsem neměl
@@ -388,7 +412,7 @@
             vidíte, jak jsou poměrně levné nabídky ihned pryč a zbývají jenom
             možnosti 500 € + za měsíc, tak to sebevědomí taky moc nepomáhá.
         </p>
-        <p id="6e3a2780-9981-49e5-827f-38ddd8d5c42f" class="">
+        <p id="6e3a2780-9981-49e5-827f-38ddd8d5c42f">
             V Maastrichtu jsem hledal především přes stránky univerzity, kde
             však byla neuvěřitelně velká konkurence, nejenže soupeříte s novými
             studenty, na trhu se nachází také studenti vyšších ročníků, takže o
@@ -398,7 +422,12 @@
             Leidenu jsem nenašel žádné přijatelné ubytování, což byl taky důvod,
             proč jsem nyní v Maastrichtu.
         </p>
-        <p id="6111eda2-6439-4bd4-8779-e4fbfde14ecb" class="">
+        <ImageLoader
+            path="maastricht_housing.png"
+            alt="Maastricht Housing"
+            description="Oficiální stránka Maastricht University s nabídkou ubytování"
+        />
+        <p id="6111eda2-6439-4bd4-8779-e4fbfde14ecb">
             Tam jsem to nakonec musel vyřešit trochu neetickou (a pro čtenáře -
             vás - demotivující) cestou. Jelikož umím programovat, tak jsem si
             napsal program, který mi zavolal na mobil pokaždé, když se na
@@ -408,7 +437,14 @@
             tak to je volba, ke které se nakonec hodně studentů pocházejících z
             EU přikloní). Toto se stalo na začátku srpna.
         </p>
-        <p id="d2191eb3-d5d9-497f-bd27-7f56998b995f" class="">
+        <details>
+            <summary>Odkaz na skript (pro programátory)</summary>
+            <a
+                href="https://github.com/Pavlyuchenko/AutomizationBotMaastrichtHousing"
+                >https://github.com/Pavlyuchenko/AutomizationBotMaastrichtHousing</a
+            >
+        </details>
+        <p id="d2191eb3-d5d9-497f-bd27-7f56998b995f">
             Tím však trable zdaleka neskončily. Landlord odpovídal lámanou
             angličtinou a velice stručně, což nepodpořilo mou důvěru v něj.
             Navíc poslal amatérsky sepsanou smlouvu ve fontu Comic Sans, což už
@@ -420,10 +456,10 @@
             Jen teda dojíždím každý den (někdy i dvakrát, když máme místo mezi
             přednáškami) 25 minut na univerzitu a 25 minut zpátky.
         </p>
-        <h2 id="dd45c0f5-7465-4ea3-a26a-525df63e5c9e" class="">
+        <h2 id="dd45c0f5-7465-4ea3-a26a-525df63e5c9e">
             Co je třeba zařídit před odjezdem na zahraniční univerzitu
         </h2>
-        <p id="74196902-c334-4dff-99d4-344cd9d500cb" class="">
+        <p id="74196902-c334-4dff-99d4-344cd9d500cb">
             Zde uvádím seznam nejen formálních záležitostí, které musíte zařídit
             před odjezdem:
         </p>
@@ -434,7 +470,7 @@
             start="1"
         >
             <li>
-                Být podmínečně přijat na své univerzitě. To obvykle vyžaduje
+                <b>Být podmínečně přijat na své univerzitě.</b> To obvykle vyžaduje
                 přeložené pololetní vysvědčení z angličtiny, anglický certifikát
                 na úrovni C1 (B2 může taky někdy stačit) a potenciálně motivační
                 dopis.
@@ -447,11 +483,10 @@
             start="2"
         >
             <li>
-                Mít za sebou úspěšně složenou maturitní zkoušku. S sebou si vzít
-                originální maturitní vysvědčení, ověřenou kopii (musíte s
-                originálem zajít na poštu) a překlad do různých jazyků, ten
-                byste měli obdržet s maturitním vysvědčením při slavnostním
-                předávání.
+                <b>Mít za sebou úspěšně složenou maturitní zkoušku.</b> S sebou si
+                vzít originální maturitní vysvědčení, ověřenou kopii (musíte s originálem
+                zajít na poštu) a překlad do různých jazyků, ten byste měli obdržet
+                s maturitním vysvědčením při slavnostním předávání.
             </li>
         </ol>
         <ol
@@ -460,7 +495,7 @@
             class="numbered-list"
             start="3"
         >
-            <li>Mít v zahraničí zařízené ubytování</li>
+            <li><b>Mít v zahraničí zařízené ubytování</b></li>
         </ol>
         <ol
             type="1"
@@ -469,9 +504,10 @@
             start="4"
         >
             <li>
-                Vlastní bankovní účet a internetové bankovnictví, ideálně v měně
-                země, do které jedete. Zatímco Raiffeisenbanka si účtuje 300 Kč
-                za každý převod na zahraniční účet, Revolut nemá žádné poplatky.
+                <b>Vlastní bankovní účet a internetové bankovnictví</b>, ideálně
+                v měně země, do které jedete. Zatímco Raiffeisenbanka si účtuje
+                300 Kč za každý převod na zahraniční účet, Revolut nemá žádné
+                poplatky.
             </li>
         </ol>
         <ol
@@ -481,10 +517,12 @@
             start="5"
         >
             <li>
-                Zjistit si u pojišťovny, zda vaše pojištění platí i v zahraničí
-                a zda je třeba mít potvrzení o tom, že jste i nadále studentem
-                (to je poměrně důležité, jinak si budete pojištění muset měsíčně
-                platit).
+                <b
+                    >Zjistit si u pojišťovny, zda vaše pojištění platí i v
+                    zahraničí</b
+                >
+                a zda je třeba mít potvrzení o tom, že jste i nadále studentem (to
+                je poměrně důležité, jinak si budete pojištění muset měsíčně platit).
             </li>
         </ol>
         <ol
@@ -494,22 +532,18 @@
             start="6"
         >
             <li>
-                Mít zaručený dostatečný měsíční finanční příjem = nájem + cca
-                200 €. A počítat s tím, že první měsíc zaplatíte alespoň
-                dvojnásobek, u mě to bylo 1 100 €.
+                <b>Mít zaručený dostatečný měsíční finanční příjem</b> = nájem +
+                cca 200 €. A počítat s tím, že první měsíc zaplatíte alespoň dvojnásobek,
+                u mě to bylo 1 100 €.
             </li>
         </ol>
-        <p id="f13815a3-08c3-4bc5-b251-4ec3d4725616" class="">
+        <p id="f13815a3-08c3-4bc5-b251-4ec3d4725616">
             To je pravděpodobně vše, co je nutné. Vždy si zjistěte, zda vaše
             univerzita nepožaduje ještě nějaké dodatečné formality.
         </p>
-        <h1 id="ffea702d-01d3-4cad-92ee-fc95c1f3192d" class="">
-            Odjezd do zahraničí
-        </h1>
-        <h2 id="2eb72d00-8d7d-442d-8de1-89041bb8fdc3" class="">
-            Pocity před odjezdem
-        </h2>
-        <p id="f79a1f0c-e357-4bf0-aaca-76ed911e033f" class="">
+        <h1 id="ffea702d-01d3-4cad-92ee-fc95c1f3192d">Odjezd do zahraničí</h1>
+        <h2 id="2eb72d00-8d7d-442d-8de1-89041bb8fdc3">Pocity před odjezdem</h2>
+        <p id="f79a1f0c-e357-4bf0-aaca-76ed911e033f">
             Čím víc se blížil odjezd, tím víc mi cizina nahnávala neskutečnou
             hrůzu a tím víc jsem začal tohoto rozhodnutí litovat. Poprvé mi
             docházelo, k čemu jsem se to vlastně odsoudil. Poprvé neuvidím své
@@ -519,7 +553,12 @@
             rozumět, když se vrátím o Vánocích zpátky? A co hůř, co když si
             nenajdu žádné kamarády v Nizozemí?
         </p>
-        <p id="2d7bd071-df75-41fe-af22-866d9923aa7f" class="">
+        <blockquote>
+            Týden před odjezdem byl zdaleka nejhorší zážitek, ještě horší než
+            stres z maturity. Všechno utíká neskutečně rychle a začínáte si
+            uvědomovat, že opouštíte všechny své kamarády i rodinu.
+        </blockquote>
+        <p id="2d7bd071-df75-41fe-af22-866d9923aa7f">
             A můžu říct, že dny ubíhají rychleji a rychleji čím víc se blížíte
             ke dni odjezdu. Poslední týden v Česku jsem byl v takovém podivném
             stavu, kdy jsem se opravdu bál následujících několika týdnů a bylo
@@ -528,10 +567,10 @@
             toho na mě opravdu hodně v krátkém intervalu. Je vhodné být alespoň
             psychicky připravený na to, že takový moment nastane.
         </p>
-        <h2 id="6fb013a0-4f13-4c96-9ce6-ab988d86e0ef" class="">
+        <h2 id="6fb013a0-4f13-4c96-9ce6-ab988d86e0ef">
             Seznamovací týden na univerzitě
         </h2>
-        <p id="98275e86-892a-4972-87fd-77f2dfc5527e" class="">
+        <p id="98275e86-892a-4972-87fd-77f2dfc5527e">
             Největší strach jsem však měl ještě z jedné skutečnosti, kterou jsem
             zatím nezmínil. Do svého ubytování jsem se mohl nastěhovat 27.
             srpna, ale ještě týden předtím se konal seznamovací týden (který mě
@@ -543,18 +582,22 @@
             přespání buď u studentské asociace nebo u mentorů, kteří budou
             přidělení každé skupině.
         </p>
-        <p id="ed308070-049c-4dfa-a95b-91256af90d7a" class="">
+        <p id="ed308070-049c-4dfa-a95b-91256af90d7a">
             Měl jsem tedy velké nervy, protože ani jedna možnost nebyla
             stoprocentní. Nakonec jsem si pro klid duše na první noc koupil
-            ubytování v hostelu StayOkay za 1000 Kč. To mě celkem zachránilo,
-            protože jinak bych do Maastrichtu dorazil v čtyři hodiny ráno a
-            neměl kam jít, tak jsem si šel schovat zavazadla do hotelu a byl
-            jsem v teple. Na další noci mi nakonec mi landlord našel jeden volný
-            pokoj, ve kterém jsem mohl strávit pár dní, než se uvolní můj pokoj.
-            Pak jsem také strávil dvě noci u svých mentorů, protože mé ubytování
-            bylo 25 minut daleko na kole, kolo jsem já však neměl.
+            ubytování v hostelu <a href="https://www.stayokay.com/en"
+                >StayOkay</a
+            > za 1000 Kč. To mě celkem zachránilo, protože jinak bych do Maastrichtu
+            dorazil v čtyři hodiny ráno a neměl kam jít, tak jsem si mohl schovat
+            zavazadla do hotelu a odpočívat po náročné cestě v teple (ubytování jsem
+            měl objednané až na následující noc). Na zbytek týdne mi nakonec landlord
+            našel jeden volný pokoj, ve kterém jsem mohl strávit pár dní, než se
+            uvolní můj pokoj. Pak jsem také během seznamovacího týdne strávil dvě
+            noci u svých mentorů (kteří byli opravdu super a se vším mi pomáhali),
+            protože mé ubytování bylo 25 minut daleko na kole, kolo jsem já však
+            neměl.
         </p>
-        <p id="e7166e66-418f-4875-93a5-f0cf785d386e" class="">
+        <p id="e7166e66-418f-4875-93a5-f0cf785d386e">
             Seznamovací týden bych určitě bez váhání doporučil, jestli taková
             událost na vaší univerzitě existuje. V Maastrichtu se jmenuje INKOM
             a organizují jej každoročně studenti. Pro mě, introverta, to sice
@@ -563,11 +606,17 @@
             slzy do očí. Jste nuceni začínat několik opakujících se konverzací s
             různými studenty, pokaždé se představovat, odkud jste, co studujete
             a tak dále, což je už po desáté celkem frustrující. Nutno však říci,
-            že to hodně pomáhá s rozšiřováním své komfortní zóny a našel jsem si
-            díky tomu pár kamarádů, se kterými se sem tam stýkám navzdory tomu,
-            že studujeme na opačné straně města.
+            že jsem díky tomu poznal hodně lidí a našel si pár kamarádů, se
+            kterými se sem tam stýkám i nadále navzdory tomu, že studujeme na
+            opačné straně města.
         </p>
-        <p id="7ab74da0-6b0d-4ef6-bf93-f23d6330ef00" class="">
+        <blockquote>
+            Jestli vaše univerzita nabízí seznamovací týden, vřele doporučuji se
+            jej zúčastnit. Je to sice psychicky náročné, ale dost vám to ze
+            startu v cizím městě pomůže a najdete si alespoň pár kamarádů.
+        </blockquote>
+
+        <p id="7ab74da0-6b0d-4ef6-bf93-f23d6330ef00">
             Při výběru univerzity je také nutné uvažovat racionálně. Jako
             příklad uvedu, že Maastricht University se na svých stránkách chlubí
             více než 50 % studenty ze zahraničí. Vyhledejte si však Maastricht
@@ -580,50 +629,52 @@
             informacemi a zvážit, zda tomu opravdu je tak, jak se na internetu
             píše, a podle toho se pak rozhodnout.
         </p>
-        <h2 id="451ff8c2-30d0-4852-8e2a-4049cc1c1cd2" class="">
+        <h2 id="451ff8c2-30d0-4852-8e2a-4049cc1c1cd2">
             Hledání kamarádů v zahraničí
         </h2>
-        <p id="ab72d28f-51b8-46a8-b70d-c2bd27308f95" class="">
+        <p id="ab72d28f-51b8-46a8-b70d-c2bd27308f95">
             Co se týče kamarádů, prvních pár měsíců nebudete k nikomu cítit
             stejně silné pouto, jaké jste si vybudovali s lidmi v průběhu
             střední školy. To ve vás zanechá pocit prázdnoty, protože několik
             týdnů budou všichni, které máte rádi, několik stovek kilometrů od
             vás a setkání s nimi často v nedohlednu.
         </p>
-        <p id="f2b96ecb-b978-413a-a029-b50062c3549e" class="">
+        <p id="f2b96ecb-b978-413a-a029-b50062c3549e">
             Pro mě bylo hledání nových kamarádů celkem oříšek. Nečekal jsem, že
             to pro mě bude tak těžká výzva. Před univerzitou jsem totiž studoval
             na osmiletém gymnáziu, což co se týče kamarádů znamená, že jste 8
             let naprosto v suchu a nejste nutně vystaveni potřebě hledat si nové
-            přátele. To se v zahraničí dramaticky mění. Neznáte naprosto nikoho,
-            a když se s někým “skamarádíte”, trvá to dlouhou dobu, než se
+            přátele. v zahraničí dramaticky mění. Neznáte naprosto nikoho, a
+            když se s někým “skamarádíte”, trvá to dlouhou dobu, než se
             vyrovnají vašim kamarádům doma.
         </p>
-        <p id="f4b06c62-ef0f-4f68-a734-e8dc4aa50661" class="">
+        <p id="f4b06c62-ef0f-4f68-a734-e8dc4aa50661">
             Uklidňující (aspoň pro mě) bylo, že v na vysoké škole v Česku by to
             nebylo o moc jiné. Tam se taky zas tak často se svými předchozími
             kamarády nevídáte a musíte si najít nové. Zahraničí má tu výhodu, že
             tady se několik lidí nachází v naprosto stejné situaci jako vy. To
-            se hodí, protože za celou dobu v Maastrichtu jsem nenarazil na
-            nikoho, kdo by se nechtěl aspoň trochu poklábosit. Když se vám někdo
-            na pohled zamlouvá, nic nedáte za to to zkusit a nejspíš zjistíte,
-            že on/ona se s vámi chce bavit také. Zapamatujte si:
+            je dobré, protože všichni jsou naprosto otevření novým lidem, takže
+            jsem za celou dobu v Maastrichtu nenarazil na nikoho, kdo by se se
+            mnou nechtěl aspoň trochu pobavit. Když se vám někdo na pohled
+            zamlouvá, nic nedáte za to to zkusit a nejspíš zjistíte, že on/ona
+            se s vámi chce bavit také. Zapamatujte si:
         </p>
-        <blockquote id="aae437c7-9a8a-408c-9aaf-f262f201055f" class="">
-            Všichni na tom jsou v zahraničí stejně, všichni jsou vystresovaní a
-            všichni si chtějí najít kamarády.
-        </blockquote>
-        <h1 id="4033e36a-ba09-407e-bae3-808013c26314" class="">
+        <figure id="aae437c7-9a8a-408c-9aaf-f262f201055f">
+            Všichni na tom jsou na zahraničí univerzitě ze začátku stejně: jsou
+            vystresovaní a chtějí si hlavně najít kamarády. Proto se nebojte
+            začínat náhodné konverzace s lidmi, kteří vám přijdou sympatičtí.
+        </figure>
+        <h1 id="4033e36a-ba09-407e-bae3-808013c26314">
             Studovat na univerzitě v zahraničí?
         </h1>
-        <p id="2365c3d0-1f09-41d4-91c1-050539fdfa68" class="">
+        <p id="2365c3d0-1f09-41d4-91c1-050539fdfa68">
             Tím se dostáváme k vyústění tohoto článku. Vyplatí se studovat v
             zahraničí? Co se týče získaných zkušeností a osamostatnění se, není
             o čem diskutovat. Pro budoucí kariéru jde o nenahraditelnou výhodu
             oproti konkurenci a vynucená samota a naprosto nové prostředí
             pomohou v osobním růstu.
         </p>
-        <p id="023f3550-0564-42ec-b9e2-7ae36d532cc4" class="">
+        <p id="023f3550-0564-42ec-b9e2-7ae36d532cc4">
             V krátkodobém hledisku však jde o obrovskou výzvu. Ocitáte se v
             novém světě a na každém kroku zpochybňujete svá rozhodnutí a
             uvědomujete si, co všechno jste nechali za sebou. A navíc se z toho
@@ -631,7 +682,7 @@
             zodpovědnost stůj co stůj a doufat, že vše dobře dopadne. A u toho
             si být vědom, že nejsme v pohádce, takže to dobře dopadnout nemusí.
         </p>
-        <p id="c62be239-5b8e-45fc-9b7d-397f5fb0066e" class="">
+        <p id="c62be239-5b8e-45fc-9b7d-397f5fb0066e">
             Tímto článkem jsem nechtěl nikoho vystrašit ani odradit od studia v
             zahraničí, pouze donutit k zamyšlení. Zahraničí totiž není pro
             každého a není to ani zdaleka jednoduché, jak to může někomu
@@ -682,7 +733,115 @@
     h4,
     h5,
     h6 {
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", sans-serif;
         text-align: left;
+
+        color: var(--primary);
+    }
+    .table_of_contents {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        padding-left: 20px;
+    }
+    .table_of_contents-item {
+        line-height: normal;
+        margin-top: 3px;
+    }
+    .table_of_contents-indent-1 {
+        padding-left: 20px;
+    }
+
+    .table_of_contents-link {
+        font-size: 14px;
+        font-weight: 400;
+
+        line-height: 0;
+        color: #999;
+        transition: 0.15s;
+    }
+    .table_of_contents-link:hover {
+        color: #333;
+    }
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+
+        margin-top: 75px;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+
+        margin-top: 45px;
+    }
+    a {
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    blockquote {
+        position: relative;
+
+        margin-left: 0;
+        padding-left: 30px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    blockquote::before {
+        content: "";
+        display: inline-block;
+
+        position: absolute;
+        left: 0;
+        top: -5px;
+
+        width: 6px;
+        height: calc(100% + 10px);
+
+        background-color: black;
+    }
+
+    figure {
+        background-color: var(--primary);
+        color: #fff;
+
+        margin: 0;
+        padding: 20px 30px;
+        white-space: normal !important;
+
+        border-radius: 8px;
+
+        margin: 40px 0;
+    }
+
+    @media (max-width: 800px) {
+        #title {
+            font-size: 32px;
+        }
+        #article-details {
+            font-size: 13px;
+            font-weight: 400;
+            gap: 8px;
+        }
+        #article {
+            margin-top: 10px;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: normal;
+        }
+        h1 {
+            font-size: 28px;
+            margin-top: 50px;
+        }
+
+        figure {
+            padding: 15px 25px;
+        }
     }
 </style>

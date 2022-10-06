@@ -40,22 +40,100 @@
 {#if segment === "showcase"}
     <slot />
 {:else if segment === "writing" || segment === "article"}
-    <header>
-        <div>
+    <nav>
+        <div id="left-nav">
+            <a href={segment === "cs" ? "/cs" : "/"}>
+                <img
+                    src="ja_cropped.jpg"
+                    alt="Michal Pavlíček foto"
+                    width="64"
+                    height="64"
+                    style="border-radius: 50%; object-fit: cover; width: 52px; height: 52px;"
+                />
+            </a>
+            <div id="image-info">
+                <h3 style="font-size: 22px;">Michal Pavlíček</h3>
+            </div>
+        </div>
+        <div id="right-nav">
+            <a
+                href="/writing"
+                style="text-decoration: {segment === 'writing'
+                    ? 'underline'
+                    : 'none'}; color: {segment === 'writing'
+                    ? 'var(--secondary)'
+                    : 'var(--primary)'};"
+            >
+                Writing
+            </a>
+            <a
+                href={segment === "cs" ? "/cs" : "/"}
+                style="text-decoration: {segment === undefined
+                    ? 'underline'
+                    : 'none'}; 
+            color: {segment === undefined
+                    ? 'var(--secondary)'
+                    : 'var(--primary)'};"
+            >
+                Portfolio
+            </a>
+            <a
+                href={segment === "cs" ? "/cs/about" : "/about"}
+                style="text-decoration: {segment === 'about'
+                    ? 'underline'
+                    : 'none'}; color: {segment === 'about'
+                    ? 'var(--secondary)'
+                    : 'var(--primary)'};"
+            >
+                About
+            </a>
+        </div>
+    </nav>
+    <div id="mobile-nav">
+        <div
+            id="left-nav"
+            on:click={() => {
+                goto("/");
+                document.getElementById("links").style.display = "none";
+                document.getElementById("container").classList = "";
+            }}
+        >
             <img
                 src="ja_cropped.jpg"
                 alt="Michal Pavlíček foto"
-                width="48"
-                height="48"
-                style="border-radius: 50%; object-fit: cover;"
+                width="32"
+                height="32"
+                id="mobile-profile-img"
             />
-            <h3>Mike Pavlicek</h3>
+            <div id="image-info">
+                <h3>Michal Pavlíček</h3>
+            </div>
         </div>
-        <div id="links-writing">
-            <a href="/">Portfolio</a>
-            <a href="/about">About</a>
+        <div id="right-nav">
+            <div
+                id="container"
+                on:click={() => {
+                    changeBurger();
+                }}
+            >
+                <div class="bar1" />
+                <div class="bar2" />
+                <div class="bar3" />
+            </div>
         </div>
-    </header>
+    </div>
+    <div
+        id="links"
+        on:click={() => {
+            document.getElementById("links").style.display = "none";
+            document.getElementById("container").classList = "";
+        }}
+    >
+        <a href={"/writing"}>Writing</a>
+        <a href={segment === "cs" ? "/cs" : "/"}>Portfolio</a>
+        <a href={segment === "cs" ? "/cs/about" : "/about"}>About</a>
+        <hr id="mobile-hr" />
+    </div>
     <div id="main-div">
         <slot />
     </div>
@@ -204,6 +282,7 @@
         >
             <a href={segment === "cs" ? "/cs" : "/"}>Portfolio</a>
             <a href={segment === "cs" ? "/cs/about" : "/about"}>About</a>
+            <a href={"/writing"}>Writing</a>
             <a href={segment === "cs" ? "/cs/resume" : "/resume"}>Resumé</a>
             <a
                 href={segment === "cs" ? "/" : "/cs"}
