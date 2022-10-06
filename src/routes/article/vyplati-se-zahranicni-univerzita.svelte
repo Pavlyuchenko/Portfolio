@@ -31,6 +31,28 @@
         content="Zjisti co obnáší studium v zahraničí, na co si dát pozor před odjezdem a na co se psychicky připravit."
     />
     <meta name="robots" content="index, follow" />
+
+    <meta
+        property="og:title"
+        content="Studium v zahraničí: Jak se dostat na univerzitu v Nizozemsku"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+        property="og:url"
+        content="https://michal-pavlicek.tech/article/vyplati-se-zahranicni-univerzita"
+    />
+    <meta property="og:image" content="fb_studium.png" />
+
+    <meta
+        name="twitter:title"
+        content="Studium v zahraničí: Jak se dostat na univerzitu v Nizozemsku"
+    />
+    <meta
+        name="twitter:description"
+        content="Zjisti co obnáší studium v zahraničí, na co si dát pozor před odjezdem a na co se psychicky připravit."
+    />
+    <meta name="twitter:image" content="fb_studium.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <h1 id="title">

@@ -44,7 +44,7 @@
         <div id="left-nav">
             <a href={segment === "cs" ? "/cs" : "/"}>
                 <img
-                    src="ja_cropped.jpg"
+                    src="ja_cropped_small.jpg"
                     alt="Michal Pavlíček foto"
                     width="64"
                     height="64"
@@ -99,7 +99,7 @@
             }}
         >
             <img
-                src="ja_cropped.jpg"
+                src="ja_cropped_small.jpg"
                 alt="Michal Pavlíček foto"
                 width="32"
                 height="32"
@@ -154,7 +154,7 @@
             <div id="left-nav">
                 <a href={segment === "cs" ? "/cs" : "/"}>
                     <img
-                        src="ja_cropped.jpg"
+                        src="ja_cropped_small.jpg"
                         alt="Michal Pavlíček foto"
                         width="64"
                         height="64"
@@ -250,7 +250,7 @@
                 }}
             >
                 <img
-                    src="ja_cropped.jpg"
+                    src="ja_cropped_small.jpg"
                     alt="Michal Pavlíček foto"
                     width="32"
                     height="32"
