@@ -24,9 +24,18 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap"
         rel="stylesheet"
     />
+
+    <title>Studium v zahraničí: Jak se dostat na univerzitu v Nizozemsku</title>
+    <meta
+        name="description"
+        content="Zjisti co obnáší studium v zahraničí, na co si dát pozor před odjezdem a na co se psychicky připravit."
+    />
+    <meta name="robots" content="index, follow" />
 </svelte:head>
 
-<h1 id="title">Cesta z Česka<br />na zahraniční univerzitu</h1>
+<h1 id="title">
+    Cesta z Česka<br />na nizozemskou univerzitu
+</h1>
 <div id="article-details">
     <p>Michal Pavlíček</p>
     <span> |</span>
