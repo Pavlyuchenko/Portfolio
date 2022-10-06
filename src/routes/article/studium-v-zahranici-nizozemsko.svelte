@@ -56,7 +56,8 @@
 </svelte:head>
 
 <h1 id="title">
-    Cesta z Česka<br />na nizozemskou univerzitu
+    Studium v zahraničí: <br />
+    Jak se dostat na univerzitu v Nizozemí
 </h1>
 <div id="article-details">
     <p>Michal Pavlíček</p>

@@ -25,10 +25,10 @@
             <h4>October</h4>
             <div>
                 <a
-                    href="/article/vyplati-se-zahranicni-univerzita"
-                    class="article-title"
+                    href="/article/studium-v-zahranici-nizozemsko"
+                    class="article-title czech"
                 >
-                    Z Česka na zahraniční univerzitu
+                    Studium v zahraničí: Jak se dostat na univerzitu v Nizozemí
                 </a>
             </div>
         </div>
@@ -47,15 +47,13 @@
     </div>
     <div class="grid-item">
         <h2>Stories</h2>
-        <a href="/article/zacatky-na-nizozemske-univerzite" class="czech">
-            Z Česka na nizozemskou univerzitu
+        <a href="/article/studium-v-zahranici-nizozemsko" class="czech">
+            Studium v zahraničí: Jak se dostat na univerzitu v Nizozemí
         </a><br />
     </div>
     <div class="grid-item">
         <h2>Literature</h2>
-        <a href="/article/why-scifi-is-going-to-decline">
-            Why sci-fi is inevitabely going to decline
-        </a><br />
+        <a href="/article/why-scifi-is-going-to-decline"> Empty </a><br />
     </div>
     <div class="grid-item">
         <h2>Philosophy</h2>
