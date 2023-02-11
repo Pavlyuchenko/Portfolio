@@ -57,7 +57,7 @@
         </div>
         <div id="right-nav">
             <a
-                href="/writing"
+                href="https://blog.michal-pavlicek.tech"
                 style="text-decoration: {segment === 'writing'
                     ? 'underline'
                     : 'none'}; color: {segment === 'writing'
@@ -129,7 +129,7 @@
             document.getElementById("container").classList = "";
         }}
     >
-        <a href={"/writing"}>Writing</a>
+        <a href="https://blog.michal-pavlicek.tech">Writing</a>
         <a href={segment === "cs" ? "/cs" : "/"}>Portfolio</a>
         <a href={segment === "cs" ? "/cs/about" : "/about"}>About</a>
         <hr id="mobile-hr" />
@@ -198,7 +198,7 @@
                     About
                 </a>
                 <a
-                    href="/writing"
+                    href="https://blog.michal-pavlicek.tech"
                     style="text-decoration: {segment === 'writing'
                         ? 'underline'
                         : 'none'}; color: {segment === 'writing'
@@ -282,7 +282,7 @@
         >
             <a href={segment === "cs" ? "/cs" : "/"}>Portfolio</a>
             <a href={segment === "cs" ? "/cs/about" : "/about"}>About</a>
-            <a href={"/writing"}>Writing</a>
+            <a href={"https://blog.michal-pavlicek.tech"}>Writing</a>
             <a href={segment === "cs" ? "/cs/resume" : "/resume"}>Resumé</a>
             <a
                 href={segment === "cs" ? "/" : "/cs"}

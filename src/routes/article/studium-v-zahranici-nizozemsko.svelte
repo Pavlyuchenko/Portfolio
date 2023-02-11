@@ -1,4 +1,13 @@
-<script>
+<script context="module">
+    export async function preload(page, session) {
+        return this.redirect(
+            301,
+            "https://blog.michal-pavlicek.tech/articles/studium-v-zahranici-nizozemsko"
+        );
+    }
+</script>
+
+<!-- <script>
     import { onMount } from "svelte";
     import ImageLoader from "../../components/ImageLoader.svelte";
 
@@ -877,3 +886,4 @@
         }
     }
 </style>
+ -->

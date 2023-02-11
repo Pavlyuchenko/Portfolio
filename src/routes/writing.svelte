@@ -1,3 +1,10 @@
+<script context="module">
+    export async function preload(page, session) {
+        return this.redirect(301, "https://blog.michal-pavlicek.tech");
+    }
+</script>
+
+<!-- 
 <div id="intro">
     <h1>
         The stories about <br />
@@ -257,3 +264,4 @@
         }
     }
 </style>
+ -->
