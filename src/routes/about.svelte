@@ -191,8 +191,6 @@
             display: block;
         }
         #profile {
-            margin-left: 50%;
-            transform: translateX(-50%);
             max-height: 400px;
             object-fit: cover;
         }
@@ -204,6 +202,13 @@
         #profile {
             width: 100%;
             max-height: 500px;
+        }
+        #links img {
+            height: 50px;
+        }
+        .skills {
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
         }
     }
 </style>

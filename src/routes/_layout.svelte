@@ -400,7 +400,7 @@
     @media (max-width: 1100px) {
         footer {
             width: 100%;
-            height: 300px;
+            height: 340px;
         }
         footer h2 {
             font-size: 24px;

@@ -59,10 +59,9 @@
     }
     .image {
         margin-top: 30px;
-        margin-left: 50%;
-        transform: translateX(-50%);
         border-radius: 12px;
         max-height: calc(100% - 100px);
+        max-width: 100vw;
 
         cursor: zoom-in;
         transition: 0.15s;
@@ -79,6 +78,7 @@
         left: 0;
         top: 0;
         width: 100%; /* Full width */
+        max-width: 100vw;
         height: 100%; /* Full height */
         background-color: rgb(0, 0, 0); /* Fallback color */
         background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
