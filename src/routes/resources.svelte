@@ -15,6 +15,16 @@
         <h2>Table of Contents</h2>
         <ul>
             <li>
+                <img src="youtube.png" alt="Person" width="24" />&nbsp;
+                <span
+                    on:click={() => {
+                        document
+                            .getElementById("youtubers")
+                            .scrollIntoView({ behavior: "smooth" });
+                    }}>Youtubers I watch</span
+                >
+            </li>
+            <li>
                 <img src="person.png" alt="Person" width="24" />&nbsp;
                 <span
                     on:click={() => {
@@ -90,19 +100,19 @@
     <br />
 
     <div id="content">
-        <div id="people-div">
-            <h2 id="people">
+        <div id="youtubers-div">
+            <h2 id="youtubers">
                 <img
-                    src="person.png"
-                    alt="People emoji"
+                    src="youtube.png"
+                    alt="Youtube emoji"
                     width="32"
                     style="vertical-align: top;"
-                /> People I admire
+                /> Youtubers I watch
             </h2>
             <ul>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqN5uVopgDR2QEGqJz6Suc6tZiDn1r04WvMGGaljlA=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/crawford.jpg"
                         alt="Devon Crawford"
                         width="120"
                         height="120"
@@ -131,7 +141,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqP4LqnnQyCkW4o1X5sXvO-Mz7NnHAjbbCFkJYIy6w=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/drew.jpg"
                         alt="Nathaniel Drew"
                         width="120"
                         height="120"
@@ -160,7 +170,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqOs5RwgRWY1O4bWwfAO4rRNQQSO0zQRHgiczXeV=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/zach_star.jpg"
                         alt="Zach Star"
                         width="120"
                         height="120"
@@ -189,7 +199,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqNii7dVv6crdSR4xjEEeYNTmH2GGQ0f81Wk3xac=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/struthless.jpg"
                         alt="struthless"
                         width="120"
                         height="120"
@@ -218,7 +228,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqOpvSaBjyydwPBNxyB_sckPMQj09C89VqRBsgmhtg=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/3b1b.jpg"
                         alt="3Blue1Brown"
                         width="120"
                         height="120"
@@ -246,7 +256,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqN7GnG_GHkk-yIUPqlBU-knM32yRLzOM4oE8_vTDg=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/lague.jpg"
                         alt="Sebastial Lague"
                         width="120"
                         height="120"
@@ -274,7 +284,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqO9iAf2tY1gMNMDVn4JanLVVWysx-wWDaH2NuDD=s176-c-k-c0x00ffffff-no-rj"
+                        src="resources/eater.jpg"
                         alt="Ben Eater"
                         width="120"
                         height="120"
@@ -301,7 +311,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://yt3.googleusercontent.com/ytc/AGIKgqObajSuwPLD5hv9cLcJJ7ltaqE1GwBcQsEv6IWQ-w=s176-c-k-c0x00ffffff-no-rj"
+                        src="/resources/gotham.jpg"
                         alt="GothamChess"
                         width="120"
                         height="120"
@@ -344,7 +354,7 @@
         <ul>
             <li>
                 <img
-                    src="https://m.media-amazon.com/images/I/919XM42JQlL.jpg"
+                    src="resources/three.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -361,7 +371,7 @@
             </li>
             <li>
                 <img
-                    src="https://m.media-amazon.com/images/I/81gUA3NPH6L.jpg"
+                    src="resources/project.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -379,7 +389,7 @@
             </li>
             <li>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg"
+                    src="resources/ready.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -395,7 +405,7 @@
             </li>
             <li>
                 <img
-                    src="https://obalky.kosmas.cz/ArticleCovers/104/486_bg.jpg"
+                    src="resources/stopar.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -411,7 +421,7 @@
             </li>
             <li>
                 <img
-                    src="https://m.media-amazon.com/images/I/41Fvm5SggCL._SX296_BO1,204,203,200_.jpg"
+                    src="resources/left.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -432,7 +442,7 @@
         <ul>
             <li>
                 <img
-                    src="https://kbimages1-a.akamaihd.net/25e45601-9089-4a7e-8d47-82ab402bf3e1/353/569/90/False/kafka-on-the-shore-1.jpg"
+                    src="resources/kafka.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -449,7 +459,7 @@
             </li>
             <li>
                 <img
-                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415375471i/119073.jpg"
+                    src="resources/name.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -466,7 +476,7 @@
             </li>
             <li>
                 <img
-                    src="https://dwcp78yw3i6ob.cloudfront.net/wp-content/uploads/2016/12/12162813/100_Years_First_Ed_Hi_Res-768x1153.jpg"
+                    src="resources/hundred.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -484,7 +494,7 @@
             </li>
             <li>
                 <img
-                    src="https://kbimages1-a.akamaihd.net/1c2047da-35ae-4efd-9eaf-06e0427934e5/353/569/90/False/JwL3l8Z5nDGGeXp2FlPwfg.jpg"
+                    src="resources/1984.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -500,7 +510,7 @@
             </li>
             <li>
                 <img
-                    src="https://www.databazeknih.cz/img/books/42_/42876/big_pan-theodor-mundstock-xPf-42876.jpg"
+                    src="resources/pan.jpg"
                     alt="Pan Theodor Mundstock"
                     width="120"
                     height="120"
@@ -521,7 +531,7 @@
         <ul>
             <li>
                 <img
-                    src="https://www.knihydobrovsky.cz/thumbs/book-detail/mod_eshop/produkty/h/hradla-volty-jednocipy-uvod-do-bastleni-9788088168232_3.jpg"
+                    src="resources/hradla.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -538,7 +548,7 @@
             </li>
             <li>
                 <img
-                    src="https://www.databazeknih.cz/img/books/48_/483739/big_napad-za-miliardu-nejinspirativnejs-rlF-483739.jpg"
+                    src="resources/napad.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -555,7 +565,7 @@
             </li>
             <li>
                 <img
-                    src="https://www.whatyouwilllearn.com/wp-content/uploads/2019/08/Show-Your-Work.jpg"
+                    src="resources/show.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -572,7 +582,7 @@
             </li>
             <li>
                 <img
-                    src="https://kbimages1-a.akamaihd.net/21a94eb9-86fe-460c-88d4-55a13872e5e0/1200/1200/False/sapiens-3.jpg"
+                    src="resources/sapiens.jpg"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -600,7 +610,7 @@
         <ul>
             <li>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Twenty_one_pilots_logo_.jpg"
+                    src="resources/twenty.jpg"
                     alt="Twenty One Pilots"
                     width="120"
                     height="120"
@@ -634,7 +644,7 @@
             </li>
             <li>
                 <img
-                    src="https://yt3.googleusercontent.com/LN9LN8GEEt-oOcHD9i3ZV4qh4UZ1h5diWzyP8l029_OdLVnhhmDckiiMko4-HgZPwvgW-R7bDw=s900-c-k-c0x00ffffff-no-rj"
+                    src="resources/generation.jpg"
                     alt="Generation Simulation"
                     width="120"
                     height="120"
@@ -665,7 +675,7 @@
             </li>
             <li>
                 <img
-                    src="https://i.scdn.co/image/ab6761610000e5ebff2158cc0a19c8859ce02687"
+                    src="resources/joseph.jpg"
                     alt="Jay Joseph"
                     width="120"
                     height="120"
@@ -695,7 +705,7 @@
             </li>
             <li>
                 <img
-                    src="https://images.sk-static.com/images/media/profile_images/artists/9697979/huge_avatar"
+                    src="resources/half.jpg"
                     alt="half•alive"
                     width="120"
                     height="120"
@@ -726,7 +736,7 @@
             </li>
             <li>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/en/5/5c/AJR_Neotheater.jpg"
+                    src="resources/ajr.jpg"
                     alt="AJR"
                     width="120"
                     height="120"
@@ -756,7 +766,7 @@
             </li>
             <li>
                 <img
-                    src="https://i.discogs.com/zlz9iQ1jsNtpfdJlMJAkrlw_qWw8zTylzMvmRAb9-3g/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTU5NjU2/LTE1OTgzNDc5MTct/MTE0NS5qcGVn.jpeg"
+                    src="resources/zimmer.jpg"
                     alt="Hans Zimmer"
                     width="120"
                     height="120"
@@ -798,7 +808,7 @@
         <ul>
             <li>
                 <img
-                    src="https://scontent-bru2-1.xx.fbcdn.net/v/t39.30808-6/313047908_487376290083658_7848437789135211953_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4Ye8ihyN12cAX84eqtP&_nc_ht=scontent-bru2-1.xx&oh=00_AfBHkvYguJQv1l82H28c--ycTePIA6e4LOB8aOVq3-1J-w&oe=6449F604"
+                    src="resources/last.jpg"
                     alt="Last of Us"
                     width="120"
                     height="120"
@@ -814,7 +824,7 @@
             </li>
             <li>
                 <img
-                    src="https://i1.sndcdn.com/artworks-WGYxNvsuTulQtuz9-lnVmWA-t500x500.jpg"
+                    src="resources/rick.jpg"
                     alt="Rick and Morty"
                     width="120"
                     height="120"
@@ -830,7 +840,7 @@
             </li>
             <li>
                 <img
-                    src="https://static1.squarespace.com/static/5c99011c77b9037f574a56be/5cc9f96374b76cebdcc3846c/5db1d28b825cda4b8ed3d470/1572970061522/1546674167_FriendsLogo_T-Shirt_SquareImage.jpg?format=1500w"
+                    src="resources/friends.jpg"
                     alt="Friends"
                     width="120"
                     height="120"
@@ -846,7 +856,7 @@
             </li>
             <li>
                 <img
-                    src="https://www.femalefirst.co.uk/image-library/square/500/h/heartstopper-poster.jpg"
+                    src="resources/heartstopper.jpg"
                     alt="Heartstopper"
                     width="120"
                     height="120"
@@ -863,7 +873,7 @@
             </li>
             <li>
                 <img
-                    src="https://pbs.twimg.com/profile_images/1480981589517484033/bh2swj0M_400x400.png"
+                    src="resources/dune.png"
                     alt="Dune"
                     width="120"
                     height="120"
@@ -880,7 +890,7 @@
             </li>
             <li>
                 <img
-                    src="https://images.booksense.com/images/464/098/9781789098464.jpg"
+                    src="resources/arrival.jpg"
                     alt="Arrival"
                     width="120"
                     height="120"
@@ -896,7 +906,7 @@
             </li>
             <li>
                 <img
-                    src="https://sciowa.org/upl/images/blog/lg-interstellar-in-70mm-imax-f004723a.jpg"
+                    src="resources/interstellar.jpg"
                     alt="Interstellar"
                     width="120"
                     height="120"
@@ -912,7 +922,7 @@
             </li>
             <li>
                 <img
-                    src="https://cdn.shopify.com/s/files/1/0755/1203/products/Comiccon_Decals_Square_for_Shopify-79.png?v=1541601036"
+                    src="resources/stranger.png"
                     alt="Stranger Things"
                     width="120"
                     height="120"
@@ -939,7 +949,7 @@
         <ul>
             <li>
                 <img
-                    src="https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/INLOGMXVRT_logitech_mx_vertical_mouse.jpg"
+                    src="/resources/mouse.jpg"
                     alt="Logitech MX Vertical"
                     width="120"
                     height="120"
@@ -957,7 +967,7 @@
             </li>
             <li>
                 <img
-                    src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1668508804-kindle-product-image-black-0-1668508793.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*"
+                    src="/resources/kindle.jpg"
                     alt="Kindle"
                     width="120"
                     height="120"
@@ -975,7 +985,7 @@
             </li>
             <li>
                 <img
-                    src="https://images.musicstore.de/images/1280/audio-technica-ath-m40x-casque-de-studio-ferm-_1_REC0011128-000.jpg"
+                    src="/resources/headphones.webp"
                     alt="Audio-Technica ATH-M40x"
                     width="120"
                     height="120"
@@ -1005,7 +1015,7 @@
             <ul>
                 <li>
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/1024px-Notion-logo.svg.png"
+                        src="/resources/notion.png"
                         alt="Notion"
                         width="120"
                         height="120"
@@ -1021,7 +1031,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+                        src="/resources/vscode.png"
                         alt="VSCode"
                         width="120"
                         height="120"
@@ -1036,7 +1046,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Opera_2015_icon.svg/1024px-Opera_2015_icon.svg.png"
+                        src="/resources/opera.png"
                         alt="Opera"
                         width="120"
                         height="120"
@@ -1051,7 +1061,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://seeklogo.com/images/W/windows-11-icon-logo-6C39629E45-seeklogo.com.png"
+                        src="/resources/windows.png"
                         alt="Windows 11"
                         width="120"
                         height="120"
@@ -1067,7 +1077,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://github.gallerycdn.vsassets.io/extensions/github/copilot/1.83.41/1682002992198/Microsoft.VisualStudio.Services.Icons.Default"
+                        src="/resources/copilot.png"
                         alt="GitHub CoPilot"
                         width="120"
                         height="120"
@@ -1083,7 +1093,7 @@
                 </li>
                 <li>
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbbTJc-oMgCOR2_SYLQX_cxDwAgFo4cgsJhO84LAzzCw&s"
+                        src="/resources/docs.png"
                         alt="Google Docs"
                         width="120"
                         height="120"
@@ -1113,7 +1123,7 @@
         <ul>
             <li>
                 <img
-                    src="https://i.ibb.co/LSmWb85/celeste.png"
+                    src="/resources/celeste.png"
                     alt="Celeste"
                     width="120"
                     height="120"
@@ -1132,7 +1142,7 @@
             </li>
             <li>
                 <img
-                    src="https://i.ibb.co/3Rp0j6D/dead-cells.png"
+                    src="/resources/dead.png"
                     alt="Dead Cells"
                     width="120"
                     height="120"
@@ -1148,7 +1158,7 @@
             </li>
             <li>
                 <img
-                    src="https://ih1.redbubble.net/image.646554537.4128/flat,750x,075,f-pad,750x1000,f8f8f8.u11.jpg"
+                    src="/resources/xcom.jpg"
                     alt="XCOM"
                     width="120"
                     height="120"
@@ -1164,7 +1174,7 @@
             </li>
             <li>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png"
+                    src="/resources/league.png"
                     alt="League of Legends"
                     width="120"
                     height="120"
@@ -1180,7 +1190,7 @@
             </li>
             <li>
                 <img
-                    src="https://i.ibb.co/mD1PjRz/zelda.png"
+                    src="/resources/zelda.png"
                     alt="The Legend of Zelda: Breath of the Wild"
                     width="120"
                     height="120"
@@ -1197,7 +1207,7 @@
             </li>
             <li>
                 <img
-                    src="https://production-gameflipusercontent.fingershock.com/us-east-1:bd6f1c5f-2646-4fdd-809a-e275109ac048/c36c5b05-1f9f-4c3f-bdf7-a0511778a465/ac6cf6e3-f0e5-4d97-9ff4-2a10003330b9"
+                    src="/resources/civ.jpg"
                     alt="Civilisation VI"
                     width="120"
                     height="120"
