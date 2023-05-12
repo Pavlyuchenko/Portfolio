@@ -340,11 +340,6 @@
                 </li>
             </ul>
         </div>
-        <div id="people-div">
-            <h2 id="people">
-                <img
-                    src="person.png"
-                    alt="People emoji"
 
         <h2 id="books">
             <img
