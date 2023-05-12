@@ -112,7 +112,7 @@
             <ul>
                 <li>
                     <img
-                        src="resources/crawford.jpg"
+                        src="resources/compressed/crawford.webp"
                         alt="Devon Crawford"
                         width="120"
                         height="120"
@@ -141,7 +141,7 @@
                 </li>
                 <li>
                     <img
-                        src="resources/drew.jpg"
+                        src="resources/compressed/drew.webp"
                         alt="Nathaniel Drew"
                         width="120"
                         height="120"
@@ -170,7 +170,7 @@
                 </li>
                 <li>
                     <img
-                        src="resources/zach_star.jpg"
+                        src="resources/compressed/zach_star.webp"
                         alt="Zach Star"
                         width="120"
                         height="120"
@@ -199,7 +199,7 @@
                 </li>
                 <li>
                     <img
-                        src="resources/struthless.jpg"
+                        src="resources/compressed/struthless.webp"
                         alt="struthless"
                         width="120"
                         height="120"
@@ -228,7 +228,7 @@
                 </li>
                 <li>
                     <img
-                        src="resources/3b1b.jpg"
+                        src="resources/compressed/3b1b.webp"
                         alt="3Blue1Brown"
                         width="120"
                         height="120"
@@ -256,7 +256,7 @@
                 </li>
                 <li>
                     <img
-                        src="resources/lague.jpg"
+                        src="resources/compressed/lague.webp"
                         alt="Sebastial Lague"
                         width="120"
                         height="120"
@@ -284,7 +284,7 @@
                 </li>
                 <li>
                     <img
-                        src="resources/eater.jpg"
+                        src="resources/compressed/eater.webp"
                         alt="Ben Eater"
                         width="120"
                         height="120"
@@ -311,7 +311,7 @@
                 </li>
                 <li>
                     <img
-                        src="/resources/gotham.jpg"
+                        src="/resources/compressed/gotham.webp"
                         alt="GothamChess"
                         width="120"
                         height="120"
@@ -340,6 +340,11 @@
                 </li>
             </ul>
         </div>
+        <div id="people-div">
+            <h2 id="people">
+                <img
+                    src="person.png"
+                    alt="People emoji"
 
         <h2 id="books">
             <img
@@ -354,7 +359,7 @@
         <ul>
             <li>
                 <img
-                    src="resources/three.jpg"
+                    src="resources/compressed/three.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -371,7 +376,7 @@
             </li>
             <li>
                 <img
-                    src="resources/project.jpg"
+                    src="resources/compressed/project.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -389,7 +394,7 @@
             </li>
             <li>
                 <img
-                    src="resources/ready.jpg"
+                    src="resources/compressed/ready.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -405,7 +410,7 @@
             </li>
             <li>
                 <img
-                    src="resources/stopar.jpg"
+                    src="resources/compressed/stopar.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -421,7 +426,7 @@
             </li>
             <li>
                 <img
-                    src="resources/left.jpg"
+                    src="resources/compressed/left.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -442,7 +447,7 @@
         <ul>
             <li>
                 <img
-                    src="resources/kafka.jpg"
+                    src="resources/compressed/kafka.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -459,7 +464,7 @@
             </li>
             <li>
                 <img
-                    src="resources/name.jpg"
+                    src="resources/compressed/name.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -476,7 +481,7 @@
             </li>
             <li>
                 <img
-                    src="resources/hundred.jpg"
+                    src="resources/compressed/hundred.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -494,7 +499,7 @@
             </li>
             <li>
                 <img
-                    src="resources/1984.jpg"
+                    src="resources/compressed/1984.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -510,7 +515,7 @@
             </li>
             <li>
                 <img
-                    src="resources/pan.jpg"
+                    src="resources/compressed/pan.webp"
                     alt="Pan Theodor Mundstock"
                     width="120"
                     height="120"
@@ -531,7 +536,7 @@
         <ul>
             <li>
                 <img
-                    src="resources/hradla.jpg"
+                    src="resources/compressed/hradla.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -548,7 +553,7 @@
             </li>
             <li>
                 <img
-                    src="resources/napad.jpg"
+                    src="resources/compressed/napad.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -565,7 +570,7 @@
             </li>
             <li>
                 <img
-                    src="resources/show.jpg"
+                    src="resources/compressed/show.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -582,7 +587,7 @@
             </li>
             <li>
                 <img
-                    src="resources/sapiens.jpg"
+                    src="resources/compressed/sapiens.webp"
                     alt="Book cover"
                     width="120"
                     height="120"
@@ -610,7 +615,7 @@
         <ul>
             <li>
                 <img
-                    src="resources/twenty.jpg"
+                    src="resources/compressed/twenty.webp"
                     alt="Twenty One Pilots"
                     width="120"
                     height="120"
@@ -644,7 +649,7 @@
             </li>
             <li>
                 <img
-                    src="resources/generation.jpg"
+                    src="resources/compressed/generation.webp"
                     alt="Generation Simulation"
                     width="120"
                     height="120"
@@ -675,7 +680,7 @@
             </li>
             <li>
                 <img
-                    src="resources/joseph.jpg"
+                    src="resources/compressed/joseph.webp"
                     alt="Jay Joseph"
                     width="120"
                     height="120"
@@ -705,7 +710,7 @@
             </li>
             <li>
                 <img
-                    src="resources/half.jpg"
+                    src="resources/compressed/half.webp"
                     alt="half•alive"
                     width="120"
                     height="120"
@@ -736,7 +741,7 @@
             </li>
             <li>
                 <img
-                    src="resources/ajr.jpg"
+                    src="resources/compressed/ajr.webp"
                     alt="AJR"
                     width="120"
                     height="120"
@@ -766,7 +771,7 @@
             </li>
             <li>
                 <img
-                    src="resources/zimmer.jpg"
+                    src="resources/compressed/zimmer.webp"
                     alt="Hans Zimmer"
                     width="120"
                     height="120"
@@ -808,7 +813,7 @@
         <ul>
             <li>
                 <img
-                    src="resources/last.jpg"
+                    src="resources/compressed/last.webp"
                     alt="Last of Us"
                     width="120"
                     height="120"
@@ -824,7 +829,7 @@
             </li>
             <li>
                 <img
-                    src="resources/rick.jpg"
+                    src="resources/compressed/rick.webp"
                     alt="Rick and Morty"
                     width="120"
                     height="120"
@@ -840,7 +845,7 @@
             </li>
             <li>
                 <img
-                    src="resources/friends.jpg"
+                    src="resources/compressed/friends.webp"
                     alt="Friends"
                     width="120"
                     height="120"
@@ -856,7 +861,7 @@
             </li>
             <li>
                 <img
-                    src="resources/heartstopper.jpg"
+                    src="resources/compressed/heartstopper.webp"
                     alt="Heartstopper"
                     width="120"
                     height="120"
@@ -873,7 +878,7 @@
             </li>
             <li>
                 <img
-                    src="resources/dune.png"
+                    src="resources/compressed/dune.webp"
                     alt="Dune"
                     width="120"
                     height="120"
@@ -890,7 +895,7 @@
             </li>
             <li>
                 <img
-                    src="resources/arrival.jpg"
+                    src="resources/compressed/arrival.webp"
                     alt="Arrival"
                     width="120"
                     height="120"
@@ -906,7 +911,7 @@
             </li>
             <li>
                 <img
-                    src="resources/interstellar.jpg"
+                    src="resources/compressed/interstellar.webp"
                     alt="Interstellar"
                     width="120"
                     height="120"
@@ -922,7 +927,7 @@
             </li>
             <li>
                 <img
-                    src="resources/stranger.png"
+                    src="resources/compressed/stranger.webp"
                     alt="Stranger Things"
                     width="120"
                     height="120"
@@ -949,7 +954,7 @@
         <ul>
             <li>
                 <img
-                    src="/resources/mouse.jpg"
+                    src="/resources/compressed/mouse.webp"
                     alt="Logitech MX Vertical"
                     width="120"
                     height="120"
@@ -967,7 +972,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/kindle.jpg"
+                    src="/resources/compressed/kindle.webp"
                     alt="Kindle"
                     width="120"
                     height="120"
@@ -985,7 +990,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/headphones.webp"
+                    src="/resources/compressed/headphones.webp"
                     alt="Audio-Technica ATH-M40x"
                     width="120"
                     height="120"
@@ -1015,7 +1020,7 @@
             <ul>
                 <li>
                     <img
-                        src="/resources/notion.png"
+                        src="/resources/compressed/notion.webp"
                         alt="Notion"
                         width="120"
                         height="120"
@@ -1031,7 +1036,7 @@
                 </li>
                 <li>
                     <img
-                        src="/resources/vscode.png"
+                        src="/resources/compressed/vscode.webp"
                         alt="VSCode"
                         width="120"
                         height="120"
@@ -1046,7 +1051,7 @@
                 </li>
                 <li>
                     <img
-                        src="/resources/opera.png"
+                        src="/resources/compressed/opera.webp"
                         alt="Opera"
                         width="120"
                         height="120"
@@ -1061,7 +1066,7 @@
                 </li>
                 <li>
                     <img
-                        src="/resources/windows.png"
+                        src="/resources/compressed/windows.webp"
                         alt="Windows 11"
                         width="120"
                         height="120"
@@ -1077,7 +1082,7 @@
                 </li>
                 <li>
                     <img
-                        src="/resources/copilot.png"
+                        src="/resources/compressed/copilot.webp"
                         alt="GitHub CoPilot"
                         width="120"
                         height="120"
@@ -1093,7 +1098,7 @@
                 </li>
                 <li>
                     <img
-                        src="/resources/docs.png"
+                        src="/resources/compressed/docs.webp"
                         alt="Google Docs"
                         width="120"
                         height="120"
@@ -1123,7 +1128,7 @@
         <ul>
             <li>
                 <img
-                    src="/resources/celeste.png"
+                    src="/resources/compressed/celeste.webp"
                     alt="Celeste"
                     width="120"
                     height="120"
@@ -1142,7 +1147,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/dead.png"
+                    src="/resources/compressed/dead.webp"
                     alt="Dead Cells"
                     width="120"
                     height="120"
@@ -1158,7 +1163,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/xcom.jpg"
+                    src="/resources/compressed/xcom.webp"
                     alt="XCOM"
                     width="120"
                     height="120"
@@ -1174,7 +1179,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/league.png"
+                    src="/resources/compressed/league.webp"
                     alt="League of Legends"
                     width="120"
                     height="120"
@@ -1190,7 +1195,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/zelda.png"
+                    src="/resources/compressed/zelda.webp"
                     alt="The Legend of Zelda: Breath of the Wild"
                     width="120"
                     height="120"
@@ -1207,7 +1212,7 @@
             </li>
             <li>
                 <img
-                    src="/resources/civ.jpg"
+                    src="/resources/compressed/civ.webp"
                     alt="Civilisation VI"
                     width="120"
                     height="120"
