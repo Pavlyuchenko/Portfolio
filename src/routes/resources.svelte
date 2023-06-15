@@ -340,6 +340,40 @@
                 </li>
             </ul>
         </div>
+        <div id="people-div">
+            <h2 id="people">
+                <img
+                    src="person.png"
+                    alt="People emoji"
+                    width="32"
+                    style="vertical-align: top;"
+                /> People I admire
+            </h2>
+            <ul>
+                <li>
+                    <img
+                        src="resources/compressed/crawford.webp"
+                        alt="Devon Crawford"
+                        width="120"
+                        height="120"
+                    />
+                    <br />
+                    Tyler Joseph
+                    <p>Test</p>
+                </li>
+                <li>
+                    <img
+                        src="resources/compressed/crawford.webp"
+                        alt="Devon Crawford"
+                        width="120"
+                        height="120"
+                    />
+                    <br />
+                    Andrej Karpathy
+                    <p>Test</p>
+                </li>
+            </ul>
+        </div>
 
         <h2 id="books">
             <img
@@ -934,6 +968,39 @@
                     A fun watch, kind of like E.T. of my generation. What if
                     there was a second world beyond ours? Third season was the
                     best one change my mind.
+                </p>
+            </li>
+            <li>
+                <img
+                    src="resources/compressed/spiderman.webp"
+                    alt="Stranger Things"
+                    width="120"
+                    height="120"
+                    loading="lazy"
+                />
+                <br />
+                Spider-Man: Across the Spider-Verse
+                <p>
+                    One would think there is nothing else to explore in the
+                    Spider-Man universe. Yet here I am, praising a movie with an
+                    incredible plot, amazing music and as a cherry on top, the
+                    animation.
+                </p>
+            </li>
+            <li>
+                <img
+                    src="resources/compressed/dark_knight.webp"
+                    alt="Stranger Things"
+                    width="120"
+                    height="120"
+                    loading="lazy"
+                />
+                <br />
+                The Dark Knight
+                <p>
+                    Haven't seen the legendary Batman trilogy since this year
+                    and boy was I missing out. The Dark Knight is as good as a
+                    superhero movie can get.
                 </p>
             </li>
         </ul>
