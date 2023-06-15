@@ -1,7 +1,8 @@
 from PIL import Image
 import os
 
-PATH = "./static/resources/"
+""" PATH = "./static/resources/" """
+PATH = "./"
 PATH_NEW = "./static/resources/compressed/"
 IMAGE_DIMENSIONS = (120, 120)
 
@@ -10,6 +11,10 @@ filenames = os.listdir(PATH)
 
 for file in filenames:
     if os.path.isdir(PATH + file):
+        continue
+
+    """ if not .jpg """
+    if file.split(".")[1] != "jpg":
         continue
 
     image = Image.open(PATH + file)

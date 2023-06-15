@@ -340,7 +340,7 @@
                 </li>
             </ul>
         </div>
-        <div id="people-div">
+        <!-- <div id="people-div">
             <h2 id="people">
                 <img
                     src="person.png"
@@ -373,7 +373,7 @@
                     <p>Test</p>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
         <h2 id="books">
             <img

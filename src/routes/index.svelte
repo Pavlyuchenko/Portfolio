@@ -84,6 +84,16 @@
     let textIndex = 0;
     let textOptions = [
         "I am a programmer",
+        "you can click any of the icons!",
+        "I am a full-stack developer",
+        "I speak English, Czech und ein bisschen Deutsch",
+        "I know Python, Javascript and Java",
+        "I'm moving to Brno, Czechia",
+        "the meaning of life is 42",
+        "I studied in Maastricht, Netherlands",
+    ];
+    /* let textOptions = [
+        "I am a programmer",
         "I study Data Science & AI in Netherlands, Maasstricht",
         "the meaning of life is 42",
         "I am looking for summer 2023 internship!",
@@ -93,7 +103,7 @@
         "I love Sci-fi",
         "cloud computing and virtual reality are my learning goals",
         "I know that's too ambitious, but I'll try anyway",
-    ];
+    ]; */
 
     let variableText = textOptions[textOptionsIndex];
     let cursor;
@@ -187,7 +197,7 @@
                         <p class="project-tag">Work</p>
                     </div>
                 </div>
-                <img id="image" src="ticklefluff.png" alt="Image Ticklefluff" />
+                <img id="image" src="ticklefluff.png" alt="Ticklefluff" />
             </article>
         </a>
         <a href="/project/expobank">
