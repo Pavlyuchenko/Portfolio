@@ -39,22 +39,11 @@
 
 {#if segment === "showcase"}
     <slot />
-{:else if segment === "writing" || segment === "article"}
-    <!-- <footer id="footer">
-        <p>Enjoy my writing? Get notified when I publish a new article!</p>
-        <input type="email" bind:value={newsletterEmail} />
-        <button
-            on:click={() => {
-                sendEmail(newsletterEmail);
-            }}>Sign Up!</button
-        >
-        <p>I promise I won't send out any bullshit.</p>
-    </footer> -->
 {:else}
     <main>
         <nav>
             <div id="left-nav">
-                <a href={segment === "cs" ? "/cs" : "/"}>
+                <a href="/">
                     <img
                         src="ja_cropped_small.jpg"
                         alt="Michal Pavlíček foto"
@@ -65,23 +54,11 @@
                 </a>
                 <div id="image-info">
                     <h3>Michal Pavlíček</h3>
-                    <p>
-                        <span class="checkmark">
-                            <div class="checkmark_stem" />
-                            <div class="checkmark_kick" />
-                        </span>
-                        <span id="programator">Programmer</span>
-                        <span class="checkmark">
-                            <div class="checkmark_stem" />
-                            <div class="checkmark_kick" />
-                        </span>
-                        Web Developer
-                    </p>
                 </div>
             </div>
             <div id="right-nav">
                 <a
-                    href={segment === "cs" ? "/cs" : "/"}
+                    href="/"
                     style="text-decoration: {segment === undefined
                         ? 'underline'
                         : 'none'}; 
@@ -90,7 +67,7 @@
                     Portfolio
                 </a>
                 <a
-                    href={segment === "cs" ? "/cs/about" : "/about"}
+                    href="/about"
                     style="text-decoration: {segment === 'about'
                         ? 'underline'
                         : 'none'}; color: {segment === 'about'
@@ -100,14 +77,14 @@
                     About
                 </a>
                 <a
-                    href={segment === "cs" ? "/cs/resources" : "/resources"}
-                    style="text-decoration: {segment === 'resources'
+                    href="/inspiration"
+                    style="text-decoration: {segment === 'inspiration'
                         ? 'underline'
-                        : 'none'}; color: {segment === 'resources'
+                        : 'none'}; color: {segment === 'inspiration'
                         ? 'var(--secondary)'
                         : 'var(--primary)'};"
                 >
-                    Resources
+                    Inspiration
                 </a>
                 <a
                     href="https://blog.michal-pavlicek.tech"
@@ -120,7 +97,7 @@
                     Writing
                 </a>
                 <a
-                    href={segment === "cs" ? "/cs/resume" : "/resume"}
+                    href="/resume"
                     style="text-decoration: {segment === 'resume'
                         ? 'underline'
                         : 'none'}; color: {segment === 'resume'
@@ -129,29 +106,8 @@
                 >
                     Resumé
                 </a>
-                <a
-                    href={segment === "cs" ? "/" : "/cs"}
-                    style="text-decoration: 'none'; color: 'var(--secondary)';"
-                >
-                    {#if segment === "cs"}
-                        <img
-                            loading="lazy"
-                            src="https://ik.imagekit.io/velkadomu/uk__ckmO6dTr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369963"
-                            alt="English"
-                            width="28"
-                        />
-                    {:else}
-                        <img
-                            src="cz.png"
-                            alt="Česky"
-                            width="28"
-                            style="border: 1px solid black;"
-                        />
-                    {/if}
-                </a>
             </div>
         </nav>
-        <hr />
         <div id="mobile-nav">
             <div
                 id="left-nav"
@@ -192,31 +148,11 @@
                 document.getElementById("container").classList = "";
             }}
         >
-            <a href={segment === "cs" ? "/cs" : "/"}>Portfolio</a>
-            <a href={segment === "cs" ? "/cs/about" : "/about"}>About</a>
-            <a href={"/resources"}>Resources</a>
+            <a href="/">Portfolio</a>
+            <a href="/about">About</a>
+            <a href={"/inspiration"}>Inspiration</a>
             <a href={"https://blog.michal-pavlicek.tech"}>Writing</a>
-            <a href={segment === "cs" ? "/cs/resume" : "/resume"}>Resumé</a>
-            <a
-                href={segment === "cs" ? "/" : "/cs"}
-                style="text-decoration: 'none'; color: 'var(--secondary)';"
-            >
-                {#if segment === "cs"}
-                    <img
-                        loading="lazy"
-                        src="https://ik.imagekit.io/velkadomu/uk__ckmO6dTr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1649504369963"
-                        alt="English"
-                        width="28"
-                    />
-                {:else}
-                    <img
-                        src="cz.png"
-                        alt="Česky"
-                        width="28"
-                        style="border: 1px solid black;"
-                    />
-                {/if}
-            </a>
+            <a href="/resume">Resumé</a>
             <hr id="mobile-hr" />
         </div>
         <slot />

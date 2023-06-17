@@ -965,11 +965,10 @@
             <br />
 
             <div id="flex-publikovat">
-                <div />
-                <button on:click={() => {}} disabled id="ulozit">Uložit</button>
+                <!-- <button on:click={() => {}} disabled id="ulozit">Uložit</button>
                 <button id="publikovat" on:click={() => {}} disabled
                     >Odeslat ke kontrole</button
-                >
+                > -->
             </div>
         </section>
         <aside />

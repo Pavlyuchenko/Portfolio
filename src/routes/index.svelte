@@ -1,5 +1,12 @@
 <script>
     import { onMount } from "svelte";
+    import Sir from "../components/InteractiveBoxes/SIR.svelte";
+    import Waterfall from "../components/InteractiveBoxes/Waterfall.svelte";
+    import GenSim from "../components/InteractiveBoxes/GenSim.svelte";
+    import Sudoku from "../components/InteractiveBoxes/Sudoku.svelte";
+    import TexEd from "../components/InteractiveBoxes/TexEd.svelte";
+    import ChatBot from "../components/InteractiveBoxes/ChatBot.svelte";
+    import Slibotechny from "../components/InteractiveBoxes/Slibotechny.svelte";
 
     const LOWER_TIME_DELETE_BOUND = 20;
     const UPPER_TIME_DELETE_BOUND = 45;
@@ -84,26 +91,14 @@
     let textIndex = 0;
     let textOptions = [
         "I am a programmer",
-        "you can click any of the icons!",
+        "you can click any of the boxes around!",
         "I am a full-stack developer",
-        "I speak English, Czech und ein bisschen Deutsch",
         "I know Python, Javascript and Java",
         "I'm moving to Brno, Czechia",
         "the meaning of life is 42",
+        "I speak English, Czech und ein bisschen Deutsch",
         "I studied in Maastricht, Netherlands",
     ];
-    /* let textOptions = [
-        "I am a programmer",
-        "I study Data Science & AI in Netherlands, Maasstricht",
-        "the meaning of life is 42",
-        "I am looking for summer 2023 internship!",
-        "I program in Javascript and Python",
-        "I speak English, Czech und ein bisschen Deutsch",
-        "I know React, Flask & Svelte",
-        "I love Sci-fi",
-        "cloud computing and virtual reality are my learning goals",
-        "I know that's too ambitious, but I'll try anyway",
-    ]; */
 
     let variableText = textOptions[textOptionsIndex];
     let cursor;
@@ -112,69 +107,41 @@
 <div id="main-div">
     <div id="intro">
         <h1>
-            My name is Michael and <br />
+            My name is Michal and <br />
             <span id="changing-text">
                 {variableText}<span bind:this={cursor} id="cursor">|</span>
             </span>
         </h1>
-        <div id="right-main">
-            <p id="hello">Hello! Welcome to my portfolio!</p>
-            <div id="vl" style="height: {height}px" />
-            <p id="bio">
-                I am a Data Science & AI bachelor in Maastricht. Currently
-                looking for a summer 2023 internship. Working as a freelance web
-                developer on Upwork.
-            </p>
+
+        <div id="interactive-boxes">
+            <a href="https://www.slibotechny.cz/" target="_blank">
+                <Slibotechny />
+            </a>
+            <a
+                href="https://pavlyuchenko.github.io/WaterfallGame"
+                target="_blank"
+            >
+                <Waterfall />
+            </a>
+            <a href="https://pavlyuchenko.github.io/Sudoku" target="_blank">
+                <Sudoku />
+            </a>
+            <a href="/showcase/text-editor" target="_blank">
+                <TexEd />
+            </a>
+            <a href="https://generationsimulation.com/" target="_blank">
+                <GenSim />
+            </a>
+            <a href="https://www.chatbotfight.com/" target="_blank">
+                <ChatBot />
+            </a>
+            <a href="https://pavlyuchenko.github.io/SIRModel" target="_blank">
+                <Sir />
+            </a>
         </div>
     </div>
 
-    <p id="my-work">Interactive projects</p>
-    <hr />
-
-    <div id="demos">
-        <a
-            href="https://pavlyuchenko.github.io/SIRModel/"
-            target="_blank"
-            class="demo-item"
-            id="sir-demo"
-        >
-            Pandemic simulation
-        </a>
-        <a
-            href="https://www.slibotechny.cz/"
-            target="_blank"
-            class="demo-item"
-            id="slibotechny-demo"
-        >
-            Slibotechny.cz
-        </a>
-        <a
-            href="/showcase/text-editor"
-            target="_blank"
-            class="demo-item"
-            id="text-editor-demo"
-        >
-            Custom Text Editor
-        </a>
-        <a
-            href="https://pavlyuchenko.github.io/Sudoku"
-            target="_blank"
-            class="demo-item"
-            id="sudoku-demo"
-        >
-            Sudoku solver
-        </a>
-        <a
-            href="https://pavlyuchenko.github.io/WaterfallGame"
-            target="_blank"
-            class="demo-item"
-            id="waterfall-demo"
-        >
-            Waterfall Game
-        </a>
-    </div>
-
-    <p id="my-work_2">Articles about my projects</p>
+    <p id="my-work_2">Experience</p>
     <hr />
 
     <div id="projects">
@@ -372,75 +339,67 @@
 </div>
 
 <style>
-    #demos {
-        display: grid;
-        width: 100%;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    :global(canvas) {
+        width: 70px;
+        height: 70px;
+
+        border-radius: 10px;
     }
-    .demo-item {
-        background-color: red;
-        width: 100%;
-        height: 66px;
-        line-height: 66px;
-        border-radius: 4px;
-        text-align: center;
-
-        font-size: 22px;
-        font-weight: 600;
-
-        transition: 0.25s;
+    :global(.hoverable) {
+        transition: 0.2s ease-in-out;
+    }
+    :global(.hoverable:hover) {
         cursor: pointer;
+        transform: scale(1.15);
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
     }
-    .demo-item:hover {
-        transform: scale(1.05);
-        box-shadow: 4px 4px 18px 8px rgba(33, 33, 33, 0.25);
+    :global(.interactive-box) {
+        position: absolute;
+
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
     }
-    #text-editor-demo {
-        background: url("/text_ed_bg.png");
-        color: #fff;
-    }
-    #slibotechny-demo {
-        background: url("/slibotechny.png");
-        border: 3px solid #303030;
+    #interactive-boxes {
+        position: absolute;
+
+        top: 0px;
+        left: max(calc((100% - 73rem) / 2), 0px);
+        right: max(calc((100% - 73rem) / 2), 0px);
+
         box-sizing: border-box;
     }
-    #sir-demo {
-        background: url("/sir_bg.png");
-        object-fit: fill;
-        color: #fff;
-    }
-    #sudoku-demo {
-        background: url("/sudoku_bg.png");
-        font-weight: 700;
-        color: #fff;
-    }
-    #waterfall-demo {
-        background: url("/waterfall_bg.png");
-        color: #fff;
-    }
+
     #main-div {
         padding: 0px calc((100% - 73rem) / 2) 0px calc((100% - 73rem) / 2);
 
         position: relative;
 
-        margin-top: 120px;
+        padding-top: 250px;
     }
 
     #intro {
         display: flex;
+
+        width: 100%;
+        justify-content: center;
     }
 
     h1 {
+        text-align: center;
+
         color: var(--primary);
         font-weight: 700;
         font-family: "Inter", sans-serif;
-        font-size: 45px;
+        font-size: 64px;
         line-height: 67px;
 
-        padding-right: 40px;
-        width: 50%;
         margin-top: 20px;
     }
     #changing-text {
@@ -450,38 +409,8 @@
         color: var(--primary);
     }
 
-    #vl {
-        top: -30px;
-        left: 50%;
-        width: 0;
-        border: 0;
-        border-left: 2px solid var(--primary);
-        position: absolute;
-    }
-
-    #right-main {
-        width: 45%;
-        padding-left: 5%;
-    }
-    #hello {
-        color: var(--primary);
-        font-weight: 600;
-        font-size: 15px;
-    }
-    #bio {
-        font-size: 19px;
-        line-height: 130%;
-    }
-
-    #my-work {
-        margin-top: 80px;
-        font-family: "Inter";
-        margin-bottom: 0px;
-        font-weight: 500;
-        color: var(--primary);
-    }
     #my-work_2 {
-        margin-top: 80px;
+        margin-top: 180px;
         font-family: "Inter";
         margin-bottom: 0px;
         font-weight: 500;
@@ -648,51 +577,9 @@
         color: #ffffff;
     }
 
-    #language-switch {
-        position: fixed;
-        bottom: 10px;
-        left: 10px;
-        z-index: 10000;
-
-        padding: 10px 20px;
-        background-color: var(--secondary);
-        color: #ffffff;
-        border-radius: 5px;
-        border: 5px solid #000000;
-
-        text-align: center;
-        transition: 0.2s;
-    }
-    #language-switch:hover {
-        background-color: var(--primary);
-    }
-    #language-switch span {
-        transition: 0.15s;
-        cursor: pointer;
-        text-decoration: underline;
-        font-size: 18px;
-    }
-    #language-switch span:hover {
-        color: var(--secondary);
-    }
-
-    @media (max-width: 1300px) {
-        #sir-demo {
-            background: #303030;
-        }
-        #text-editor-demo {
-            background: #ff8a00;
-        }
-        #waterfall-demo {
-            background: #e63946;
-        }
-        #sudoku-demo {
-            background: #0096ff;
-        }
-    }
     @media (max-width: 1100px) {
         h1 {
-            margin-top: 50px;
+            margin-top: 0px;
         }
         #main-div {
             padding-left: 0px;
@@ -711,37 +598,44 @@
         #projects article #image {
             max-width: 300px;
         }
-
-        #intro {
-            flex-direction: column;
-            align-items: center;
-        }
-        #vl {
-            display: none;
-        }
-        h1 {
-            width: 95%;
-            text-align: center;
-            padding-right: 0;
-        }
         #main-div {
+            padding-top: 100px;
+        }
+    }
+    @media (max-width: 900px) {
+        #interactive-boxes {
+            position: relative;
+            width: 100%;
+
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            justify-content: center;
+
+            margin-top: 60px;
+        }
+        #intro {
+            display: flex;
+            flex-direction: column;
+        }
+        :global(.interactive-box) {
+            position: relative;
+            top: 0 !important;
+            left: 0 !important;
+            rotate: 0deg !important;
+
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        :global(.hoverable:hover) {
+            transform: translateX(-50%) scale(1.15);
+        }
+        #my-work_2 {
             margin-top: 20px;
         }
-        #right-main {
-            width: 100%;
-            padding-left: 10px;
-            margin-top: 220px;
-            position: absolute;
-        }
-        #hello {
-            text-align: left;
-            font-size: 20px;
-        }
-        #bio {
-            font-size: 20px;
-        }
-        #my-work {
-            margin-top: 140px;
+        #main-div {
+            padding-top: 0px;
         }
     }
 
@@ -753,36 +647,8 @@
             width: 90px;
         }
         h1 {
-            font-size: 32px;
+            font-size: 30px;
             line-height: normal;
-        }
-        #my-work {
-            margin-top: 220px;
-        }
-        #right-main {
-            margin-top: 180px;
-        }
-        #projects article {
-            padding-left: 25px;
-        }
-        #my-work {
-            margin-top: 240px;
-        }
-        #right-main {
-            margin-top: 240px;
-        }
-        #demos {
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
-        .demo-item {
-            width: 100% !important;
-        }
-    }
-
-    @media (max-width: 360px) {
-        #bio {
-            font-size: 18px;
         }
     }
 </style>
