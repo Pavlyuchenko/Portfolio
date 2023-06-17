@@ -1,5 +1,5 @@
 <div class="hoverable interactive-box" div>
-    <img src="/gensim.png" alt="Generation Simulation logo" />
+    <img src="/GenSim.png" alt="Generation Simulation logo" />
 </div>
 
 <style>
