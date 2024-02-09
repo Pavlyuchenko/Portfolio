@@ -4,6 +4,10 @@
     import ImageLoader from "../../components/ImageLoader.svelte";
 </script>
 
+<svelte:head>
+    <title>Upwork | Michal Pavlíček</title>
+</svelte:head>
+
 <article>
     <div>
         <div>
@@ -53,6 +57,30 @@
     </div>
 
     <div id="the-story">
+        <h3 class="epilogue">Lessons learned</h3>
+        <div class="flex" id="epilogue-div">
+            <div class="flex-child-left">
+                <div class="lesson-title">Communication is key</div>
+                <p>
+                    For the first time I found myself having to talk to 4 native
+                    English speakers on Zoom. Sounded daunting to me at first,
+                    but suddenly I realized I was the one talking the most
+                    anyways. That was a huge turning point for me, giving me the
+                    confidence to speak up.
+                </p>
+            </div>
+            <div class="flex-child-right">
+                <div class="lesson-title">It's tough between projects</div>
+                <p>
+                    I also got the opportunity to witness the bad part of
+                    freelancing, which is getting the clients in the first
+                    place. When finishing one project, it can take quite a long
+                    time to find a perfect match and is frustrating, when noone
+                    responds to your proposals.
+                </p>
+            </div>
+        </div>
+
         <h3>Prolog</h3>
         <p>
             I've been hearing about this freelance thing for a long time. It
@@ -106,34 +134,14 @@
         >
 
         <h3 class="epilogue">Epilogue</h3>
-        <div class="flex " id="epilogue-div">
+        <div class="flex" id="epilogue-div">
             <p>
-                I am grateful for starting my freelance journey on Upwork, since
-                it allowed me to go study abroad and I gained invaluable
-                experience when talking to clients.
+                I am grateful for starting my freelance journey on Upwork.
+                Thanks to that I was able to afford living in the expensive
+                Netherlands and study the Data Science & AI bachelor for a year
+                Apart from that I learnt quite a lot of lessons talking to
+                clients.
             </p>
-        </div>
-        <h3 class="epilogue">Lessons learned</h3>
-        <div class="flex " id="epilogue-div">
-            <div class="flex-child-left">
-                <div class="lesson-title">Communication is key</div>
-                <p>
-                    From the start I had to be completely sure I am making the
-                    exact project the clients wants me to. I had to therefore
-                    ask a lot of questions and make sure we are on the same
-                    boat. That improved my communication skills quite a bit.
-                </p>
-            </div>
-            <div class="flex-child-right">
-                <div class="lesson-title">It's tough between projects</div>
-                <p>
-                    I also got the opportunity to witness the bad part of
-                    freelancing, which is getting the clients in the first
-                    place. When finishing one project, it can take quite a long
-                    time to find a perfect match and is frustrating, when noone
-                    responds to your proposals.
-                </p>
-            </div>
         </div>
     </div>
 </article>
@@ -263,17 +271,27 @@
         margin-bottom: 30px;
     }
 
+    #epilogue-div {
+        padding: 10px 15px;
+        margin-bottom: 40px;
+
+        background-color: var(--primary);
+        border-radius: 7px;
+    }
+
     #epilogue-div p {
-        margin-top: 20px;
+        margin-top: 10px;
+
+        color: #fff;
     }
 
     .flex .lesson-title {
-        background-color: #cbcede;
+        background-color: #fff;
         width: -moz-fit-content;
         width: fit-content;
         padding: 10px 18px;
 
-        font-weight: 500;
+        font-weight: 700;
         font-size: 18px;
     }
 

@@ -149,10 +149,9 @@
                     <br />
                     Nathaniel Drew
                     <p>
-                        The most unique self-help Youtuber who managed to get
-                        his producion to another level. His overlap with
-                        psychology and philosophy and his unique life path
-                        provide amazing inspiration.
+                        The most unique self-help Youtuber who overlaps with
+                        psychology and philosophy. His videos are
+                        documentary-like.
                     </p>
                     <div class="video-links">
                         <a href="https://youtu.be/3aR_Uo2lipc" target="_blank"
@@ -180,7 +179,7 @@
                     <p>
                         An engineer evolved into comedian. Funniest short
                         sketches that never dissapoint. Never did I think a
-                        video about US health care would make me laugh so hard.
+                        video about US health care would make me laugh.
                         <br />
                     </p>
                     <div class="video-links">
@@ -264,9 +263,9 @@
                     <br />
                     Sebastian Lague
                     <p>
-                        Very interesting take on development projects. Amazing
-                        what can be done when a smart person decides to document
-                        unique projects and share them with the world.
+                        Very interesting take on development projects. His
+                        videos are very long and very detailed, digging deep
+                        into the topic.
                     </p>
                     <div class="video-links">
                         <a href="https://youtu.be/U4ogK0MIzqk" target="_blank"
@@ -293,7 +292,8 @@
                     Ben Eater
                     <p>
                         A channel that introduced me to a world beyond the
-                        top-level programming languages.
+                        top-level programming languages. For an IT person, it's
+                        eye-opening.
                     </p>
                     <div class="video-links">
                         <a href="https://youtu.be/l7rce6IQDWs" target="_blank"
@@ -309,7 +309,7 @@
                         >
                     </div>
                 </li>
-                <li>
+                <!-- <li>
                     <img
                         src="/resources/compressed/gotham.webp"
                         alt="GothamChess"
@@ -337,7 +337,7 @@
                             >Link 3</a
                         >
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
         <!-- <div id="people-div">
@@ -488,7 +488,7 @@
                     A realistic book with a handful of magical elements. The
                     story follows two completely different characters, a teenage
                     boy and a mentally undeveloped old man who can speak with
-                    cats. Set in Japan.
+                    cats.
                 </p>
             </li>
             <li>
@@ -655,12 +655,12 @@
 
                 <p>
                     My favorite band of all time, I know all the song, even
-                    before Tyler and Josh got together. The range of genres they
-                    cover is wide, the lyrics is deep and the world-building
-                    behind the scenes makes a lot of sense and I can relate to
-                    it on a personal level. You never know what comes next, you
-                    only know you'll love it whether it's pop, alternative rock,
-                    rap or anything else.
+                    before Tyler and Josh met. The range of genres they cover is
+                    wide, the lyrics is deep and the world-building behind the
+                    scenes makes a lot of sense and I can relate to it on a
+                    personal level. You never know what comes next, you only
+                    know you'll love it whether it's pop, alternative rock, rap
+                    or anything else.
                 </p>
                 <div class="video-links">
                     <a href="https://youtu.be/3sO-Y1Zbft4" target="_blank"
@@ -884,8 +884,7 @@
                 Friends
                 <p>
                     Am I too young to be watching Friends? Yes, but I still
-                    managed to watch all 10 episodes in four months. How you
-                    doin'?
+                    managed to watch all 10 episodes in four months.
                 </p>
             </li>
             <li>
@@ -901,8 +900,7 @@
                 <p>
                     A somewhat cheesy show, but I've already seen it three
                     times. Whenever I feel sad, this is the go to show. It's
-                    short, lovely and uplifting. Looking forward to season 2 too
-                    much.
+                    short, lovely and uplifting.
                 </p>
             </li>
             <li>

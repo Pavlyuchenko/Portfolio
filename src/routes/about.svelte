@@ -3,16 +3,12 @@
     <div id="personal-info">
         <h1>Hello, I'm <span style="color: var(--primary);">Michal</span></h1>
         <p id="main-desc">
-            I'm a full-stack developer originally from Czechia now living in
-            Maastricht, Netherlands. I enjoy growing both as a person and as a
-            developer, connecting with other like-minded people and solving
-            interesting and challlenging problems.
+            I'm a Computer Science student from Czechia, who spent a year
+            studying Data Science & AI in the Netherlands. Aside from studying,
+            I am a full-stack developer, soccer player, and a sci-fi fan.
         </p>
         <p id="desc">
-            I'm a freelancer at Upwork currently working on <a
-                href="https://dev.ticklefluff.com"
-                target="_blank">Ticklefluff</a
-            >. I used to work at a Czech company
+            I used to freelance at Upwork and work for a Czech company
             <a href="https://zauzoo.com" target="_blank">Zauzoo</a>
             as a front-end developer and tester. I created both the front-end and
             the back-end of projects
@@ -24,15 +20,10 @@
             The main technologies I use are React & Flask.
         </p>
         <p id="desc">
-            I am a first year bachelor student at Maastricht University in the
-            Netherlands studying Data Science and Artificial Intelligence.
-            Currently in the process of looking for a summer 2023 internship.
-        </p>
-        <p id="desc">
-            When I'm not programming, designing or solving algorithmical
-            puzzles, you may find me on a football field, watching sci-fi shows
-            (Wubba Lubba dub-dub!), reading (also mostly sci-fi) books,
-            investing, or hanging out with my friends.
+            Currently, I am staring a handfull of projects: a programming club
+            at my local high school, a high school programming competition at
+            BUT, and revamping non-profit websites. I am looking for a summer
+            2024 internship.
         </p>
         <p id="desc">
             Among my biggest competitive programming achievments belongs
@@ -52,9 +43,8 @@
             >.
         </p>
         <p id="desc">
-            Since I am always looking for a challenge, my next learning topic is
-            cloud computing and later on virtual reality, as that's what excites
-            me and what I see the future in.
+            I would eventually like to end up in the area of sports data science
+            or virtual reality. Flipping a coin for it.
         </p>
     </div>
 </section>
@@ -82,6 +72,7 @@
             <p>Figma</p>
             <p>Vercel</p>
             <p>Java</p>
+            <p>C</p>
         </div>
     </div>
 </div>

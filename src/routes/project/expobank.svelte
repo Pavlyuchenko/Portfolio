@@ -52,6 +52,31 @@
     </div>
 
     <div id="the-story">
+        <h3 class="epilogue">Lessons learned</h3>
+        <div class="flex" id="epilogue-div">
+            <div class="flex-child-left">
+                <div class="lesson-title">
+                    Testing is boring, but it is useful
+                </div>
+                <p>
+                    I had to force myself to keep on testing new and new things,
+                    since it felt unimaginably hard and unusual. But the longer
+                    I did that, the faster it got and the more entertaining it
+                    eventually was.
+                </p>
+            </div>
+            <div class="flex-child-right">
+                <div class="lesson-title">Help is better than gold</div>
+                <p>
+                    Without help, I would be completely clueless. Not a lot of
+                    people use Play Framework anymore, so there isn't many
+                    materials on the internet. KarmaJS doesn't have a good
+                    documentation in my view as well, so I would have to learn
+                    all the thing by myself without help, which would have taken
+                    at least double the time it took.
+                </p>
+            </div>
+        </div>
         <h3>Prolog</h3>
         <p>
             After finishing the previous project at Zauzoo, I received another
@@ -97,7 +122,7 @@
         />
 
         <h3 class="epilogue">Epilogue</h3>
-        <div class="flex " id="epilogue-div">
+        <div class="flex" id="epilogue-div">
             <p>
                 Despite the fact that testing doesn't belong to the most fun
                 parts of IT, I am still very grateful for this experience. I
@@ -105,31 +130,6 @@
                 I got the opportunity to test my abilities on real project,
                 which kept me motivated.
             </p>
-        </div>
-        <h3 class="epilogue">Lessons learned</h3>
-        <div class="flex " id="epilogue-div">
-            <div class="flex-child-left">
-                <div class="lesson-title">
-                    Testing is boring, but it is useful
-                </div>
-                <p>
-                    I had to force myself to keep on testing new and new things,
-                    since it felt unimaginably hard and unusual. But the longer
-                    I did that, the faster it got and the more entertaining it
-                    eventually was.
-                </p>
-            </div>
-            <div class="flex-child-right">
-                <div class="lesson-title">Help is better than gold</div>
-                <p>
-                    Without help, I would be completely clueless. Not a lot of
-                    people use Play Framework anymore, so there isn't many
-                    materials on the internet. KarmaJS doesn't have a good
-                    documentation in my view as well, so I would have to learn
-                    all the thing by myself without help, which would have taken
-                    at least double the time it took.
-                </p>
-            </div>
         </div>
     </div>
 </article>
@@ -259,17 +259,27 @@
         margin-bottom: 30px;
     }
 
+    #epilogue-div {
+        padding: 10px 15px;
+        margin-bottom: 40px;
+
+        background-color: var(--primary);
+        border-radius: 7px;
+    }
+
     #epilogue-div p {
         margin-top: 20px;
+
+        color: #fff;
     }
 
     .flex .lesson-title {
-        background-color: #cbcede;
+        background-color: #fff;
         width: -moz-fit-content;
         width: fit-content;
         padding: 10px 18px;
 
-        font-weight: 500;
+        font-weight: 700;
         font-size: 18px;
     }
 
