@@ -1,0 +1,91 @@
+main #top-flex {
+    display: flex;
+    align-items: center;
+    padding: 5em 20em;
+}
+
+main h1 {
+    font-size: 4em;
+}
+
+main p {
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+}
+
+#timeline {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10em;
+    margin-bottom: 5em;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#line {
+    position: absolute;
+    top: calc((18px + 4px) / 2);
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+#milestones-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 0 3em;
+}
+
+.milestone {
+    text-align: center;
+    flex: 1;
+}
+
+.milestone-square {
+    width: 18px;
+    height: 18px;
+    border: 4px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: #ff8a00;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.milestone h4 {
+    font-size: 1.9em;
+    margin: 0.25em 0;
+}
+.milestone p {
+    display: inline;
+
+    font-size: 1.5em;
+}
+
+#text-flex {
+    display: flex;
+    padding: 5em 20em;
+    gap: 12em;
+}
+
+#recommendations {
+    padding: 5em 20em;
+}
+#recommendations h2 {
+    font-size: 3em;
+}
+
+#rec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.5em;
+    column-gap: 5em;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+}
