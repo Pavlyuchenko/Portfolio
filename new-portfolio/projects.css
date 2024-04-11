@@ -1,0 +1,31 @@
+main {
+    padding: 3em 30em;
+}
+
+main h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#note {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 2em;
+}
+
+main h3 {
+    font-size: 2em;
+    text-align: center;
+}
+main p {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 0.4em;
+    color: var(--primary-color);
+}
+main a {
+    font-weight: 600;
+    color: var(--primary-color);
+}

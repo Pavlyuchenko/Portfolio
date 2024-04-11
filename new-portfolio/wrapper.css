@@ -47,6 +47,9 @@ nav ul li a:not(.active) {
     text-decoration: underline;
     color: var(--primary-color);
 }
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
 hr {
     border: none;
@@ -93,6 +96,9 @@ footer p {
     text-decoration: none;
     color: var(--primary-color);
 }
+#footer-links a:hover {
+    text-decoration: underline;
+}
 
 /* GLOBAL */
 .primary-button {
@@ -107,6 +113,9 @@ footer p {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.primary-button:hover {
+    text-decoration: underline;
+}
 
 .secondary-button {
     background-color: transparent;
@@ -120,4 +129,7 @@ footer p {
     margin-top: 2em;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+.secondary-button:hover {
+    text-decoration: underline;
 }
