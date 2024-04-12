@@ -3,24 +3,24 @@ main {
 }
 
 main h1 {
-    font-size: 3em;
+    font-size: 3.75em;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 #note {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin-top: 0.2em;
     margin-bottom: 2em;
 }
 
 main h3 {
-    font-size: 2em;
+    font-size: 2.3em;
     text-align: center;
 }
 main p {
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin-bottom: 0;
     margin-top: 0.4em;
     color: var(--primary-color);
@@ -28,4 +28,10 @@ main p {
 main a {
     font-weight: 600;
     color: var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+    main {
+        padding: 3em 2em;
+    }
 }

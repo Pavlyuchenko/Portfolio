@@ -1,7 +1,13 @@
 main #top-flex {
     display: flex;
     align-items: center;
-    padding: 5em 20em;
+    padding: 5em 24em;
+
+    gap: 22em;
+}
+
+main #top-flex div {
+    flex: 1;
 }
 
 main h1 {
@@ -18,6 +24,7 @@ main p {
     z-index: 2;
     color: #fff;
     font-weight: 600;
+    white-space: nowrap;
 }
 .orange-text::before {
     content: "";
@@ -115,4 +122,69 @@ main p {
     font-size: 2em;
     text-align: center;
     font-weight: 600;
+}
+
+#me-img {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+    border: 7px solid var(--primary-color);
+    box-sizing: border-box;
+}
+
+@media (max-width: 1600px) {
+    main #top-flex {
+        padding: 5em 10em;
+        gap: 8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    main #top-flex {
+        flex-direction: column;
+        gap: 5em;
+        padding: 2em;
+    }
+    main #top-flex p {
+        font-size: 2.75em;
+    }
+    #me-img-wrapper {
+        margin: 0 3em;
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    #recommendations {
+        padding: 5em 2em;
+    }
+
+    #text-flex {
+        flex-direction: column;
+        gap: 3em;
+        padding: 5em 2em;
+        padding-bottom: 0;
+    }
+    #text-flex p {
+        font-size: 2.75em;
+    }
+
+    #rec-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        gap: 3em 2em;
+    }
+    #rec-grid img {
+        max-width: 100%;
+    }
+    #rec-grid div {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -16,7 +16,7 @@ h2 {
 }
 
 h1 {
-    font-size: 9em;
+    font-size: 8em;
     color: var(--primary-color);
     margin: 0;
     margin-top: 0.1em;
@@ -65,6 +65,7 @@ h1 {
     font-weight: 500;
 
     max-width: 500px;
+    margin-top: 0.5em;
 }
 
 .button-wrapper {
@@ -126,4 +127,46 @@ h3 {
 }
 .project span {
     font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin-top: 3em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+    h1 {
+        font-size: 6em;
+    }
+    #status {
+        font-size: 2em;
+    }
+    #desc {
+        font-size: 3em;
+    }
+
+    section {
+        margin-top: 5em;
+        margin-bottom: 10em;
+    }
+
+    h3 {
+        font-size: 4em;
+    }
+
+    #projects {
+        flex-direction: column;
+        gap: 3em;
+
+        margin-top: 0;
+    }
+    .project {
+        width: 100%;
+    }
+
+    .sec-techs {
+        display: none;
+    }
 }
