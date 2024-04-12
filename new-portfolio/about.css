@@ -133,12 +133,29 @@ main p {
     border-radius: 10px;
     border: 7px solid var(--primary-color);
     box-sizing: border-box;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (max-width: 1600px) {
     main #top-flex {
         padding: 5em 10em;
         gap: 8em;
+    }
+    #rec-grid img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    #text-flex {
+        padding: 5em 10em;
+        gap: 10em;
+    }
+    #recommendations {
+        padding: 5em 10em;
     }
 }
 
@@ -156,7 +173,19 @@ main p {
     }
 
     #timeline {
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+
+    #line {
         display: none;
+    }
+    #milestones-wrapper {
+        flex-direction: column;
+        gap: 5em;
+    }
+    .milestone {
+        font-size: 1.5em;
     }
 
     #recommendations {
@@ -179,6 +208,7 @@ main p {
         width: 100%;
         padding: 0;
         gap: 3em 2em;
+        font-size: 2.5em;
     }
     #rec-grid img {
         max-width: 100%;

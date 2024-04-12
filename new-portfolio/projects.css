@@ -21,7 +21,7 @@ main h3 {
 }
 main p {
     font-size: 1.75em;
-    margin-bottom: 0;
+    margin: 0;
     margin-top: 0.4em;
     color: var(--primary-color);
 }
@@ -30,8 +30,18 @@ main a {
     color: var(--primary-color);
 }
 
+.highlight::before {
+    content: "⭐ ";
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
 @media (max-width: 1200px) {
     main {
         padding: 3em 2em;
+        font-size: 1.5em;
+    }
+    main p {
+        margin-bottom: 0.75em;
     }
 }
