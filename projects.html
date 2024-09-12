@@ -14,15 +14,39 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@500,600&display=swap"
             rel="stylesheet"
         />
+
+        <script>
+            document.addEventListener("keydown", function (event) {
+                switch (event.key.toLowerCase()) {
+                    case "h":
+                        window.location.href = "/";
+                        break;
+                    case "a":
+                        window.location.href = "/about";
+                        break;
+                    case "p":
+                        window.location.href = "/projects";
+                        break;
+                    case "w":
+                        window.location.href = "/writing";
+                        break;
+                    case "c":
+                        window.location.href = "/cv.pdf";
+                        break;
+                }
+            });
+        </script>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="index">Home</a></li>
-                <li><a href="about">About me</a></li>
-                <li><a href="projects" class="active">Projects</a></li>
-                <li><a href="https://blog.michal-pavlicek.cz/">Writing</a></li>
-                <li><a href="cv.pdf">CV</a></li>
+                <li><a href="index">Home [h]</a></li>
+                <li><a href="about">About me [a]</a></li>
+                <li><a href="projects" class="active">Projects [p]</a></li>
+                <li>
+                    <a href="https://blog.michal-pavlicek.cz/">Writing [w]</a>
+                </li>
+                <li><a href="cv.pdf">CV [c]</a></li>
             </ul>
             <hr />
         </nav>
