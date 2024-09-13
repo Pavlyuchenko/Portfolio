@@ -28,10 +28,11 @@
                         window.location.href = "/projects";
                         break;
                     case "w":
-                        window.location.href = "/writing";
+                        window.location.href =
+                            "https://blog.michal-pavlicek.cz/";
                         break;
                     case "c":
-                        window.location.href = "/cv.pdf";
+                        window.open("/cv.pdf", "_blank");
                         break;
                 }
             });
@@ -40,13 +41,13 @@
     <body>
         <nav>
             <ul>
-                <li><a href="index">Home [h]</a></li>
-                <li><a href="about" class="active">About me [a]</a></li>
-                <li><a href="projects">Projects [p]</a></li>
+                <li><a href="index">[h] Home</a></li>
+                <li><a href="about" class="active">[a] About me</a></li>
+                <li><a href="projects">[p] Projects</a></li>
                 <li>
-                    <a href="https://blog.michal-pavlicek.cz/">Writing [w]</a>
+                    <a href="https://blog.michal-pavlicek.cz/">[w] Writing</a>
                 </li>
-                <li><a href="cv.pdf">CV [c]</a></li>
+                <li><a href="cv.pdf" target="_blank">CV [c]</a></li>
             </ul>
             <hr />
         </nav>

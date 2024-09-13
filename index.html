@@ -64,10 +64,13 @@
                         window.location.href = "/projects";
                         break;
                     case "w":
-                        window.location.href = "/writing";
+                        window.open(
+                            "https://blog.michal-pavlicek.cz/",
+                            "_blank"
+                        );
                         break;
                     case "c":
-                        window.location.href = "/cv.pdf";
+                        window.open("/cv.pdf", "_blank");
                         break;
                 }
             });
@@ -76,13 +79,13 @@
     <body>
         <nav>
             <ul>
-                <li><a href="index" class="active">Home [h]</a></li>
-                <li><a href="about">About me [a]</a></li>
-                <li><a href="projects">Projects [p]</a></li>
+                <li><a href="index" class="active">[h] Home</a></li>
+                <li><a href="about">[a] About me</a></li>
+                <li><a href="projects">[p] Projects</a></li>
                 <li>
-                    <a href="https://blog.michal-pavlicek.cz/">Writing [w]</a>
+                    <a href="https://blog.michal-pavlicek.cz/">[w] Writing</a>
                 </li>
-                <li><a href="cv.pdf">CV [c]</a></li>
+                <li><a href="cv.pdf" target="_blank">CV [c]</a></li>
             </ul>
             <hr />
         </nav>
@@ -198,7 +201,7 @@
                     <li>Animation</li>
                     <li>Automation & Bots</li>
                     <li>Low Level Programming</li>
-                    <li>Writing [w]</li>
+                    <li>Writing</li>
                 </ol>
             </div>
 
