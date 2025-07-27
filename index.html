@@ -1,223 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Michal Pavlíček | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michal Pavlíček | Portfolio</title>
 
-        <link rel="stylesheet" href="wrapper.css" />
-        <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="wrapper.css" />
+    <link rel="stylesheet" href="index.css" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@500,600&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500,600&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
 
-        <meta
-            name="description"
-            content="Michal Pavlíček's portfolio website. Developer, informatics student, sportsperson, sci-fi and tech enthusiast."
-        />
-        <meta
-            name="keywords"
-            content="Michal Pavlíček, developer, informatics, student, sportsperson, sci-fi, tech, enthusiast, portfolio"
-        />
-        <meta name="author" content="Michal Pavlíček" />
-        <meta name="robots" content="index, follow" />
-        <meta name="revisit-after" content="7 days" />
-        <meta name="language" content="en" />
-        <meta name="distribution" content="global" />
-        <meta name="rating" content="general" />
+    <meta
+      name="description"
+      content="Michal Pavlíček's portfolio website. Developer, informatics student, sportsperson, sci-fi and tech enthusiast."
+    />
+    <meta
+      name="keywords"
+      content="Michal Pavlíček, developer, informatics, student, sportsperson, sci-fi, tech, enthusiast, portfolio"
+    />
+    <meta name="author" content="Michal Pavlíček" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="language" content="en" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
 
-        <meta property="og:title" content="Michal Pavlíček | Portfolio" />
-        <meta
-            property="og:description"
-            content="Michal Pavlíček's portfolio website. Developer, informatics student, sportsperson, sci-fi and tech enthusiast."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://michal-pavlicek.cz/" />
-        <meta property="og:site_name" content="Michal Pavlíček | Portfolio" />
-        <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Michal Pavlíček | Portfolio" />
+    <meta
+      property="og:description"
+      content="Michal Pavlíček's portfolio website. Developer, informatics student, sportsperson, sci-fi and tech enthusiast."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://michal-pavlicek.cz/" />
+    <meta property="og:site_name" content="Michal Pavlíček | Portfolio" />
+    <meta property="og:locale" content="en_US" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@Pavlyuchenko" />
-        <meta name="twitter:creator" content="@Pavlyuchenko" />
-        <meta name="twitter:title" content="Michal Pavlíček | Portfolio" />
-        <meta
-            name="twitter:description"
-            content="Michal Pavlíček's portfolio website. Developer, informatics student, sportsperson, sci-fi and tech enthusiast."
-        />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Pavlyuchenko" />
+    <meta name="twitter:creator" content="@Pavlyuchenko" />
+    <meta name="twitter:title" content="Michal Pavlíček | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Michal Pavlíček's portfolio website. Developer, informatics student, sportsperson, sci-fi and tech enthusiast."
+    />
 
-        <script>
-            document.addEventListener("keydown", function (event) {
-                switch (event.key.toLowerCase()) {
-                    case "h":
-                        window.location.href = "/";
-                        break;
-                    case "a":
-                        window.location.href = "/about";
-                        break;
-                    case "p":
-                        window.location.href = "/projects";
-                        break;
-                    case "w":
-                        window.open(
-                            "https://blog.michal-pavlicek.cz/",
-                            "_blank"
-                        );
-                        break;
-                    case "c":
-                        window.open("/cv.pdf", "_blank");
-                        break;
-                }
-            });
-        </script>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index" class="active">[h] Home</a></li>
-                <li><a href="about">[a] About me</a></li>
-                <li><a href="projects">[p] Projects</a></li>
-                <li>
-                    <a href="https://blog.michal-pavlicek.cz/">[w] Writing</a>
-                </li>
-                <li><a href="cv.pdf" target="_blank">CV [c]</a></li>
-            </ul>
-            <hr />
-        </nav>
+    <script>
+      document.addEventListener("keydown", function (event) {
+        switch (event.key.toLowerCase()) {
+          case "h":
+            window.location.href = "/";
+            break;
+          case "a":
+            window.location.href = "/about";
+            break;
+          case "p":
+            window.location.href = "/projects";
+            break;
+          case "w":
+            window.open("https://blog.michal-pavlicek.cz/", "_blank");
+            break;
+          case "c":
+            window.open("/cv.pdf", "_blank");
+            break;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index" class="active">[h] Home</a></li>
+        <li><a href="about">[a] About me</a></li>
+        <li><a href="projects">[p] Projects</a></li>
+        <li>
+          <a href="https://blog.michal-pavlicek.cz/">[w] Writing</a>
+        </li>
+        <li><a href="cv.pdf" target="_blank">[c] CV</a></li>
+      </ul>
+      <hr />
+    </nav>
 
-        <main>
-            <h2>Hello! I'm</h2>
-            <h1>Michal Pavlíček 👋</h1>
-            <p id="status">Intern at Livesport 🔥</p>
-            <p id="desc">
-                I’m a web intern at Livesport, a masters computer graphics student at CTU, Prague, a
-                sportsperson, and a sci-fi and tech enthusiast.
-            </p>
-            <div class="button-wrapper">
-                <a href="projects" class="primary-button">See my work</a>
-                <a href="about" class="secondary-button">Get to know me</a>
-            </div>
+    <main>
+      <h2>Hello! I'm</h2>
+      <h1>Michal Pavlíček 👋</h1>
+      <p id="status">Intern at Livesport 🔥</p>
+      <p id="desc">
+        I’m a web intern at Livesport, a masters computer graphics student at
+        CTU, Prague, a sportsperson, and a sci-fi and tech enthusiast.
+      </p>
+      <div class="button-wrapper">
+        <a href="projects" class="primary-button">See my work</a>
+        <a href="about" class="secondary-button">Get to know me</a>
+      </div>
 
-            <div id="language-line">
-                <span>python</span>
-                <span>c</span>
-                <span>sql</span>
-                <span>javascript</span>
-                <span>react</span>
-                <span class="sec-techs">java</span>
-                <span>flask</span>
-                <span class="sec-techs">linux</span>
-                <span>git</span>
-                <span class="sec-techs">spring boot</span>
-                <span class="sec-techs">svelte</span>
-                <span class="sec-techs">bash</span>
-                <span class="sec-techs">typescript</span>
-                <span class="sec-techs">testing</span>
-            </div>
-        </main>
+      <div id="language-line">
+        <span>python</span>
+        <span>c</span>
+        <span>sql</span>
+        <span>javascript</span>
+        <span>react</span>
+        <span class="sec-techs">java</span>
+        <span>flask</span>
+        <span class="sec-techs">linux</span>
+        <span>git</span>
+        <span class="sec-techs">spring boot</span>
+        <span class="sec-techs">svelte</span>
+        <span class="sec-techs">bash</span>
+        <span class="sec-techs">typescript</span>
+        <span class="sec-techs">testing</span>
+      </div>
+    </main>
 
-        <section>
-            <h3>A few projects</h3>
-            <div id="projects">
-                <a
-                    href="https://velkadomu-sapper.vercel.app/"
-                    target="_blank"
-                    class="project"
-                >
-                    <div class="project-image-wrapper">
-                        <img
-                            src="imgs/velkadomu.webp"
-                            alt="VelkáDomů project"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="project-name">
-                        <span>1A</span> football news website
-                    </div>
-                </a>
-                <a
-                    href="https://vanocni-florbalovy-turnaj2-0.vercel.app/"
-                    target="_blank"
-                    class="project"
-                >
-                    <div class="project-image-wrapper">
-                        <img
-                            src="imgs/turnaj.webp"
-                            alt="Sports tournament tracker"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="project-name">
-                        <span>2A</span> sports tournament tracker
-                    </div>
-                </a>
-                <a
-                    href="https://www.slibotechny.cz/"
-                    target="_blank"
-                    class="project"
-                >
-                    <div class="project-image-wrapper">
-                        <img
-                            src="imgs/slibotechny.webp"
-                            alt="Politic parties watchdog"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="project-name">
-                        <span>3A</span> political parties watchdog
-                    </div>
-                </a>
-                <a
-                    href="https://fotbal-propal.vercel.app/"
-                    target="_blank"
-                    class="project"
-                >
-                    <div class="project-image-wrapper">
-                        <img src="imgs/cms.webp" alt="CMS" loading="lazy" />
-                    </div>
-                    <div class="project-name">
-                        <span>4A</span> cms with custom text-ed
-                    </div>
-                </a>
-            </div>
+    <section>
+      <h3>A few projects</h3>
+      <div id="projects">
+        <a
+          href="https://www.vut.cz/studenti/zav-prace/detail/162862?zp_id=162862"
+          target="_blank"
+          class="project"
+        >
+          <div class="project-image-wrapper">
+            <img
+              src="imgs/scrabble.png"
+              alt="Scrabble project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-name"><span>1</span> online scrabble with AI</div>
+        </a>
+        <a
+          href="https://velkadomu-sapper.vercel.app/"
+          target="_blank"
+          class="project"
+        >
+          <div class="project-image-wrapper">
+            <img
+              src="imgs/velkadomu.webp"
+              alt="VelkáDomů project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-name"><span>2</span> football news website</div>
+        </a>
+        <a href="https://chdcho.cz/" target="_blank" class="project">
+          <div class="project-image-wrapper">
+            <img src="imgs/chdcho.png" alt="Chdcho project" loading="lazy" />
+          </div>
+          <div class="project-name"><span>3</span> web platform with CMS</div>
+        </a>
+        <a
+          href="https://velkadomu-sapper.vercel.app/"
+          target="_blank"
+          class="project"
+        >
+          <div class="project-image-wrapper">
+            <img
+              src="imgs/flashscore2.png"
+              alt="VelkáDomů project"
+              loading="lazy"
+              height="50px"
+            />
+          </div>
+          <div class="project-name"><span>4</span> (intern) Flashscore</div>
+        </a>
+      </div>
 
-            <div class="button-wrapper">
-                <a href="projects" class="primary-button">See more work</a>
-                <a href="about" class="secondary-button">Get to know me</a>
-            </div>
-        </section>
+      <div class="button-wrapper">
+        <a href="projects" class="primary-button">See more work</a>
+        <a href="about" class="secondary-button">Get to know me</a>
+      </div>
+    </section>
 
-        <hr />
-        <footer>
-            <div>
-                <p>© 2024 Michal Pavlíček</p>
-            </div>
-            <div id="footer-button-div">
-                <a
-                    href="https://www.linkedin.com/in/michal-pavlicek/"
-                    class="primary-button"
-                    >Get in touch</a
-                >
-            </div>
-            <div id="footer-links">
-                <a href="credits">Credits</a>
-                <a href="https://github.com/Pavlyuchenko" target="_blank"
-                    >GitHub</a
-                >
-                <a
-                    href="https://www.linkedin.com/in/michal-pavlicek/"
-                    target="_blank"
-                    >LinkedIn</a
-                >
-                <a href="mailto:michaelg.pavlicek@gmail.com" target="_blank"
-                    >Email</a
-                >
-            </div>
-        </footer>
-    </body>
+    <hr />
+    <footer>
+      <div>
+        <p>© 2024 Michal Pavlíček</p>
+      </div>
+      <div id="footer-button-div">
+        <a
+          href="https://www.linkedin.com/in/michal-pavlicek/"
+          class="primary-button"
+          >Get in touch</a
+        >
+      </div>
+      <div id="footer-links">
+        <a href="credits">Credits</a>
+        <a href="https://github.com/Pavlyuchenko" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/michal-pavlicek/" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="mailto:michaelg.pavlicek@gmail.com" target="_blank">Email</a>
+      </div>
+    </footer>
+  </body>
 </html>
