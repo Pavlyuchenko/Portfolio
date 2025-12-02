@@ -4,5 +4,6 @@
 			"src": "**/*",
 			"use": "@vercel/static"
 		}
-	]
+	],
+	"cleanUrls": true
 }
